@@ -123,14 +123,14 @@ People whose posts I keep going back to.
 
 | Name | X | GitHub | Known for |
 | --- | --- | --- | --- |
-| Michael Gannotti | [@MichaelGannotti](https://x.com/MichaelGannotti) |  | Runs local AI demos and shares what works |
+| Mike Gannotti | [@MichaelGannotti](https://x.com/MichaelGannotti) |  | AI research at SMF Works; tests models and publishes the numbers |
 | loktar00 | [@loktar00](https://x.com/loktar00) |  | Brings local AI into real product work |
 | itsjustmarky | [@itsjustmarky](https://x.com/itsjustmarky) |  | Runs big models on their own GPUs and shares the settings that make them fast |
-| jpschroeder | [@jpschroeder](https://x.com/jpschroeder) |  |  |
-| ddalcu | [@ddalcu](https://x.com/ddalcu) |  |  |
+| Justin Schroeder | [@jpschroeder](https://x.com/jpschroeder) |  | Open-source builder; created dmux, ArrowJS and FormKit |
+| David Dalcu | [@ddalcu](https://x.com/ddalcu) |  | Builds open-source local LLM engines and UIs; created MLX Serve |
 | GumbiiDigital | [@GumbiiDigital](https://x.com/GumbiiDigital) |  |  |
 | MikeBradleyAI | [@MikeBradleyAI](https://x.com/MikeBradleyAI) |  |  |
-| StefanMaier | [@StefanMaier](https://x.com/StefanMaier) |  |  |
+| Stefan Maier | [@StefanMaier](https://x.com/StefanMaier) |  | VR, spatial computing and local LLMs |
 | ashen_one | [@ashen_one](https://x.com/ashen_one) |  |  |
 | TheDavidTai | [@TheDavidTai](https://x.com/TheDavidTai) |  | Works on Darkbloom |
 | Spangler3000 | [@Spangler3000](https://x.com/Spangler3000) |  | Works on Darkbloom |

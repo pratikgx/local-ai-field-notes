@@ -70,14 +70,14 @@ Runtimes & inference,Zhuohan Li,@zhuohan123,https://github.com/zhuohan123,vLLM c
 Runtimes & inference,slaren,,https://github.com/slaren,Core llama.cpp/ggml maintainer,https://github.com/ggml-org/llama.cpp
 Runtimes & inference,turboderp,@turboderp_,https://github.com/turboderp,ExLlama author,https://github.com/turboderp-org/exllamav2
 Community,Ahmad Osman,@TheAhmadOsman,,Gets people running models on their own hardware,
-Following on X,Michael Gannotti,@MichaelGannotti,,Runs local AI demos and shares what works,
+Following on X,Mike Gannotti,@MichaelGannotti,,AI research at SMF Works; tests models and publishes the numbers,
 Following on X,loktar00,@loktar00,,Brings local AI into real product work,
 Following on X,itsjustmarky,@itsjustmarky,,Runs big models on their own GPUs and shares the settings that make them fast,
-Following on X,jpschroeder,@jpschroeder,,,
-Following on X,ddalcu,@ddalcu,,,
+Following on X,Justin Schroeder,@jpschroeder,,"Open-source builder; created dmux, ArrowJS and FormKit",
+Following on X,David Dalcu,@ddalcu,,Builds open-source local LLM engines and UIs; created MLX Serve,
 Following on X,GumbiiDigital,@GumbiiDigital,,,
 Following on X,MikeBradleyAI,@MikeBradleyAI,,,
-Following on X,StefanMaier,@StefanMaier,,,
+Following on X,Stefan Maier,@StefanMaier,,"VR, spatial computing and local LLMs",
 Following on X,ashen_one,@ashen_one,,,
 Following on X,TheDavidTai,@TheDavidTai,,Works on Darkbloom,
 Following on X,Spangler3000,@Spangler3000,,Works on Darkbloom,
