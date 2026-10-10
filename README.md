@@ -28,4 +28,4 @@ If a person belongs on the list and isn't there, open a pull request. See [CONTR
 
 ## About
 
-I'm Pratik ([@pratikg](https://x.com/pratikg)). I work at Eigen Labs. When I'm not using my Mac mini, it serves open-weight models on [Darkbloom](https://x.com/darkbloomai), an open inference network that runs on idle Macs. This repo is personal.
+I'm Pratik ([@pratikg](https://x.com/pratikg) on X, [pratikgx](https://huggingface.co/pratikgx) on Hugging Face). I work at Eigen Labs. When I'm not using my Mac mini, it serves open-weight models on [Darkbloom](https://x.com/darkbloomai), an open inference network that runs on idle Macs. This repo is personal.
