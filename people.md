@@ -127,6 +127,7 @@ People whose posts I keep going back to.
 | loktar00 | [@loktar00](https://x.com/loktar00) |  | Brings local AI into real product work |
 | itsjustmarky | [@itsjustmarky](https://x.com/itsjustmarky) |  | Runs big models on their own GPUs and shares the settings that make them fast |
 | jpschroeder | [@jpschroeder](https://x.com/jpschroeder) |  |  |
+| ddalcu | [@ddalcu](https://x.com/ddalcu) |  |  |
 | GumbiiDigital | [@GumbiiDigital](https://x.com/GumbiiDigital) |  |  |
 | MikeBradleyAI | [@MikeBradleyAI](https://x.com/MikeBradleyAI) |  |  |
 | StefanMaier | [@StefanMaier](https://x.com/StefanMaier) |  |  |
