@@ -12,7 +12,7 @@ Mac mini with an Apple M5 Pro, 64 GB of unified memory and a 1 TB drive, on macO
 2. mlx-lm, Apple's tool for running models with MLX. `bash scripts/bench.sh` installs it in its own environment.
 3. uv, to get Python 3.12. The newest mlx-lm needs Python 3.11 or later, and Laguna and Bonsai needed the newest one.
 4. Ollama and LM Studio, for chatting with models in an app. Every speed in models.md comes from MLX in the terminal, not from these apps.
-5. Tailscale, for a private network between my own devices.
+5. Tailscale, for a private network between my own devices. I didn't want my internet traffic going through a VPN, so I left the exit node off. Tailscale only carries traffic between my own devices, and websites still go through my normal connection. Tailscale SSH and sharing (Serve and Funnel) are off too, so nothing on the Mac is exposed.
 
 ## First model I ran
 

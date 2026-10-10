@@ -42,6 +42,8 @@ The terms that confused me when I started, in plain words.
 
 **Hugging Face.** The website where most open models, quantized versions and datasets are published.
 
+**Tailscale.** An app that puts your own devices on a private network, so you can reach your Mac from your laptop or phone wherever you are. It's a kind of VPN, but by default it only carries traffic between your devices. Your normal internet traffic only goes through it if you turn on an exit node.
+
 ## Memory
 
 **VRAM.** Memory on a graphics card. On a PC, the model has to fit in VRAM to run fast.
