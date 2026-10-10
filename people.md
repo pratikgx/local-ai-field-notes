@@ -128,10 +128,10 @@ People whose posts I keep going back to.
 | itsjustmarky | [@itsjustmarky](https://x.com/itsjustmarky) |  | Runs big models on their own GPUs and shares the settings that make them fast |
 | Justin Schroeder | [@jpschroeder](https://x.com/jpschroeder) |  | Open-source builder; created dmux, ArrowJS and FormKit |
 | David Dalcu | [@ddalcu](https://x.com/ddalcu) |  | Builds open-source local LLM engines and UIs; created MLX Serve |
-| GumbiiDigital | [@GumbiiDigital](https://x.com/GumbiiDigital) |  |  |
-| MikeBradleyAI | [@MikeBradleyAI](https://x.com/MikeBradleyAI) |  |  |
+| Gumbii | [@GumbiiDigital](https://x.com/GumbiiDigital) |  | Builds local-first AI, custom LoRAs and automation tools |
+| Mike Bradley | [@MikeBradleyAI](https://x.com/MikeBradleyAI) |  | Founder and COO; leads open-source AI projects at Osmantic AI |
 | Stefan Maier | [@StefanMaier](https://x.com/StefanMaier) |  | VR, spatial computing and local LLMs |
-| ashen_one | [@ashen_one](https://x.com/ashen_one) |  |  |
+| Ashen | [@ashen_one](https://x.com/ashen_one) |  | AI content creator; local AI evangelist |
 | TheDavidTai | [@TheDavidTai](https://x.com/TheDavidTai) |  | Works on Darkbloom |
 | Spangler3000 | [@Spangler3000](https://x.com/Spangler3000) |  | Works on Darkbloom |
 | ashxhart | [@ashxhart](https://x.com/ashxhart) |  | Works on Darkbloom |
