@@ -137,3 +137,6 @@ People whose posts I keep going back to.
 | TheDavidTai | [@TheDavidTai](https://x.com/TheDavidTai) |  | Works on Darkbloom |
 | Spangler3000 | [@Spangler3000](https://x.com/Spangler3000) |  | Works on Darkbloom |
 | ashxhart | [@ashxhart](https://x.com/ashxhart) |  | Works on Darkbloom |
+| Clem Delangue | [@ClementDelangue](https://x.com/ClementDelangue) |  | Hugging Face co-founder and CEO |
+| Ronald Mannak | [@ronaldmannak](https://x.com/ronaldmannak) |  | Builds Pico, a private local AI server app for Mac |
+| Tomasz Wojewoda | [@twojewoda](https://x.com/twojewoda) |  | Founder and CEO of Vvvroom.ai |
