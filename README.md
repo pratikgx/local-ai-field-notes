@@ -22,9 +22,13 @@ Mac mini, Apple M5 Pro, 64 GB unified memory.
 
 `bash scripts/bench.sh` installs mlx-lm in a separate environment, picks models that fit your memory and logs speed and memory use. Pause anything else using the GPU first. Results land in `results/` and `models.md`.
 
+### Share your results
+
+I'd love to see how other Macs compare. [Open an issue](https://github.com/pratikgx/local-ai-field-notes/issues/new) with your chip, your memory and the new file from `results/`. [CONTRIBUTING.md](CONTRIBUTING.md) has the steps.
+
 ## Add someone
 
-If a person belongs on the list and isn't there, open a pull request. See [CONTRIBUTING.md](CONTRIBUTING.md) for the two rules.
+If a person belongs on the list and isn't there, open a pull request. See [CONTRIBUTING.md](CONTRIBUTING.md) for the two rules. Corrections are welcome too.
 
 ## About
 
