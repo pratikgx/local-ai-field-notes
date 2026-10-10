@@ -1,0 +1,5 @@
+.venv/
+.venv-*/
+__pycache__/
+converted/
+.DS_Store

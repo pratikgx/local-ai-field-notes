@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-09",
+  "machine": {
+    "chip": "Apple M5 Pro",
+    "memory_gb": 64,
+    "macos": "27.0",
+    "hw_model": "Mac17,16"
+  },
+  "prompt": "Explain in three short paragraphs why someone might run AI models on their own computer.",
+  "max_tokens": 256,
+  "notes": "Run by hand after scripts/bench.sh, because the mlx-lm version that script installs supports neither model. Darkbloom was running (idle) during both runs.",
+  "results": [
+    {
+      "model": "Laguna XS 2.1",
+      "repo": "poolside/Laguna-XS-2.1-NVFP4-mlx",
+      "runtime": "mlx-lm 0.32.0 (mlx_lm.generate), Python 3.12, no trust_remote_code",
+      "gen_tokens": 256,
+      "gen_tps": 55.498,
+      "prompt_tps": 18.799,
+      "peak_mem_gb": 21.657
+    },
+    {
+      "model": "Ternary Bonsai 2 27B",
+      "repo": "prism-ml/Ternary-Bonsai-2-27B-mlx-2bit",
+      "runtime": "MLX 0.32.0 with the Hadamard loader in scripts/bench_bonsai.py, greedy decoding",
+      "gen_tokens": 173,
+      "gen_tps": 26.430,
+      "prompt_tps": 40.367,
+      "peak_mem_gb": 8.445,
+      "stop_reason": "model finished its answer before 256 tokens"
+    }
+  ]
+}

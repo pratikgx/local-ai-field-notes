@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-09",
+  "machine": {
+    "chip": "Apple M5 Pro",
+    "memory_gb": 64,
+    "macos": "27.0",
+    "hw_model": "Mac17,16"
+  },
+  "prompt": "Explain in three short paragraphs why someone might run AI models on their own computer.",
+  "max_tokens": 256,
+  "results": [
+    {
+      "gen_tokens": 256,
+      "gen_tps": 60.8,
+      "prompt_tps": 53.563,
+      "peak_mem_gb": 4.726,
+      "sample": "<think>\nOkay, the user wants me to explain why someone might run AI models on their own computer in three short paragraphs. Let me start by breaking down the possible reasons. First, data privacy is a big one. People might not want their data sent to a cloud server, so running models locally keeps it secure. Then there's the aspect of control and customization. If you're doing research or developm",
+      "model": "Qwen3 8B",
+      "repo": "mlx-community/Qwen3-8B-4bit"
+    },
+    {
+      "gen_tokens": 256,
+      "gen_tps": 34.054,
+      "prompt_tps": 102.504,
+      "peak_mem_gb": 8.418,
+      "sample": "<think>\nOkay, the user wants me to explain why someone might run AI models on their own computer in three short paragraphs. Let me start by breaking down the possible reasons.\n\nFirst, data privacy and security come to mind. If someone is handling sensitive information, they might prefer keeping everything local instead of using cloud services. That makes sense because cloud providers could have vu",
+      "model": "Qwen3 14B",
+      "repo": "lmstudio-community/Qwen3-14B-MLX-4bit"
+    },
+    {
+      "gen_tokens": 215,
+      "gen_tps": 17.536,
+      "prompt_tps": 42.466,
+      "peak_mem_gb": 16.154,
+      "sample": "There are several compelling reasons to run AI models locally on your own computer. Primarily, it offers **enhanced privacy and security**. When using cloud-based AI services, your data is sent to external servers for processing. Running models locally keeps your information on your machine, avoiding potential data breaches or unwanted access by third parties \u2013 crucial for sensitive data like pers",
+      "model": "Gemma 3 27B",
+      "repo": "mlx-community/gemma-3-27b-it-qat-4bit"
+    },
+    {
+      "gen_tokens": 256,
+      "gen_tps": 106.053,
+      "prompt_tps": 58.203,
+      "peak_mem_gb": 17.234,
+      "sample": "<think>\nOkay, the user wants three short paragraphs explaining why someone might run AI models on their own computer. Let me start by breaking down the main reasons.\n\nFirst, privacy and data control. If someone is handling sensitive data, like personal info or company secrets, running AI locally avoids sending data to external servers. That's a big plus for privacy. Also, they can keep their data ",
+      "model": "Qwen3 30B-A3B (MoE)",
+      "repo": "lmstudio-community/Qwen3-30B-A3B-MLX-4bit"
+    }
+  ]
+}

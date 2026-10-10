@@ -1,0 +1,83 @@
+cat,name,x,github,known_for,repo
+Fine-tuning & quantization,Andrej Karpathy,@karpathy,https://github.com/karpathy,"nanoGPT, nanochat, llm.c",https://github.com/karpathy/nanochat
+Fine-tuning & quantization,Charles Goddard,,https://github.com/cg123,mergekit author,https://github.com/arcee-ai/mergekit
+Fine-tuning & quantization,Daniel Han,@danielhanchen,https://github.com/danielhanchen,Unsloth co-founder; finds bugs in new model releases,https://github.com/unslothai/unsloth
+Fine-tuning & quantization,Eric Hartford,@quixiai,https://github.com/ehartford,Dolphin uncensored fine-tunes,
+Fine-tuning & quantization,Kyle Corbitt,,https://github.com/corbt,OpenPipe/ART,https://github.com/OpenPipe/ART
+Fine-tuning & quantization,Maxime Labonne,@maximelabonne,https://github.com/mlabonne,LLM course; abliteration; Liquid AI,https://github.com/mlabonne/llm-course
+Fine-tuning & quantization,Maziyar Panahi,@maziyarpanahi,https://github.com/maziyarpanahi,Prolific open fine-tunes/quants,
+Fine-tuning & quantization,Michael Han,,https://github.com/shimmyshimmer,Unsloth co-founder,https://github.com/unslothai/unsloth
+Fine-tuning & quantization,Tim Dettmers,@tim_dettmers,https://github.com/TimDettmers,"QLoRA, bitsandbytes",https://github.com/bitsandbytes-foundation/bitsandbytes
+Fine-tuning & quantization,Will Brown,@willccbb,https://github.com/willccbb,verifiers; RL for open models,https://github.com/PrimeIntellect-ai/verifiers
+Fine-tuning & quantization,Wing Lian,@winglian,https://github.com/winglian,Axolotl creator,https://github.com/axolotl-ai-cloud/axolotl
+Fine-tuning & quantization,Yaowei Zheng (hiyouga),@code_hiyouga,https://github.com/hiyouga,LLaMA-Factory creator,https://github.com/hiyouga/LlamaFactory
+Fine-tuning & quantization,Zach Mueller,@TheZachMueller,https://github.com/muellerzr,Accelerate; teaches distributed training,
+Fine-tuning & quantization,bartowski,,https://github.com/bartowski1182,Prolific GGUF quantizer on HF,
+Fine-tuning & quantization,kalomaze,,https://github.com/kalomaze,"Sampling methods (min-p), local-model research",
+Local apps & agents,Danny Avila,@lgtm_hbu,https://github.com/danny-avila,LibreChat creator,https://github.com/LibreChat-AI/LibreChat
+Local apps & agents,Matt Williams,@technovangelist,https://github.com/technovangelist,Ex-Ollama; local AI YouTube educator,
+Local apps & agents,Paul Gauthier,,https://github.com/paul-gauthier,Aider creator; Aider leaderboards,https://github.com/Aider-AI/aider
+Local apps & agents,Simon Willison,@simonw,https://github.com/simonw,llm CLI; most-read local-model blogger,https://github.com/simonw/llm
+Local apps & agents,Timothy Carambat,@tcarambat,https://github.com/timothycarambat,AnythingLLM creator,https://github.com/Mintplex-Labs/anything-llm
+Local apps & agents,Timothy J. Baek,@timothyjbaek,https://github.com/tjbck,Open WebUI creator,https://github.com/open-webui/open-webui
+Local apps & agents,Vik Paruchuri,@VikParuchuri,https://github.com/VikParuchuri,Marker/Surya; Datalab,https://github.com/datalab-to/marker
+Local apps & agents,comfyanonymous,,https://github.com/comfyanonymous,ComfyUI creator,https://github.com/Comfy-Org/ComfyUI
+Local apps & agents,oobabooga,,https://github.com/oobabooga,text-generation-webui creator,https://github.com/oobabooga/textgen
+MLX ecosystem,Angelos Katharopoulos,@angeloskath,https://github.com/angeloskath,Co-creator of MLX,https://github.com/ml-explore/mlx
+MLX ecosystem,Awni Hannun,@awnihannun,https://github.com/awni,Co-creator of MLX; ships model support fast,https://github.com/ml-explore/mlx
+MLX ecosystem,David Koski,,https://github.com/davidkoski,Leads MLX Swift,https://github.com/ml-explore/mlx-swift-examples
+MLX ecosystem,Gökdeniz Gülmez,@actuallyisaak,https://github.com/Goekdeniz-Guelmez,MLX-LM training contributions,
+MLX ecosystem,Ivan Fioravanti,@ivanfioravanti,https://github.com/ivanfioravanti,MLX benchmarks and Mac Studio tests,
+MLX ecosystem,Pedro Cuenca,,https://github.com/pcuenca,HF; Apple/Swift/Core ML and MLX bridge,
+MLX ecosystem,Prince Canuma,@Prince_Canuma,https://github.com/Blaizzy,mlx-vlm / mlx-audio; ports new models to Mac day one,https://github.com/Blaizzy/mlx-vlm
+Open-weight labs,Arthur Zucker,@artzucker,https://github.com/ArthurZucker,transformers core maintainer,https://github.com/huggingface/transformers
+Open-weight labs,Bowen Peng,,https://github.com/bloc97,Nous; YaRN / DisTrO,
+Open-weight labs,Hamel Husain,@HamelHusain,https://github.com/hamelsmu,Evals + open fine-tuning educator,
+Open-weight labs,Jeffrey Quesnelle,@theemozilla,https://github.com/jquesnelle,Nous Research co-founder; YaRN,
+Open-weight labs,Jeremy Howard,@jeremyphoward,https://github.com/jph00,"fast.ai, Answer.AI",
+Open-weight labs,Julien Chaumond,@julien_c,https://github.com/julien-c,Hugging Face co-founder/CTO,
+Open-weight labs,Leandro von Werra,@lvwerra,https://github.com/lvwerra,HF research; TRL creator,https://github.com/huggingface/trl
+Open-weight labs,Lewis Tunstall,@_lewtun,https://github.com/lewtun,"HF post-training (Zephyr, Open-R1)",
+Open-weight labs,Merve Noyan,@mervenoyann,https://github.com/merveenoyan,HF; open vision-language models,
+Open-weight labs,Nathan Lambert,@natolambert,https://github.com/natolambert,Ai2 post-training (Tülu); Interconnects,
+Open-weight labs,Omar Sanseviero,@osanseviero,https://github.com/osanseviero,Gemma DevRel; ex-HF,
+Open-weight labs,Philipp Schmid,@_philschmid,https://github.com/philschmid,Open-model deploy/fine-tune guides,
+Open-weight labs,Ross Wightman,@wightmanr,https://github.com/rwightman,timm; OpenCLIP,https://github.com/huggingface/pytorch-image-models
+Open-weight labs,Sebastian Raschka,@rasbt,https://github.com/rasbt,LLMs from scratch; open-model architecture explainers,https://github.com/rasbt/LLMs-from-scratch
+Open-weight labs,Stas Bekman,@StasBekman,https://github.com/stas00,ML engineering open book,https://github.com/stas00/ml-engineering
+Open-weight labs,Teknium,@Teknium,https://github.com/teknium1,Nous Research co-founder; Hermes,
+Open-weight labs,Thomas Wolf,@Thom_wolf,https://github.com/thomwolf,Hugging Face co-founder/CSO,
+Open-weight labs,Vaibhav Srivastav,@reach_vb,https://github.com/Vaibhavs10,HF; open-model releases and audio,
+Runtimes & inference,Alex Cheema,,https://github.com/AlexCheema,exo co-founder,https://github.com/exo-explore/exo
+Runtimes & inference,Casper Hansen,,https://github.com/casper-hansen,AutoAWQ quantization,https://github.com/casper-hansen/AutoAWQ
+Runtimes & inference,Eric Buehler,,https://github.com/EricLBuehler,mistral.rs author,https://github.com/EricLBuehler/mistral.rs
+Runtimes & inference,Ettore Di Giacinto,@mudler_it,https://github.com/mudler,LocalAI creator,https://github.com/mudler/LocalAI
+Runtimes & inference,Georgi Gerganov,@ggerganov,https://github.com/ggerganov,"Created llama.cpp, whisper.cpp, ggml",https://github.com/ggml-org/llama.cpp
+Runtimes & inference,Iwan Kawrakow,,https://github.com/ikawrakow,Author of k-quants and i-quants,https://github.com/ikawrakow/ik_llama.cpp
+Runtimes & inference,Jeffrey Morgan,@jmorgan,https://github.com/jmorganca,Ollama co-founder,https://github.com/ollama/ollama
+Runtimes & inference,Johannes Gäßler,,https://github.com/JohannesGaessler,llama.cpp CUDA backend,https://github.com/ggml-org/llama.cpp
+Runtimes & inference,Joshua Lochner (Xenova),@xenovacom,https://github.com/xenova,Transformers.js creator,https://github.com/huggingface/transformers.js
+Runtimes & inference,Justine Tunney,@jartine,https://github.com/jart,"llamafile, Cosmopolitan libc",https://github.com/mozilla-ai/llamafile
+Runtimes & inference,Lianmin Zheng,@lm_zheng,https://github.com/merrymercy,SGLang / LMSYS co-creator,https://github.com/sgl-project/sglang
+Runtimes & inference,LostRuins (Concedo),,https://github.com/LostRuins,KoboldCpp author,https://github.com/LostRuins/koboldcpp
+Runtimes & inference,Michael Chiang,@mchiang0610,https://github.com/mchiang0610,Ollama co-founder,https://github.com/ollama/ollama
+Runtimes & inference,Tianqi Chen,,https://github.com/tqchen,"TVM, MLC LLM, XGBoost",https://github.com/mlc-ai/mlc-llm
+Runtimes & inference,Tri Dao,,https://github.com/tridao,"FlashAttention, Mamba",https://github.com/Dao-AILab/flash-attention
+Runtimes & inference,Woosuk Kwon,@woosuk_k,https://github.com/WoosukKwon,vLLM creator,https://github.com/vllm-project/vllm
+Runtimes & inference,Xuan-Son Nguyen (ngxson),,https://github.com/ngxson,llama.cpp server/multimodal,https://github.com/ggml-org/llama.cpp
+Runtimes & inference,Ying Sheng,,https://github.com/Ying1123,SGLang co-creator,https://github.com/sgl-project/sglang
+Runtimes & inference,Zhuohan Li,@zhuohan123,https://github.com/zhuohan123,vLLM co-creator,https://github.com/vllm-project/vllm
+Runtimes & inference,slaren,,https://github.com/slaren,Core llama.cpp/ggml maintainer,https://github.com/ggml-org/llama.cpp
+Runtimes & inference,turboderp,@turboderp_,https://github.com/turboderp,ExLlama author,https://github.com/turboderp-org/exllamav2
+Community,Ahmad Osman,@TheAhmadOsman,,Gets people running models on their own hardware,
+Following on X,Michael Gannotti,@MichaelGannotti,,Runs local AI demos and shares what works,
+Following on X,loktar00,@loktar00,,Brings local AI into real product work,
+Following on X,itsjustmarky,@itsjustmarky,,Runs big models on their own GPUs and shares the settings that make them fast,
+Following on X,jpschroeder,@jpschroeder,,,
+Following on X,GumbiiDigital,@GumbiiDigital,,,
+Following on X,MikeBradleyAI,@MikeBradleyAI,,,
+Following on X,StefanMaier,@StefanMaier,,,
+Following on X,ashen_one,@ashen_one,,,
+Following on X,TheDavidTai,@TheDavidTai,,Works on Darkbloom,
+Following on X,Spangler3000,@Spangler3000,,Works on Darkbloom,
+Following on X,ashxhart,@ashxhart,,Works on Darkbloom,
