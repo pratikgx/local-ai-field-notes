@@ -8,7 +8,7 @@ I'm not an engineer. These notes are for people like me who want to understand h
 
 ## What's in here
 
-- [people.md](people.md) lists the builders behind local AI, sorted by the part of the stack they work on, with handles you can follow
+- [people.md](people.md) lists the builders behind local AI, sorted by the part of the stack they work on, with handles you can follow. They're also on my X list, [Local AI Builders](https://x.com/i/lists/2108979978985742481)
 - [notes/](notes/) has dated logs of what I tried, what worked and what broke
 - [models.md](models.md) tracks every model I've run, with how much memory it used and how fast it went
 - [glossary.md](glossary.md) explains the terms that confused me when I started

@@ -2,6 +2,8 @@
 
 The builders behind local AI, sorted by the part of the stack they work on.
 
+Follow them on X with my list, [Local AI Builders](https://x.com/i/lists/2108979978985742481).
+
 In the stack sections, a handle is listed only when the person shows it on their own GitHub profile. If you know someone's handle and it isn't here, add it with a link that proves it. The last section, Following on X, is people I follow directly there.
 
 ## Apps
