@@ -1,0 +1,7 @@
+date,model,build,runtime,prompt_tokens,thinking,prompt_tps,gen_tps,ttft_s,peak_mem_gb
+2026-10-25,Nanbeige4.3-33B,MLX 4-bit g64,mlx-lm 0.32.2,512,on,310.8,14.38,1.65,19.32
+2026-10-25,Nanbeige4.3-33B,MLX 4-bit g64,mlx-lm 0.32.2,512,off,358.2,14.51,1.43,19.32
+2026-10-25,Nanbeige4.3-33B,MLX 4-bit g64,mlx-lm 0.32.2,4096,on,350.4,13.85,11.7,20.21
+2026-10-25,Nanbeige4.3-33B,MLX 4-bit g64,mlx-lm 0.32.2,4096,off,355.8,13.75,11.52,20.21
+2026-10-25,Nanbeige4.3-33B,MLX 4-bit g64,mlx-lm 0.32.2,16384,on,298.2,11.69,54.97,22.82
+2026-10-25,Nanbeige4.3-33B,MLX 4-bit g64,mlx-lm 0.32.2,32768,on,252.0,9.93,130.1,26.37

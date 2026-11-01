@@ -1,0 +1,157 @@
+{
+ "date": "2026-10-25",
+ "model": "Nanbeige4.3-33B",
+ "base_repo": "Nanbeige/Nanbeige4.3-33B",
+ "build_repo": "pratikgx/Nanbeige4.3-33B-MLX-4bit",
+ "machine": {
+  "chip": "Apple M5 Pro",
+  "machine": "Mac mini",
+  "memory_gb": 64,
+  "macos": "27.0.1",
+  "power": "AC",
+  "thermal_warnings": "none recorded"
+ },
+ "software": {
+  "mlx": "0.32.4",
+  "mlx_lm": "0.32.2"
+ },
+ "quantization": {
+  "format": "MLX affine",
+  "bits": 4,
+  "group_size": 64,
+  "bits_per_weight_incl_scales": 4.5,
+  "weights_bytes": 18630506496,
+  "size_gb": 18.6,
+  "quantized_layers": "all linear layers, including embeddings and lm_head"
+ },
+ "settings": {
+  "decoding": "greedy (temp 0)",
+  "gen_tokens": 256,
+  "warmup_runs": 1,
+  "timed_runs": 3,
+  "reported": "median run"
+ },
+ "speed": [
+  {
+   "prompt_tokens": 512,
+   "thinking": "on",
+   "prompt_tps": 310.8,
+   "gen_tps": 14.38,
+   "ttft_s": 1.65,
+   "peak_mem_gb": 19.32
+  },
+  {
+   "prompt_tokens": 512,
+   "thinking": "off",
+   "prompt_tps": 358.2,
+   "gen_tps": 14.51,
+   "ttft_s": 1.43,
+   "peak_mem_gb": 19.32
+  },
+  {
+   "prompt_tokens": 4096,
+   "thinking": "on",
+   "prompt_tps": 350.4,
+   "gen_tps": 13.85,
+   "ttft_s": 11.7,
+   "peak_mem_gb": 20.21
+  },
+  {
+   "prompt_tokens": 4096,
+   "thinking": "off",
+   "prompt_tps": 355.8,
+   "gen_tps": 13.75,
+   "ttft_s": 11.52,
+   "peak_mem_gb": 20.21
+  },
+  {
+   "prompt_tokens": 16384,
+   "thinking": "on",
+   "prompt_tps": 298.2,
+   "gen_tps": 11.69,
+   "ttft_s": 54.97,
+   "peak_mem_gb": 22.82
+  },
+  {
+   "prompt_tokens": 32768,
+   "thinking": "on",
+   "prompt_tps": 252.0,
+   "gen_tps": 9.93,
+   "ttft_s": 130.1,
+   "peak_mem_gb": 26.37
+  }
+ ],
+ "quality": {
+  "note": "small sanity sets written for this benchmark, thinking on, run once",
+  "math_word_problems": "20/20",
+  "coding_tasks": "10/10",
+  "instruction_following": "10/10"
+ },
+ "needle_in_a_haystack": [
+  {
+   "context": "32k",
+   "depth_pct": 10,
+   "found": true,
+   "prompt_tps": 256.9,
+   "peak_mem_gb": 26.32
+  },
+  {
+   "context": "32k",
+   "depth_pct": 30,
+   "found": true,
+   "prompt_tps": 260.5,
+   "peak_mem_gb": 26.35
+  },
+  {
+   "context": "32k",
+   "depth_pct": 50,
+   "found": true,
+   "prompt_tps": 261.3,
+   "peak_mem_gb": 26.35
+  },
+  {
+   "context": "32k",
+   "depth_pct": 70,
+   "found": true,
+   "prompt_tps": 253.7,
+   "peak_mem_gb": 26.35
+  },
+  {
+   "context": "32k",
+   "depth_pct": 90,
+   "found": true,
+   "prompt_tps": 259.0,
+   "peak_mem_gb": 26.35
+  },
+  {
+   "context": "64k",
+   "depth_pct": 25,
+   "found": true,
+   "prompt_tps": 195.4,
+   "peak_mem_gb": 33.44
+  },
+  {
+   "context": "64k",
+   "depth_pct": 50,
+   "found": true,
+   "prompt_tps": 200.0,
+   "peak_mem_gb": 33.44
+  },
+  {
+   "context": "64k",
+   "depth_pct": 75,
+   "found": true,
+   "prompt_tps": 200.6,
+   "peak_mem_gb": 33.44
+  },
+  {
+   "context": "128k",
+   "depth_pct": 50,
+   "found": true,
+   "prompt_tps": 136.4,
+   "peak_mem_gb": 47.75
+  }
+ ],
+ "needle_128k_prompt_tokens": 131008,
+ "needle_128k_end_to_end_minutes": "about 16"
+}
