@@ -1,0 +1,770 @@
+{
+ "hardware": {
+  "chip": "Apple M5 Pro",
+  "machine": "Mac mini",
+  "ram_gb": 64,
+  "peak_bandwidth_gbs": 307,
+  "source": "https://www.apple.com/mac-mini/specs/",
+  "source_alt": "https://support.apple.com/en-us/128108",
+  "recorded": "2026-10-30"
+ },
+ "kv_bytes_per_token": 147456,
+ "builds": {
+  "mlx-4bit-g64 (LM 4-bit affine g64, vision bf16)": {
+   "env": {
+    "label": "mlx-4bit-g64",
+    "model_path": "mlx_4bit",
+    "chip": "Apple M5 Pro",
+    "ram_gb": 64,
+    "macos": "27.0.1 (26A434)",
+    "mlx": "0.32.4",
+    "mlx_vlm": "0.7.11",
+    "python": "3.12.15",
+    "power": "Now drawing from 'AC Power'",
+    "therm_start": "Note: No thermal warning level has been recorded\nNote: No performance warning level has been recorded\nNote: No CPU power status has been recorded",
+    "size_gb": 3.143,
+    "date": "2026-10-30 18:49 PDT",
+    "load_s": 0.7,
+    "therm_end": "Note: No thermal warning level has been recorded\nNote: No performance warning level has been recorded\nNote: No CPU power status has been recorded",
+    "elapsed_s": 254.1
+   },
+   "text": [
+    {
+     "ctx": 512,
+     "prompt_tokens": 512,
+     "gen_tokens": 256,
+     "prompt_tps": 2709.0,
+     "gen_tps": 95.55,
+     "ttft_s": 0.191,
+     "peak_mem_gb": 3.87,
+     "spread_gen_tps": [
+      95.08,
+      95.82,
+      95.55
+     ],
+     "spread_prompt_tps": [
+      2747.6,
+      2701.2,
+      2709.0
+     ],
+     "bytes_per_token_est": 2357292032,
+     "eff_bw_gbs_est": 225.3,
+     "bw_util_pct_est": 73.4
+    },
+    {
+     "ctx": 4096,
+     "prompt_tokens": 4096,
+     "gen_tokens": 256,
+     "prompt_tps": 2341.0,
+     "gen_tps": 79.53,
+     "ttft_s": 1.756,
+     "peak_mem_gb": 4.57,
+     "spread_gen_tps": [
+      79.53,
+      79.76,
+      79.4
+     ],
+     "spread_prompt_tps": [
+      2368.7,
+      2337.7,
+      2341.0
+     ],
+     "bytes_per_token_est": 2885774336,
+     "eff_bw_gbs_est": 229.5,
+     "bw_util_pct_est": 74.8
+    },
+    {
+     "ctx": 16384,
+     "prompt_tokens": 16384,
+     "gen_tokens": 256,
+     "prompt_tps": 1727.6,
+     "gen_tps": 50.16,
+     "ttft_s": 9.501,
+     "peak_mem_gb": 6.27,
+     "spread_gen_tps": [
+      50.11,
+      50.16,
+      51.55
+     ],
+     "spread_prompt_tps": [
+      1727.6,
+      1453.4,
+      1814.8
+     ],
+     "bytes_per_token_est": 4697713664,
+     "eff_bw_gbs_est": 235.6,
+     "bw_util_pct_est": 76.7
+    },
+    {
+     "ctx": 32768,
+     "prompt_tokens": 32768,
+     "gen_tokens": 256,
+     "prompt_tps": 1236.8,
+     "gen_tps": 34.46,
+     "ttft_s": 26.525,
+     "peak_mem_gb": 8.8,
+     "spread_gen_tps": [
+      34.46,
+      34.96,
+      32.49
+     ],
+     "spread_prompt_tps": [
+      1236.8,
+      1351.9,
+      1105.1
+     ],
+     "bytes_per_token_est": 7113632768,
+     "eff_bw_gbs_est": 245.1,
+     "bw_util_pct_est": 79.8
+    }
+   ],
+   "image_turn": [
+    {
+     "name": "settings_1280x800",
+     "image": "screens/settings.png",
+     "instruction": "Turn on Dark Mode.",
+     "ttft_s": 1.084,
+     "total_s": 2.38,
+     "prompt_tokens": 2140,
+     "gen_tokens": 114,
+     "prompt_tps": 2012.793,
+     "gen_tps": 88.529,
+     "peak_mem_gb": 4.277,
+     "t_think_end_s": 1.979,
+     "t_action_line_s": 2.013,
+     "t_tool_call_done_s": 2.36,
+     "spread_total_s": [
+      2.4,
+      2.38,
+      2.37
+     ],
+     "spread_ttft_s": [
+      1.1,
+      1.08,
+      1.08
+     ],
+     "spread_tool_call_done_s": [
+      2.38,
+      2.36,
+      2.35
+     ],
+     "reply_text": "I\u2019m at the first step, and the screen shows the Settings window already open on the Appearance page. In the right-hand pane, the Dark Mode switch is visible and still off, which matches the task\u2019s need to turn Dark Mode on. Since this step is only a screenshot capture, it doesn\u2019t change the setting yet; it just records the current state before I interact with the toggle.\n</think>\n\nAction: Take a screenshot of the current Settings Appearance page.\n\n<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"screenshot\"}}\n</tool_call>"
+    },
+    {
+     "name": "settings_1920x1080",
+     "image": "screens/settings_1080p.png",
+     "instruction": "Turn on Dark Mode.",
+     "ttft_s": 1.767,
+     "total_s": 3.118,
+     "prompt_tokens": 3180,
+     "gen_tokens": 114,
+     "prompt_tps": 1837.289,
+     "gen_tps": 84.85,
+     "peak_mem_gb": 4.343,
+     "t_think_end_s": 2.703,
+     "t_action_line_s": 2.738,
+     "t_tool_call_done_s": 3.098,
+     "spread_total_s": [
+      3.14,
+      3.12,
+      3.09
+     ],
+     "spread_ttft_s": [
+      1.79,
+      1.77,
+      1.74
+     ],
+     "spread_tool_call_done_s": [
+      3.12,
+      3.1,
+      3.07
+     ],
+     "reply_text": "I\u2019m at the first step, and the screen shows the Settings app already open on the Appearance page. In the right-hand pane, the Dark Mode switch is visible and still off, which matches the task\u2019s need to turn Dark Mode on. Since this step is only a screenshot capture, it doesn\u2019t change the setting yet; it just records the current state before I interact with the toggle.\n</think>\n\nAction: Take a screenshot of the current Settings Appearance page.\n\n<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"screenshot\"}}\n</tool_call>"
+    }
+   ],
+   "demo": [
+    {
+     "task": "dark_mode",
+     "instruction": "Turn on Dark Mode.",
+     "image": "screens/settings_1080p.png",
+     "steps": 2,
+     "task_secs": 9.34,
+     "per_step": [
+      {
+       "step": 1,
+       "action_line": "Take a screenshot of the current Settings Appearance page.",
+       "tool": [
+        "computer_use"
+       ],
+       "first_args": {
+        "action": "screenshot"
+       },
+       "secs": 2.97,
+       "gen_tokens": 114,
+       "prompt_tokens": 3180,
+       "bash_output": null
+      },
+      {
+       "step": 2,
+       "action_line": "Click the Dark Mode switch to turn it on.",
+       "tool": [
+        "computer_use"
+       ],
+       "first_args": {
+        "action": "click",
+        "coordinate": [
+         826,
+         311
+        ],
+        "button": "left"
+       },
+       "secs": 6.35,
+       "gen_tokens": 164,
+       "prompt_tokens": 5351,
+       "bash_output": null
+      }
+     ],
+     "verdict": {
+      "first_gui_action": {
+       "action": "click",
+       "coordinate": [
+        826,
+        311
+       ],
+       "button": "left"
+      },
+      "click_px": [
+       1587,
+       336
+      ],
+      "target_bbox_px": [
+       1476.0,
+       322.5,
+       1545.0,
+       361.5
+      ],
+      "correct": false
+     }
+    },
+    {
+     "task": "csv_total",
+     "instruction": "What is the total of the Revenue column in /tmp_workspace/sales.csv? Tell me the exact total.",
+     "image": "screens/sheet_1080p.png",
+     "steps": 4,
+     "task_secs": 33.47,
+     "per_step": [
+      {
+       "step": 1,
+       "action_line": "Run the shell command to read /tmp_workspace/sales.csv and print its contents.",
+       "tool": [
+        "computer_use"
+       ],
+       "first_args": {
+        "action": "screenshot"
+       },
+       "secs": 4.49,
+       "gen_tokens": 241,
+       "prompt_tokens": 3197,
+       "bash_output": null
+      },
+      {
+       "step": 2,
+       "action_line": "Run the Python shell command to read /tmp_workspace/sales.csv and sum the Revenue column values.",
+       "tool": [
+        "bash"
+       ],
+       "first_args": {
+        "command": "python3 - <<'PY'\nimport csv, os\npath = '/tmp_workspace/sales.csv'\nprint('exists', os.path.exists(path))\nwith open(path, newline='', encoding='utf-8') as f:\n    rows = list(csv.reader(f))\nprint('rows:', rows)\nheader = rows[0]\nprint('header:', header)\nrevenues = [float(r[2]) for r in rows[1:]]\nprint('sum:', sum(revenues))\nprint('sum format:', f\"{sum(revenues):.2f}\")\nPY"
+       },
+       "secs": 10.28,
+       "gen_tokens": 319,
+       "prompt_tokens": 5495,
+       "bash_output": "exists True\nrows: [['Region', 'Units', 'Revenue'], ['North', '205', '9351.64'], ['South', '242', '6798.04'], ['East', '77', '8262.96'], ['West', '88', '4344.92'], ['Central', '69', '9023.45'], ['Pacific', '149', '1522.46'], ['Mountain', '262', '4796.28'], ['Atlantic', '163', '1980.13'], ['Gulf', '257', '1708.35'], ['Lakes', '329', '2264.7'], ['Plains', '154', '6623.38'], ['Coastal', '338', '9350.3']]\nheader: ['Region', 'Units', 'Revenue']\nsum: 66026.61\nsum format: 66026.61\n"
+      },
+      {
+       "step": 3,
+       "action_line": "Run the Python shell command to load /tmp_workspace/sales.csv, sum the Revenue column by header name, and print the exact total.",
+       "tool": [
+        "bash"
+       ],
+       "first_args": {
+        "command": "python3 - <<'PY'\nimport csv\nfrom decimal import Decimal\npath = '/tmp_workspace/sales.csv'\nwith open(path, newline='', encoding='utf-8') as f:\n    reader = csv.DictReader(f)\n    total = Decimal('0')\n    for row in reader:\n        total += Decimal(row['Revenue'])\nprint(total)\nprint(f\"{total:.2f}\")\nPY"
+       },
+       "secs": 11.43,
+       "gen_tokens": 318,
+       "prompt_tokens": 6082,
+       "bash_output": "66026.61\n66026.61\n"
+      },
+      {
+       "step": 4,
+       "action_line": "Mark the task complete.",
+       "tool": [
+        "computer_use"
+       ],
+       "first_args": {
+        "action": "terminate",
+        "status": "success",
+        "msg_to_user": "The total Revenue is 66026.61."
+       },
+       "secs": 7.21,
+       "gen_tokens": 160,
+       "prompt_tokens": 6432,
+       "bash_output": null
+      }
+     ],
+     "verdict": {
+      "channel": "bash",
+      "total_in_bash_output": true,
+      "total_reported_to_user": true,
+      "correct": true
+     }
+    },
+    {
+     "task": "rename_file",
+     "instruction": "Rename report_final_v2.docx in /tmp_workspace to Q3_report.docx.",
+     "image": "screens/finder_1080p.png",
+     "steps": 4,
+     "task_secs": 25.95,
+     "per_step": [
+      {
+       "step": 1,
+       "action_line": "Take a screenshot of the current screen.",
+       "tool": [
+        "computer_use"
+       ],
+       "first_args": {
+        "action": "screenshot"
+       },
+       "secs": 3.43,
+       "gen_tokens": 142,
+       "prompt_tokens": 3193,
+       "bash_output": null
+      },
+      {
+       "step": 2,
+       "action_line": "Run the shell command to rename `/tmp_workspace/report_final_v2.docx` to `/tmp_workspace/Q3_report.docx` and verify the new file exists.",
+       "tool": [
+        "bash"
+       ],
+       "first_args": {
+        "command": "set -e\nsrc='/tmp_workspace/report_final_v2.docx'\ndst='/tmp_workspace/Q3_report.docx'\n[ -f \"$src\" ]\nmv \"$src\" \"$dst\"\n[ -f \"$dst\" ]\n[ ! -e \"$src\" ]\nprintf 'renamed to %s\\n' \"$dst\""
+       },
+       "secs": 7.71,
+       "gen_tokens": 245,
+       "prompt_tokens": 5392,
+       "bash_output": "renamed to /tmp_workspace/Q3_report.docx\n"
+      },
+      {
+       "step": 3,
+       "action_line": "Run the shell check to confirm `/tmp_workspace/Q3_report.docx` exists and `/tmp_workspace/report_final_v2.docx` does not.",
+       "tool": [
+        "bash"
+       ],
+       "first_args": {
+        "command": "set -e\nprintf 'Checking requested final path...\\n'\nls -l /tmp_workspace/Q3_report.docx\nprintf '\\nChecking source path is absent...\\n'\nif [ -e /tmp_workspace/report_final_v2.docx ]; then\n  echo 'source still exists unexpectedly' >&2\n  exit 1\nelse\n  echo 'source absent as expected'\nfi"
+       },
+       "secs": 7.78,
+       "gen_tokens": 239,
+       "prompt_tokens": 5663,
+       "bash_output": "Checking requested final path...\n-rw-r--r--@ 1 user  staff  1024 Oct 30 19:07 /tmp_workspace/Q3_report.docx\n\nChecking source path is absent...\nsource absent as expected\n"
+      },
+      {
+       "step": 4,
+       "action_line": "Mark the task complete.",
+       "tool": [
+        "computer_use"
+       ],
+       "first_args": {
+        "action": "terminate",
+        "status": "success",
+        "msg_to_user": "Done. The file has been renamed from `/tmp_workspace/report_final_v2.docx` to `/tmp_workspace/Q3_report.docx`."
+       },
+       "secs": 6.98,
+       "gen_tokens": 168,
+       "prompt_tokens": 5970,
+       "bash_output": null
+      }
+     ],
+     "verdict": {
+      "channel": "bash",
+      "renamed_on_disk": true,
+      "correct": true
+     }
+    }
+   ]
+  },
+  "mlx-bf16": {
+   "env": {
+    "label": "mlx-bf16",
+    "model_path": "mlx_bf16",
+    "chip": "Apple M5 Pro",
+    "ram_gb": 64,
+    "macos": "27.0.1 (26A434)",
+    "mlx": "0.32.4",
+    "mlx_vlm": "0.7.11",
+    "python": "3.12.15",
+    "power": "Now drawing from 'AC Power'",
+    "therm_start": "Note: No thermal warning level has been recorded\nNote: No performance warning level has been recorded\nNote: No CPU power status has been recorded",
+    "size_gb": 9.484,
+    "date": "2026-10-30 18:56 PDT",
+    "load_s": 1.2,
+    "therm_end": "Note: No thermal warning level has been recorded\nNote: No performance warning level has been recorded\nNote: No CPU power status has been recorded",
+    "elapsed_s": 353.1
+   },
+   "text": [
+    {
+     "ctx": 512,
+     "prompt_tokens": 512,
+     "gen_tokens": 256,
+     "prompt_tps": 2386.9,
+     "gen_tps": 30.03,
+     "ttft_s": 0.216,
+     "peak_mem_gb": 9.96,
+     "spread_gen_tps": [
+      29.86,
+      30.03,
+      31.59
+     ],
+     "spread_prompt_tps": [
+      2386.9,
+      2272.1,
+      2515.9
+     ],
+     "bytes_per_token_est": 8139308032,
+     "eff_bw_gbs_est": 244.5,
+     "bw_util_pct_est": 79.6
+    },
+    {
+     "ctx": 4096,
+     "prompt_tokens": 4096,
+     "gen_tokens": 256,
+     "prompt_tps": 3085.9,
+     "gen_tps": 29.79,
+     "ttft_s": 1.332,
+     "peak_mem_gb": 10.75,
+     "spread_gen_tps": [
+      29.62,
+      29.79,
+      30.03
+     ],
+     "spread_prompt_tps": [
+      3096.0,
+      3085.9,
+      3076.5
+     ],
+     "bytes_per_token_est": 8667790336,
+     "eff_bw_gbs_est": 258.2,
+     "bw_util_pct_est": 84.1
+    },
+    {
+     "ctx": 16384,
+     "prompt_tokens": 16384,
+     "gen_tokens": 256,
+     "prompt_tps": 2089.5,
+     "gen_tps": 21.03,
+     "ttft_s": 7.857,
+     "peak_mem_gb": 12.61,
+     "spread_gen_tps": [
+      20.99,
+      21.03,
+      23.67
+     ],
+     "spread_prompt_tps": [
+      2089.5,
+      1495.5,
+      2089.9
+     ],
+     "bytes_per_token_est": 10479729664,
+     "eff_bw_gbs_est": 220.4,
+     "bw_util_pct_est": 71.8
+    },
+    {
+     "ctx": 32768,
+     "prompt_tokens": 32768,
+     "gen_tokens": 256,
+     "prompt_tps": 1436.4,
+     "gen_tps": 19.92,
+     "ttft_s": 22.846,
+     "peak_mem_gb": 15.2,
+     "spread_gen_tps": [
+      19.92,
+      14.42,
+      20.08
+     ],
+     "spread_prompt_tps": [
+      1436.4,
+      1444.4,
+      1388.8
+     ],
+     "bytes_per_token_est": 12895648768,
+     "eff_bw_gbs_est": 256.9,
+     "bw_util_pct_est": 83.7
+    }
+   ],
+   "image_turn": [
+    {
+     "name": "settings_1280x800",
+     "image": "screens/settings.png",
+     "instruction": "Turn on Dark Mode.",
+     "ttft_s": 0.964,
+     "total_s": 5.086,
+     "prompt_tokens": 2140,
+     "gen_tokens": 126,
+     "prompt_tps": 2255.52,
+     "gen_tps": 30.622,
+     "peak_mem_gb": 10.528,
+     "t_think_end_s": 3.974,
+     "t_action_line_s": 4.071,
+     "t_tool_call_done_s": 5.046,
+     "spread_total_s": [
+      5.09,
+      5.0,
+      5.79
+     ],
+     "spread_ttft_s": [
+      0.96,
+      0.94,
+      0.97
+     ],
+     "spread_tool_call_done_s": [
+      5.05,
+      4.96,
+      5.7
+     ],
+     "reply_text": "I\u2019m at the opening state of the task, and the screenshot shows the Settings window already open on the Appearance page. In the main pane, the Dark Mode switch is visible and currently off, which matches the part of the task that still needs to be done: turn Dark Mode on. Since this step is only a screenshot capture, it does not change the setting yet, but it gives me the current screen state I need before interacting with the toggle.\n</think>\n\nAction: Take a screenshot of the current Settings Appearance page.\n\n<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"screenshot\"}}\n</tool_call>"
+    },
+    {
+     "name": "settings_1920x1080",
+     "image": "screens/settings_1080p.png",
+     "instruction": "Turn on Dark Mode.",
+     "ttft_s": 1.651,
+     "total_s": 6.016,
+     "prompt_tokens": 3180,
+     "gen_tokens": 131,
+     "prompt_tps": 1954.845,
+     "gen_tps": 30.042,
+     "peak_mem_gb": 10.672,
+     "t_think_end_s": 4.861,
+     "t_action_line_s": 4.968,
+     "t_tool_call_done_s": 5.975,
+     "spread_total_s": [
+      6.02,
+      6.04,
+      6.0
+     ],
+     "spread_ttft_s": [
+      1.65,
+      1.65,
+      1.66
+     ],
+     "spread_tool_call_done_s": [
+      5.98,
+      5.99,
+      5.96
+     ],
+     "reply_text": "I\u2019m at the opening state of the task, and the screenshot shows the Settings window already open on the Appearance page. In the main pane, the Dark Mode switch is visible and currently off, which matches the part of the task that still needs to be done: turn Dark Mode on. Since this step is only a screenshot capture, it doesn\u2019t change the setting yet, but it does confirm the current control I need to act on next and the current state of the toggle.\n</think>\n\nAction: Take a screenshot of the current Settings Appearance page.\n\n<tool_call>\n{\"name\": \"computer_use\", \"arguments\": {\"action\": \"screenshot\"}}\n</tool_call>"
+    }
+   ],
+   "demo": [
+    {
+     "task": "dark_mode",
+     "instruction": "Turn on Dark Mode.",
+     "image": "screens/settings_1080p.png",
+     "steps": 2,
+     "task_secs": 16.99,
+     "per_step": [
+      {
+       "step": 1,
+       "action_line": "Take a screenshot of the current Settings Appearance page.",
+       "tool": [
+        "computer_use"
+       ],
+       "first_args": {
+        "action": "screenshot"
+       },
+       "secs": 6.1,
+       "gen_tokens": 131,
+       "prompt_tokens": 3180,
+       "bash_output": null
+      },
+      {
+       "step": 2,
+       "action_line": "Click the Dark Mode switch and wait for the setting to apply.",
+       "tool": [
+        "computer_use",
+        "computer_use"
+       ],
+       "first_args": {
+        "action": "click",
+        "coordinate": [
+         805,
+         311
+        ],
+        "button": "left"
+       },
+       "secs": 10.88,
+       "gen_tokens": 190,
+       "prompt_tokens": 5368,
+       "bash_output": null
+      }
+     ],
+     "verdict": {
+      "first_gui_action": {
+       "action": "click",
+       "coordinate": [
+        805,
+        311
+       ],
+       "button": "left"
+      },
+      "click_px": [
+       1546,
+       336
+      ],
+      "target_bbox_px": [
+       1476.0,
+       322.5,
+       1545.0,
+       361.5
+      ],
+      "correct": true
+     }
+    },
+    {
+     "task": "csv_total",
+     "instruction": "What is the total of the Revenue column in /tmp_workspace/sales.csv? Tell me the exact total.",
+     "image": "screens/sheet_1080p.png",
+     "steps": 4,
+     "task_secs": 56.53,
+     "per_step": [
+      {
+       "step": 1,
+       "action_line": "Run the shell command to read /tmp_workspace/sales.csv and calculate the sum of the Revenue column.",
+       "tool": [
+        "bash"
+       ],
+       "first_args": {
+        "command": "python3 - <<'PY'\nimport csv\nfrom pathlib import Path\npath = Path('/tmp_workspace/sales.csv')\nwith path.open(newline='', encoding='utf-8') as f:\n    reader = csv.DictReader(f)\n    print('headers:', reader.fieldnames)\n    total = 0\n    for row in reader:\n        total += float(row['Revenue'])\n    print(total)\nPY"
+       },
+       "secs": 13.92,
+       "gen_tokens": 313,
+       "prompt_tokens": 3197,
+       "bash_output": "headers: ['Region', 'Units', 'Revenue']\n66026.60999999999\n"
+      },
+      {
+       "step": 2,
+       "action_line": "Run the Python shell check to read /tmp_workspace/sales.csv and sum the Revenue values as numbers.",
+       "tool": [
+        "bash"
+       ],
+       "first_args": {
+        "command": "python3 - <<'PY'\nimport csv\nfrom pathlib import Path\npath = Path('/tmp_workspace/sales.csv')\nwith path.open(newline='', encoding='utf-8') as f:\n    reader = csv.DictReader(f)\n    for row in reader:\n        print(row)\n    total = 0\n    for row in reader:\n        total += float(row['Revenue'])\n    print('sum:', total)\n    print('sum rounded:', round(total, 10))\n    print(' integers:', [float(r['Revenue']) for r in reader])\nPY"
+       },
+       "secs": 13.79,
+       "gen_tokens": 347,
+       "prompt_tokens": 3553,
+       "bash_output": "{'Region': 'North', 'Units': '205', 'Revenue': '9351.64'}\n{'Region': 'South', 'Units': '242', 'Revenue': '6798.04'}\n{'Region': 'East', 'Units': '77', 'Revenue': '8262.96'}\n{'Region': 'West', 'Units': '88', 'Revenue': '4344.92'}\n{'Region': 'Central', 'Units': '69', 'Revenue': '9023.45'}\n{'Region': 'Pacific', 'Units': '149', 'Revenue': '1522.46'}\n{'Region': 'Mountain', 'Units': '262', 'Revenue': '4796.28'}\n{'Region': 'Atlantic', 'Units': '163', 'Revenue': '1980.13'}\n{'Region': 'Gulf', 'Units': '257', 'Revenue': '1708.35'}\n{'Region': 'Lakes', 'Units': '329', 'Revenue': '2264.7'}\n{'Region': 'Plains', 'Units': '154', 'Revenue': '6623.38'}\n{'Region': 'Coastal', 'Units': '338', 'Revenue': '9350.3'}\nsum: 0\nsum rounded: 0\n integers: []\n"
+      },
+      {
+       "step": 3,
+       "action_line": "Run the Python shell check again, reading only the data rows from /tmp_workspace/sales.csv and summing the Revenue values.",
+       "tool": [
+        "bash"
+       ],
+       "first_args": {
+        "command": "python3 - <<'PY'\nimport csv\nfrom decimal import Decimal\npath = '/tmp_workspace/sales.csv'\nwith open(path, newline='', encoding='utf-8') as f:\n    reader = csv.DictReader(f)\n    total = Decimal('0')\n    for row in reader:\n        total += Decimal(row['Revenue'])\n    print(total)\n    print(f'{total:.2f}')\nPY"
+       },
+       "secs": 13.02,
+       "gen_tokens": 316,
+       "prompt_tokens": 4240,
+       "bash_output": "66026.61\n66026.61\n"
+      },
+      {
+       "step": 4,
+       "action_line": "Run the Python shell command to read /tmp_workspace/sales.csv and print the sum of the Revenue column values.",
+       "tool": [],
+       "first_args": null,
+       "secs": 15.71,
+       "gen_tokens": 398,
+       "prompt_tokens": 4588,
+       "bash_output": null
+      }
+     ],
+     "verdict": {
+      "channel": "bash",
+      "total_in_bash_output": true,
+      "total_reported_to_user": false,
+      "correct": true
+     }
+    },
+    {
+     "task": "rename_file",
+     "instruction": "Rename report_final_v2.docx in /tmp_workspace to Q3_report.docx.",
+     "image": "screens/finder_1080p.png",
+     "steps": 2,
+     "task_secs": 23.83,
+     "per_step": [
+      {
+       "step": 1,
+       "action_line": "Take a screenshot of the current screen.",
+       "tool": [
+        "computer_use"
+       ],
+       "first_args": {
+        "action": "screenshot"
+       },
+       "secs": 8.21,
+       "gen_tokens": 199,
+       "prompt_tokens": 3193,
+       "bash_output": null
+      },
+      {
+       "step": 2,
+       "action_line": "Select report_final_v2.docx and open its context menu.",
+       "tool": [
+        "computer_use",
+        "computer_use"
+       ],
+       "first_args": {
+        "action": "click",
+        "coordinate": [
+         353,
+         278
+        ],
+        "button": "left"
+       },
+       "secs": 15.62,
+       "gen_tokens": 271,
+       "prompt_tokens": 5449,
+       "bash_output": null
+      }
+     ],
+     "verdict": {
+      "channel": "gui",
+      "renamed_on_disk": false,
+      "correct": true,
+      "first_gui_action": {
+       "action": "click",
+       "coordinate": [
+        353,
+        278
+       ],
+       "button": "left"
+      },
+      "click_px": [
+       678,
+       300
+      ],
+      "target_bbox_px": [
+       512,
+       279,
+       1680,
+       322
+      ],
+      "note": "GUI route: judged on whether the first click lands on the report_final_v2.docx row (GUI not executed)"
+     }
+    }
+   ]
+  }
+ }
+}

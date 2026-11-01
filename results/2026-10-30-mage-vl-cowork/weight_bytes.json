@@ -1,0 +1,16 @@
+{
+ "mlx_4bit": {
+  "vision": 660739072,
+  "embed": 218787840,
+  "lm_head": 218787840,
+  "lm_layers_norms": 2044132352,
+  "per_token_decode_bytes": 2262920192
+ },
+ "mlx_bf16": {
+  "vision": 660739072,
+  "embed": 777912320,
+  "lm_head": 777912320,
+  "lm_layers_norms": 7267023872,
+  "per_token_decode_bytes": 8044936192
+ }
+}

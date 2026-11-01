@@ -1,0 +1,13 @@
+build,test,context_tokens,prompt_tps,gen_tps,ttft_s,t_action_line_s,t_tool_call_done_s,total_turn_s,gen_tokens,peak_mlx_mem_gb,eff_bw_gbs_est,bw_util_pct_est
+"mlx-4bit-g64 (LM 4-bit affine g64, vision bf16)",text,512,2709.0,95.55,0.191,,,,256,3.87,225.3,73.4
+"mlx-4bit-g64 (LM 4-bit affine g64, vision bf16)",text,4096,2341.0,79.53,1.756,,,,256,4.57,229.5,74.8
+"mlx-4bit-g64 (LM 4-bit affine g64, vision bf16)",text,16384,1727.6,50.16,9.501,,,,256,6.27,235.6,76.7
+"mlx-4bit-g64 (LM 4-bit affine g64, vision bf16)",text,32768,1236.8,34.46,26.525,,,,256,8.8,245.1,79.8
+"mlx-4bit-g64 (LM 4-bit affine g64, vision bf16)",image+text agent turn settings_1280x800,2140,2012.8,88.53,1.084,2.013,2.36,2.38,114,4.28,,
+"mlx-4bit-g64 (LM 4-bit affine g64, vision bf16)",image+text agent turn settings_1920x1080,3180,1837.3,84.85,1.767,2.738,3.098,3.118,114,4.34,,
+mlx-bf16,text,512,2386.9,30.03,0.216,,,,256,9.96,244.5,79.6
+mlx-bf16,text,4096,3085.9,29.79,1.332,,,,256,10.75,258.2,84.1
+mlx-bf16,text,16384,2089.5,21.03,7.857,,,,256,12.61,220.4,71.8
+mlx-bf16,text,32768,1436.4,19.92,22.846,,,,256,15.2,256.9,83.7
+mlx-bf16,image+text agent turn settings_1280x800,2140,2255.5,30.62,0.964,4.071,5.046,5.086,126,10.53,,
+mlx-bf16,image+text agent turn settings_1920x1080,3180,1954.8,30.04,1.651,4.968,5.975,6.016,131,10.67,,
