@@ -129,7 +129,7 @@ def main():
     with open(os.path.join(ROOT, "notes", f"{today}-auto-machine.md"), "w") as f:
         f.write("\n".join(lines) + "\n")
     print("Done. Updated models.md, wrote results/ and notes/" + f"{today}-auto-machine.md")
-    print("Paste results/" + f"{today}.json back to Claude to write the note and the post.")
+    print("To share your numbers, open an issue with results/" + f"{today}.json attached. CONTRIBUTING.md has the steps.")
 
 if __name__ == "__main__":
     main()
