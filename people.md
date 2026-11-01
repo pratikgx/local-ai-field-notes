@@ -140,3 +140,45 @@ People whose posts I keep going back to.
 | Clem Delangue | [@ClementDelangue](https://x.com/ClementDelangue) |  | Hugging Face co-founder and CEO |
 | Ronald Mannak | [@ronaldmannak](https://x.com/ronaldmannak) |  | Builds Pico, a private local AI server app for Mac |
 | Tomasz Wojewoda | [@twojewoda](https://x.com/twojewoda) |  | Founder and CEO of Vvvroom.ai |
+| Sebastian Christiansen | [@CerebralCoding_](https://x.com/CerebralCoding_) |  | Builds Latch, a GPU scheduler for agents; contributes to MLX-Serve and TensorFold |
+| Arip | [@machinestein](https://x.com/machinestein) |  | Open-sourced Locals, an Apple silicon engine for local LLMs |
+| Adrien Grondin | [@adrgrondin](https://x.com/adrgrondin) |  | Apple platforms at LM Studio; building Locally AI |
+| Alican Kiraz | [@AlicanKiraz0](https://x.com/AlicanKiraz0) |  | Chasing AGI and building AI |
+| Sufyan | [@sfxnz](https://x.com/sfxnz) |  | Builds and experiments with local AI on a 256 GB RAM machine |
+| Michael Helcig | [@mhelcig](https://x.com/mhelcig) |  | Works on local intelligence; CS at ETH Zurich; co-creator of GSQ-RCO |
+| Lasse | [@lasse_ai](https://x.com/lasse_ai) |  | Runs AI at home on two DGX Sparks and an RTX PRO 4500 |
+| Cheng | [@zcbenz](https://x.com/zcbenz) |  | MLX maintainer at Apple; created Electron |
+| Shashank Prasanna | [@shshnkp](https://x.com/shshnkp) |  | AI/ML evangelist for MLX, Core AI and Foundation Models |
+| Joshua Warren | [@JoshuaSWarren](https://x.com/JoshuaSWarren) |  | Makes Apple silicon fast under Linux: MLX, Mesa GPU, Neural Engine |
+| macintog | [@macintogdev](https://x.com/macintogdev) |  | Makes MacTC, a GPU and CPU performance monitor for Macs |
+| Hikari | [@Hikari_07_jp](https://x.com/Hikari_07_jp) |  | Local LLM builder in Japan; publishes abliterated and draft models on Hugging Face |
+| keys | [@u1tra_instinct](https://x.com/u1tra_instinct) |  | Publishes abliterated and quantized open models on Hugging Face |
+| Ornith | [@ornith_](https://x.com/ornith_) |  | Shares the Ornith 1.5 open-weight models |
+| Fuli Luo | [@_LuoFuli](https://x.com/_LuoFuli) |  | Building Xiaomi MiMo; previously DeepSeek |
+| Ramin | [@ramin_m_h](https://x.com/ramin_m_h) |  | Building Liquid AI |
+| Sahin Lale | [@SahinLale](https://x.com/SahinLale) |  | PrismML co-founder |
+| Omead Pooladzandi | [@HessianFree](https://x.com/HessianFree) |  | PrismML co-founder; PSGD |
+| Chris | [@llm_wizard](https://x.com/llm_wizard) |  | Open-source model advocate at NVIDIA AI |
+| Gerardo Delgado | [@gerdelgado](https://x.com/gerdelgado) |  | Senior Director of Product for local AI at NVIDIA |
+| Philip Kiely | [@philipkiely](https://x.com/philipkiely) |  | Author of Inference Engineering; at Baseten |
+| Hunter Bown | [@goodhunt](https://x.com/goodhunt) |  | Creator and maintainer of Codewhale, an open-source coding agent |
+| Konstantin Gladych | [@gladkos](https://x.com/gladkos) |  | Building Atomic Chat, a local AI app |
+| stevibe | [@stevibe](https://x.com/stevibe) |  | Local AI benchmarker; building BenchLocalAI on a DGX Spark |
+| Steve | [@SteveSTechMan](https://x.com/SteveSTechMan) |  | Puts discarded enterprise hardware back to work for local AI, with measured numbers |
+| Sudo su | [@sudoingX](https://x.com/sudoingX) |  | GPUs and local LLMs |
+| Alex Ziskind | [@digitalix](https://x.com/digitalix) |  | Software engineer making videos about dev gear and local AI |
+| Melvin Vivas | [@melvindvivas](https://x.com/melvindvivas) |  | AI coding, agents and local models on YouTube |
+| Dan Kornas | [@DanKornas](https://x.com/DanKornas) |  | Explores AI tools, models and projects; runs an AI tool library and newsletter |
+| Machine Learning FLX | [@machinelearnflx](https://x.com/machinelearnflx) |  | AI engineering newsletter: agents, LLM systems, MLOps and papers |
+| netrunner | [@plotarmordev](https://x.com/plotarmordev) |  | Cofounder and engineer; runs local AI and shares what they learn |
+| basedcapital | [@thebasedcapital](https://x.com/thebasedcapital) |  | Local LLM enthusiast; builds brainbox |
+| div | [@divagr1925](https://x.com/divagr1925) |  | RL and transformer experiments |
+| David Hendrickson | [@TeksEdge](https://x.com/TeksEdge) |  | Founder and CEO; author of Generative Software Engineering |
+| Ariel Deschapell | [@NotASithLord](https://x.com/NotASithLord) |  | Co-founder and CTO of Hydra Host; distributed AI infrastructure |
+| brexton | [@brexton](https://x.com/brexton) |  | Global Co-Head of AI and compute infrastructure at the Cantor Group |
+| Sigil Wen | [@0xSigil](https://x.com/0xSigil) |  | Creator of Underdog AI; founder of Conway Research; Thiel Fellow |
+| Haider. | [@haider1](https://x.com/haider1) |  | Posts about open intelligence for a decentralized future |
+| Bleys Goodson | [@bleysg](https://x.com/bleysg) |  | Measures AI progress in tasks per gigajoule |
+| Frosty40 | [@FrostForger](https://x.com/FrostForger) |  | Self-described maker and outsider |
+| Thomas Mattimore | [@mattimost](https://x.com/mattimost) |  | Self-described tinkerer |
+| Hiten Shah | [@hnshah](https://x.com/hnshah) |  | Founder of Crazy Egg, KISSmetrics and Nira |
