@@ -1,0 +1,7 @@
+date,model,build,engine,test,condition,prompt_tokens,gen_tokens,prompt_tps,gen_tps,prompt_tps_runs,gen_tps_runs,ttft_s,ttft_s_runs,max_rss_gb,peak_footprint_gb
+2026-10-29,LiquidAI/LFM3-1.7B-GGUF,Q4_K_M,"llama.cpp eb7818c (Metal, flash attention)",llama-completion real prompt,clean (mean of 2),4196,256,5479.9,178.41,5472.0 5487.9,177.69 179.12,0.77,0.77 0.77,2.94,1.85
+2026-10-29,LiquidAI/LFM3-1.7B-GGUF,Q4_K_M,"llama.cpp eb7818c (Metal, flash attention)",llama-completion real prompt,clean (mean of 2),130662,256,1931.2,81.9,1920.9 1941.5,82.10 81.70,67.67,68.03 67.31,3.22,2.13
+2026-10-29,LiquidAI/LFM3-1.7B-GGUF,Q4_K_M,"llama.cpp eb7818c (Metal, flash attention)",llama-completion real prompt,on-camera run (single run),4196,256,5381.7,173.42,5381.7,173.42,0.79,0.79,,
+2026-10-29,LiquidAI/LFM3-1.7B-GGUF,Q4_K_M,"llama.cpp eb7818c (Metal, flash attention)",llama-completion real prompt,on-camera run (single run),130662,256,1877.6,78.09,1877.6,78.09,69.6,69.60,,
+2026-10-29,LiquidAI/LFM3-1.7B-GGUF,Q4_K_M,"llama.cpp eb7818c (Metal, flash attention)",llama-bench pp4096 / tg256@d4096,clean (mean of 2),4096,256,5369.0,176.59,5318.2 5419.8,179.6 173.5,,,,
+2026-10-29,LiquidAI/LFM3-1.7B-GGUF,Q4_K_M,"llama.cpp eb7818c (Metal, flash attention)",llama-bench pp131072 / tg256@d131072,clean (mean of 2),131072,256,1961.7,82.13,1946.1 1977.4,82.3 82.0,,,,

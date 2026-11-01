@@ -1,0 +1,6 @@
+date,model,build,engine,size_gb,context_tokens,gen_tokens,prompt_tps_median,gen_tps_median,gen_tps_runs,ttft_s_computed,gpu_mem_gb_llamacpp,chip,ram_gb,macos,thinking
+2026-10-27,LiquidAI/LFM3-1.7B-GGUF,Q4_K_M,"llama.cpp eb7818c (Metal, flash attention)",1.09,512,256,5776.4,184.03,185.9 184.0 184.0,0.089,,Apple M5 Pro,64,27.0.1 (26A434),default (on)
+2026-10-27,LiquidAI/LFM3-1.7B-GGUF,Q4_K_M,"llama.cpp eb7818c (Metal, flash attention)",1.09,4096,256,5656.0,178.22,178.2 182.3 177.3,0.724,1.43,Apple M5 Pro,64,27.0.1 (26A434),default (on)
+2026-10-27,LiquidAI/LFM3-1.7B-GGUF,Q4_K_M,"llama.cpp eb7818c (Metal, flash attention)",1.09,32768,256,,141.0,141.2 141.0 138.0,,,Apple M5 Pro,64,27.0.1 (26A434),default (on)
+2026-10-27,LiquidAI/LFM3-1.7B-GGUF,Q4_K_M,"llama.cpp eb7818c (Metal, flash attention)",1.09,131072,256,,80.11,81.4 80.1 66.4,,3.15,Apple M5 Pro,64,27.0.1 (26A434),default (on)
+2026-10-27,LiquidAI/LFM3-1.7B-GGUF,Q8_0,"llama.cpp eb7818c (Metal, flash attention)",1.84,512,256,3577.3,125.45,125.4 125.0 127.5,0.143,,Apple M5 Pro,64,27.0.1 (26A434),default (on)
