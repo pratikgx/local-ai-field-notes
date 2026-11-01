@@ -1,0 +1,8 @@
+date,model,repo,total_params,active_params,quant,runtime,hardware,memory_gb,test,metric,value,unit,source_post
+2026-10-22,Flint,RecursiveSI/flint,40B,2.5B,4-bit,Ollama,M5 Pro Mac mini,64,short coding prompt,decode_speed,115,tok/s,https://x.com/pratikg/status/2113047879548105131
+2026-10-23,Flint,RecursiveSI/flint,40B,2.5B,4-bit,Ollama,M5 Pro Mac mini,64,read 20K-token codebase then add a feature,prefill_time,11,s,https://x.com/pratikg/status/2113087627503256038
+2026-10-23,Flint,RecursiveSI/flint,40B,2.5B,4-bit,Ollama,M5 Pro Mac mini,64,read 20K-token codebase then add a feature,decode_speed_at_20k_context,87,tok/s,https://x.com/pratikg/status/2113087627503256038
+2026-10-23,Flint,RecursiveSI/flint,40B,2.5B,4-bit,Ollama,M5 Pro Mac mini,64,read 20K-token codebase then add a feature,tests_passed,40/40,tests,https://x.com/pratikg/status/2113087627503256038
+2026-10-23,Flint,RecursiveSI/flint,40B,2.5B,4-bit,Ollama,M5 Pro Mac mini,64,JSON parser from scratch,first_draft_test_failures,13,failures,https://x.com/pratikg/status/2113087627503256038
+2026-10-23,Flint,RecursiveSI/flint,40B,2.5B,4-bit,Ollama,M5 Pro Mac mini,64,JSON parser from scratch,rounds_to_fix_all,1,rounds,https://x.com/pratikg/status/2113087627503256038
+2026-10-23,Flint,RecursiveSI/flint,40B,2.5B,4-bit,Ollama,M5 Pro Mac mini,64,long coding runs,max_reasoning_tokens_before_code,20000+,tokens,https://x.com/pratikg/status/2113087627503256038

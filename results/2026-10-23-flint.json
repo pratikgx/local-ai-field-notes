@@ -1,0 +1,72 @@
+{
+ "model": "Flint",
+ "repo": "RecursiveSI/flint",
+ "total_params": "40B",
+ "active_params": "2.5B",
+ "quant": "4-bit",
+ "runtime": "Ollama",
+ "machine": {
+  "chip": "Apple M5 Pro",
+  "machine": "Mac mini",
+  "memory_gb": 64
+ },
+ "source_dataset": "https://huggingface.co/datasets/pratikgx/mac-mini-local-benchmarks",
+ "results": [
+  {
+   "date": "2026-10-22",
+   "test": "short coding prompt",
+   "metric": "decode_speed",
+   "value": "115",
+   "unit": "tok/s",
+   "source_post": "https://x.com/pratikg/status/2113047879548105131"
+  },
+  {
+   "date": "2026-10-23",
+   "test": "read 20K-token codebase then add a feature",
+   "metric": "prefill_time",
+   "value": "11",
+   "unit": "s",
+   "source_post": "https://x.com/pratikg/status/2113087627503256038"
+  },
+  {
+   "date": "2026-10-23",
+   "test": "read 20K-token codebase then add a feature",
+   "metric": "decode_speed_at_20k_context",
+   "value": "87",
+   "unit": "tok/s",
+   "source_post": "https://x.com/pratikg/status/2113087627503256038"
+  },
+  {
+   "date": "2026-10-23",
+   "test": "read 20K-token codebase then add a feature",
+   "metric": "tests_passed",
+   "value": "40/40",
+   "unit": "tests",
+   "source_post": "https://x.com/pratikg/status/2113087627503256038"
+  },
+  {
+   "date": "2026-10-23",
+   "test": "JSON parser from scratch",
+   "metric": "first_draft_test_failures",
+   "value": "13",
+   "unit": "failures",
+   "source_post": "https://x.com/pratikg/status/2113087627503256038"
+  },
+  {
+   "date": "2026-10-23",
+   "test": "JSON parser from scratch",
+   "metric": "rounds_to_fix_all",
+   "value": "1",
+   "unit": "rounds",
+   "source_post": "https://x.com/pratikg/status/2113087627503256038"
+  },
+  {
+   "date": "2026-10-23",
+   "test": "long coding runs",
+   "metric": "max_reasoning_tokens_before_code",
+   "value": "20000+",
+   "unit": "tokens",
+   "source_post": "https://x.com/pratikg/status/2113087627503256038"
+  }
+ ]
+}
