@@ -1,0 +1,17 @@
+# My Hugging Face uploads
+
+Everything I've put on Hugging Face, the note that explains it and the exact version this repo points to. A GitHub Action checks Hugging Face every night and opens a pull request when something changes.
+
+The list is generated from [data/huggingface.csv](data/huggingface.csv) by `scripts/hf_sync.py`, so edit the CSV, not this page. The note column is the only part filled in by hand.
+
+| Updated | Type | Hugging Face | Note | Version |
+| --- | --- | --- | --- | --- |
+| 2026-11-01 | dataset | [pratikgx/mage-vl-cowork-m5-pro-mac-mini-bench](https://huggingface.co/datasets/pratikgx/mage-vl-cowork-m5-pro-mac-mini-bench) | [2026-10-30-mage-vl-cowork](notes/2026-10-30-mage-vl-cowork.md) | [f0edaaed](https://huggingface.co/datasets/pratikgx/mage-vl-cowork-m5-pro-mac-mini-bench/tree/f0edaaed06562af36fce94dae0df8fbba2fa8374) |
+| 2026-10-31 | model | [pratikgx/Mage-VL-Cowork-MLX-4bit](https://huggingface.co/pratikgx/Mage-VL-Cowork-MLX-4bit) | [2026-10-30-mage-vl-cowork](notes/2026-10-30-mage-vl-cowork.md) | [b3d4def3](https://huggingface.co/pratikgx/Mage-VL-Cowork-MLX-4bit/tree/b3d4def31e755b0c53199dc41fb90144ce4e95f0) |
+| 2026-10-30 | dataset | [pratikgx/mistral-large-4-1t-m5-pro-mac-mini-bench](https://huggingface.co/datasets/pratikgx/mistral-large-4-1t-m5-pro-mac-mini-bench) | [2026-10-29-mistral-large-4-1t](notes/2026-10-29-mistral-large-4-1t.md) | [ba34f153](https://huggingface.co/datasets/pratikgx/mistral-large-4-1t-m5-pro-mac-mini-bench/tree/ba34f153889c4ab6a7fca824bfd1c9331abd89c1) |
+| 2026-10-30 | dataset | [pratikgx/lfm3-1.7b-m5-pro-mac-mini-bench](https://huggingface.co/datasets/pratikgx/lfm3-1.7b-m5-pro-mac-mini-bench) | [2026-10-27-lfm3-1.7b](notes/2026-10-27-lfm3-1.7b.md) | [1e33fa85](https://huggingface.co/datasets/pratikgx/lfm3-1.7b-m5-pro-mac-mini-bench/tree/1e33fa85af167c9305fdcab13ed9e1f2f11173de) |
+| 2026-10-27 | dataset | [pratikgx/mac-mini-local-benchmarks](https://huggingface.co/datasets/pratikgx/mac-mini-local-benchmarks) | [2026-10-23-flint](notes/2026-10-23-flint.md), [2026-10-26-nemotron-3.5-bolt-e4b](notes/2026-10-26-nemotron-3.5-bolt-e4b.md) | [5b28f490](https://huggingface.co/datasets/pratikgx/mac-mini-local-benchmarks/tree/5b28f490dc7ea492aeb7dcf1a18e35d1ebfde42c) |
+| 2026-10-27 | dataset | [pratikgx/launch-bench-results](https://huggingface.co/datasets/pratikgx/launch-bench-results) | [2026-10-27-laghu](notes/2026-10-27-laghu.md) | [80b0c5a1](https://huggingface.co/datasets/pratikgx/launch-bench-results/tree/80b0c5a1890633a7e6428aa4753f46158e8e42a4) |
+| 2026-10-27 | model | [pratikgx/Laghu-MLX-4bit](https://huggingface.co/pratikgx/Laghu-MLX-4bit) | [2026-10-27-laghu](notes/2026-10-27-laghu.md) | [a428a4d2](https://huggingface.co/pratikgx/Laghu-MLX-4bit/tree/a428a4d2b01071df20366cb94cdfad902cb98747) |
+| 2026-10-25 | model | [pratikgx/Nanbeige4.3-33B-MLX-4bit](https://huggingface.co/pratikgx/Nanbeige4.3-33B-MLX-4bit) | [2026-10-25-nanbeige4.3-33b](notes/2026-10-25-nanbeige4.3-33b.md) | [883c8bda](https://huggingface.co/pratikgx/Nanbeige4.3-33B-MLX-4bit/tree/883c8bda53b2062ff7e37f178ccf503c79674797) |
+| 2026-10-25 | dataset | [pratikgx/1000-rewrites-later](https://huggingface.co/datasets/pratikgx/1000-rewrites-later) | [2026-10-25-1000-rewrites](notes/2026-10-25-1000-rewrites.md) | [fea5476b](https://huggingface.co/datasets/pratikgx/1000-rewrites-later/tree/fea5476b53bb2b2be186294d8962f83ae5000517) |
