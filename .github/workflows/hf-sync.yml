@@ -1,4 +1,5 @@
 # Checks Hugging Face every night and opens a pull request when an upload changed.
+# With an HF_TOKEN secret, it first links each Hugging Face card back to its note here.
 # PRs need Settings > Actions > General > "Allow GitHub Actions to create and approve pull requests".
 # Until that's on, it opens an issue with a link to the changes instead.
 name: Sync Hugging Face
@@ -18,8 +19,22 @@ concurrency: hf-sync
 jobs:
   sync:
     runs-on: ubuntu-latest
+    env:
+      HF_TOKEN: ${{ secrets.HF_TOKEN }}
     steps:
       - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        if: env.HF_TOKEN != ''
+        with:
+          python-version: "3.12"
+
+      # Runs before the check, so the new Hugging Face versions land in tonight's pull request
+      - name: Link Hugging Face cards back to GitHub
+        if: env.HF_TOKEN != ''
+        run: |
+          pip install --quiet "huggingface_hub>=0.25"
+          python3 scripts/hf_backlinks.py
 
       - name: Check Hugging Face
         run: python3 scripts/hf_sync.py --summary "$RUNNER_TEMP/summary.md"
