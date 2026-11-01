@@ -1,0 +1,50 @@
+# Checks Hugging Face every night and opens a pull request when an upload changed.
+# PRs need Settings > Actions > General > "Allow GitHub Actions to create and approve pull requests".
+# Until that's on, it opens an issue with a link to the changes instead.
+name: Sync Hugging Face
+
+on:
+  schedule:
+    - cron: "17 9 * * *"  # every day at 9:17 UTC (2:17 am Pacific)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency: hf-sync
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check Hugging Face
+        run: python3 scripts/hf_sync.py --summary "$RUNNER_TEMP/summary.md"
+
+      - name: Open a pull request if anything changed
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TITLE: Sync Hugging Face uploads
+        run: |
+          if git diff --quiet -- data/huggingface.csv huggingface.md; then
+            echo "Nothing changed on Hugging Face."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
+          git switch -C hf-sync
+          git add data/huggingface.csv huggingface.md
+          git commit -m "$TITLE"
+          git push --force origin hf-sync
+          if [ "$(gh pr view hf-sync --json state -q .state 2>/dev/null)" = "OPEN" ]; then
+            gh pr edit hf-sync --body-file "$RUNNER_TEMP/summary.md"
+          elif ! gh pr create --base main --head hf-sync --title "$TITLE" --body-file "$RUNNER_TEMP/summary.md"; then
+            echo "Couldn't open a pull request, opening an issue instead."
+            if [ -z "$(gh issue list --state open --search "\"$TITLE\" in:title" --json number -q '.[0].number')" ]; then
+              { cat "$RUNNER_TEMP/summary.md"; echo; echo "Review and merge the changes here: ${{ github.server_url }}/${{ github.repository }}/compare/main...hf-sync"; } > "$RUNNER_TEMP/issue.md"
+              gh issue create --title "$TITLE" --body-file "$RUNNER_TEMP/issue.md"
+            fi
+          fi

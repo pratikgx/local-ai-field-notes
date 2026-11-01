@@ -72,4 +72,6 @@ Each task ran once per build, greedy. That's a small sanity check, not a score, 
 - [results/2026-10-30-mage-vl-cowork.json](../results/2026-10-30-mage-vl-cowork.json) and [.csv](../results/2026-10-30-mage-vl-cowork.csv): every speed, memory and agent-move number, plus the demo traces. The bandwidth columns are estimates from the model's size, not measured.
 - [results/2026-10-30-mage-vl-cowork/](../results/2026-10-30-mage-vl-cowork/): the raw bench and demo output for each build.
 - [scripts/mage/](../scripts/mage/): the remap, bench, demo, summary and chart scripts, the system prompt and the mock screens. See its README to run it yourself.
+- Hugging Face dataset with every run, log and script, including the PyTorch parity checks: [pratikgx/mage-vl-cowork-m5-pro-mac-mini-bench](https://huggingface.co/datasets/pratikgx/mage-vl-cowork-m5-pro-mac-mini-bench)
+- 4-bit build: [pratikgx/Mage-VL-Cowork-MLX-4bit](https://huggingface.co/pratikgx/Mage-VL-Cowork-MLX-4bit)
 - ![Speed chart](img/2026-10-30-mage-speed.png)
