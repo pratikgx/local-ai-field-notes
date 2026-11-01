@@ -1,0 +1,58 @@
+{
+ "date": "2026-10-26",
+ "model": "NVIDIA Nemotron 3.5 Bolt E4B",
+ "repo": "mlx-community/NVIDIA-Nemotron-3.5-Bolt-E4B-OptiQ-4bit",
+ "total_params": "8B",
+ "effective_params": "4B",
+ "quant": "OptiQ mixed 4/8-bit",
+ "runtime": "MLX (stock mlx-lm)",
+ "machine": {
+  "chip": "Apple M5 Pro",
+  "machine": "Mac mini",
+  "memory_gb": 64
+ },
+ "settings": {
+  "temperature": 0,
+  "thinking": "on",
+  "timed_runs": 3,
+  "reported": "median"
+ },
+ "speed": [
+  {
+   "context": "512",
+   "decode_speed": 63.0,
+   "time_to_first_token": 0.14,
+   "mlx_peak_memory": 7.28,
+   "prompt_processing_speed": 3642.0
+  },
+  {
+   "context": "4k",
+   "decode_speed": 63.8,
+   "time_to_first_token": 0.93,
+   "mlx_peak_memory": 7.5,
+   "prompt_processing_speed": 4446.0
+  },
+  {
+   "context": "16k",
+   "decode_speed": 56.1,
+   "time_to_first_token": 4.12,
+   "mlx_peak_memory": 8.11,
+   "prompt_processing_speed": 4007.0
+  },
+  {
+   "context": "32k",
+   "decode_speed": 48.2,
+   "time_to_first_token": 9.07,
+   "mlx_peak_memory": 8.92,
+   "prompt_processing_speed": 3632.0
+  }
+ ],
+ "quality": {
+  "math_correct": "20/20",
+  "code_correct": "10/10",
+  "instruction_following_correct": "9/10",
+  "needles_found": "8/8"
+ },
+ "source_post": "https://x.com/pratikg/status/2115098145235599479",
+ "source_dataset": "https://huggingface.co/datasets/pratikgx/mac-mini-local-benchmarks"
+}
