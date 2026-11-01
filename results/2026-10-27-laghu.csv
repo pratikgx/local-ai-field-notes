@@ -1,0 +1,9 @@
+date,model,variant,chip,mem_gb,prompt_tokens,prefill_tps,decode_tps,ttft_s,peak_mem_gb,runs
+2026-10-27,Laghu 152M,bf16,Apple M4 Pro,24,512,11515.6,364.3,0.045,0.662,3
+2026-10-27,Laghu 152M,bf16,Apple M4 Pro,24,2048,11263.8,355.6,0.182,1.171,3
+2026-10-27,Laghu 152M,bf16,Apple M4 Pro,24,8192,9197.5,327.7,0.891,1.233,3
+2026-10-27,Laghu 152M,bf16,Apple M4 Pro,24,16000,7553.8,303.1,2.119,1.262,3
+2026-10-27,Laghu 152M,q4,Apple M4 Pro,24,512,11843.9,401.5,0.044,0.382,3
+2026-10-27,Laghu 152M,q4,Apple M4 Pro,24,2048,10825.5,408.8,0.19,1.114,3
+2026-10-27,Laghu 152M,q4,Apple M4 Pro,24,8192,8876.4,397.1,0.924,1.151,3
+2026-10-27,Laghu 152M,q4,Apple M4 Pro,24,16000,7069.2,379.4,2.265,1.152,3

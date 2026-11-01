@@ -1,0 +1,11 @@
+{
+  "decoding": "greedy (temp 0)",
+  "speed": {"prompt_lengths": [512, 2048, 8192, 16000], "gen_tokens": 256, "warmup": 1, "runs": 3,
+            "prefill_step_size": 2048, "ignore_eos": true, "prompt_source": "Pride and Prejudice (Gutenberg) raw text, bos + first N tokens"},
+  "quality": {"seed": 0, "precision": "bf16",
+              "gsm8k": {"n": 100, "split": "test", "max_tokens": 512, "modes": ["thinking_off", "thinking_on"], "format": "0-shot chat, last number; strict = cut-off reply counts wrong"},
+              "ifeval": {"n": 100, "max_tokens": 1024, "mode": "thinking_off", "scorer": "lm-eval ifeval instruction checkers"},
+              "arc_easy": {"n": 200, "split": "test", "format": "lm-eval loglikelihood 'Question: q\\nAnswer: choice', 0-shot, no chat template"},
+              "hellaswag": {"n": 200, "split": "validation", "format": "lm-eval loglikelihood preprocessed ctx/endings, 0-shot, no chat template"},
+              "sanity_prompts": 3}
+}

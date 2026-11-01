@@ -1,0 +1,275 @@
+{
+ "model": "Laghu 152M (udgamlabs/Laghu-MLX)",
+ "repo": "https://huggingface.co/udgamlabs/Laghu-MLX",
+ "variants": {
+  "bf16": "models/Laghu-MLX",
+  "q4": "models/Laghu-MLX-4bit (local mlx_lm.convert q4 g64)"
+ },
+ "date": "2026-10-27",
+ "hardware": {
+  "chip": "Apple M4 Pro",
+  "mem_gb": 24.0,
+  "gpu_cores": "16",
+  "os": "macOS 27.0.1",
+  "mlx": "0.32.4",
+  "mlx_lm": "0.32.2",
+  "python": "3.12.14"
+ },
+ "settings": {
+  "decoding": "greedy (temp 0)",
+  "speed": {
+   "prompt_lengths": [
+    512,
+    2048,
+    8192,
+    16000
+   ],
+   "gen_tokens": 256,
+   "warmup": 1,
+   "runs": 3,
+   "prefill_step_size": 2048,
+   "ignore_eos": true,
+   "prompt_source": "Pride and Prejudice (Gutenberg) raw text, bos + first N tokens"
+  },
+  "quality": {
+   "seed": 0,
+   "precision": "bf16",
+   "gsm8k": {
+    "n": 100,
+    "split": "test",
+    "max_tokens": 512,
+    "modes": [
+     "thinking_off",
+     "thinking_on"
+    ],
+    "format": "0-shot chat, last number; strict = cut-off reply counts wrong"
+   },
+   "ifeval": {
+    "n": 100,
+    "max_tokens": 1024,
+    "mode": "thinking_off",
+    "scorer": "lm-eval ifeval instruction checkers"
+   },
+   "arc_easy": {
+    "n": 200,
+    "split": "test",
+    "format": "lm-eval loglikelihood 'Question: q\\nAnswer: choice', 0-shot, no chat template"
+   },
+   "hellaswag": {
+    "n": 200,
+    "split": "validation",
+    "format": "lm-eval loglikelihood preprocessed ctx/endings, 0-shot, no chat template"
+   },
+   "sanity_prompts": 3
+  }
+ },
+ "metrics": {
+  "speed": {
+   "bf16": [
+    {
+     "prompt_len": 512,
+     "n_runs": 3,
+     "prefill_tps_median": 11515.580891676562,
+     "prefill_tps_min": 11168.70580395264,
+     "prefill_tps_max": 11692.545515594118,
+     "decode_tps_median": 364.32166613847596,
+     "decode_tps_min": 352.9511519996318,
+     "decode_tps_max": 367.3177367534292,
+     "ttft_s_median": 0.04470412491355091,
+     "ttft_s_min": 0.044079417013563216,
+     "ttft_s_max": 0.04607795795891434,
+     "peak_mem_gb_median": 0.661809106,
+     "peak_mem_gb_min": 0.515794842,
+     "peak_mem_gb_max": 0.661809106
+    },
+    {
+     "prompt_len": 2048,
+     "n_runs": 3,
+     "prefill_tps_median": 11263.817668349591,
+     "prefill_tps_min": 11178.635056145884,
+     "prefill_tps_max": 11299.055808558942,
+     "decode_tps_median": 355.5962807033376,
+     "decode_tps_min": 354.66552589677116,
+     "decode_tps_max": 356.272182232351,
+     "ttft_s_median": 0.18206454196479172,
+     "ttft_s_min": 0.18157749995589256,
+     "ttft_s_max": 0.18356616608798504,
+     "peak_mem_gb_median": 1.17076787,
+     "peak_mem_gb_min": 1.136689112,
+     "peak_mem_gb_max": 1.17076787
+    },
+    {
+     "prompt_len": 8192,
+     "n_runs": 3,
+     "prefill_tps_median": 9197.51658720931,
+     "prefill_tps_min": 9186.948425326778,
+     "prefill_tps_max": 9202.02327598978,
+     "decode_tps_median": 327.69585188986287,
+     "decode_tps_min": 326.9306573286755,
+     "decode_tps_max": 330.6882757990286,
+     "ttft_s_median": 0.8911917499499395,
+     "ttft_s_min": 0.8907923339866102,
+     "ttft_s_max": 0.892374666989781,
+     "peak_mem_gb_median": 1.233182674,
+     "peak_mem_gb_min": 1.233182674,
+     "peak_mem_gb_max": 1.233182674
+    },
+    {
+     "prompt_len": 16000,
+     "n_runs": 3,
+     "prefill_tps_median": 7553.849652038445,
+     "prefill_tps_min": 7508.071032114177,
+     "prefill_tps_max": 7564.680233698906,
+     "decode_tps_median": 303.1020752455294,
+     "decode_tps_min": 297.7775874742884,
+     "decode_tps_max": 305.8557486927253,
+     "ttft_s_median": 2.1194797080243006,
+     "ttft_s_min": 2.1165290840435773,
+     "ttft_s_max": 2.132377124973573,
+     "peak_mem_gb_median": 1.261527028,
+     "peak_mem_gb_min": 1.261527028,
+     "peak_mem_gb_max": 1.261527028
+    }
+   ],
+   "q4": [
+    {
+     "prompt_len": 512,
+     "n_runs": 3,
+     "prefill_tps_median": 11843.878358687954,
+     "prefill_tps_min": 11672.320222934182,
+     "prefill_tps_max": 11898.963477058964,
+     "decode_tps_median": 401.53332967394687,
+     "decode_tps_min": 373.46306656658754,
+     "decode_tps_max": 422.9892740799133,
+     "ttft_s_median": 0.04368495801463723,
+     "ttft_s_min": 0.04331049998290837,
+     "ttft_s_max": 0.04416854097507894,
+     "peak_mem_gb_median": 0.381569,
+     "peak_mem_gb_min": 0.378816486,
+     "peak_mem_gb_max": 0.381569
+    },
+    {
+     "prompt_len": 2048,
+     "n_runs": 3,
+     "prefill_tps_median": 10825.497005000887,
+     "prefill_tps_min": 10825.375406268651,
+     "prefill_tps_max": 10835.759082914166,
+     "decode_tps_median": 408.82407869635796,
+     "decode_tps_min": 367.7777817862549,
+     "decode_tps_max": 413.6261261871673,
+     "ttft_s_median": 0.18951341696083546,
+     "ttft_s_min": 0.1894572910387069,
+     "ttft_s_max": 0.1895322499331087,
+     "peak_mem_gb_median": 1.113612264,
+     "peak_mem_gb_min": 1.113612264,
+     "peak_mem_gb_max": 1.113612264
+    },
+    {
+     "prompt_len": 8192,
+     "n_runs": 3,
+     "prefill_tps_median": 8876.38079074155,
+     "prefill_tps_min": 8858.69425639343,
+     "prefill_tps_max": 8885.151794088995,
+     "decode_tps_median": 397.1030606153642,
+     "decode_tps_min": 392.50950800755595,
+     "decode_tps_max": 398.31922785634026,
+     "ttft_s_median": 0.9235681249992922,
+     "ttft_s_min": 0.9227051249472424,
+     "ttft_s_max": 0.9254959169775248,
+     "peak_mem_gb_median": 1.151123438,
+     "peak_mem_gb_min": 1.151123438,
+     "peak_mem_gb_max": 1.151123438
+    },
+    {
+     "prompt_len": 16000,
+     "n_runs": 3,
+     "prefill_tps_median": 7069.180527716279,
+     "prefill_tps_min": 7002.010963771013,
+     "prefill_tps_max": 7134.320377613529,
+     "decode_tps_median": 379.4159440134509,
+     "decode_tps_min": 378.81006517962203,
+     "decode_tps_max": 380.9428619162412,
+     "ttft_s_median": 2.2647337910020724,
+     "ttft_s_min": 2.2443934170296416,
+     "ttft_s_max": 2.286592665943317,
+     "peak_mem_gb_median": 1.152466892,
+     "peak_mem_gb_min": 1.152466892,
+     "peak_mem_gb_max": 1.152466892
+    }
+   ]
+  },
+  "quality": {
+   "gsm8k_off": {
+    "task": "gsm8k_off",
+    "n": 100,
+    "thinking": false,
+    "max_tokens": 512,
+    "acc_strict": 0.05,
+    "acc_lenient": 0.05,
+    "hit_length_limit": 0.0,
+    "seconds": 14.604712009429932
+   },
+   "gsm8k_on": {
+    "task": "gsm8k_on",
+    "n": 100,
+    "thinking": true,
+    "max_tokens": 512,
+    "acc_strict": 0.1,
+    "acc_lenient": 0.1,
+    "hit_length_limit": 0.01,
+    "seconds": 41.060065031051636
+   },
+   "ifeval": {
+    "task": "ifeval",
+    "n": 100,
+    "max_tokens": 1024,
+    "prompt_level_strict": 0.29,
+    "prompt_level_loose": 0.3,
+    "inst_level_strict": 0.38562091503267976,
+    "inst_level_loose": 0.40522875816993464,
+    "hit_length_limit": 0.45,
+    "seconds": 170.7440619468689
+   },
+   "arc_easy": {
+    "task": "arc_easy",
+    "n": 200,
+    "acc": 0.585,
+    "acc_norm": 0.49,
+    "seconds": 6.801198959350586
+   },
+   "hellaswag": {
+    "task": "hellaswag",
+    "n": 200,
+    "acc": 0.305,
+    "acc_norm": 0.38,
+    "seconds": 9.576288938522339
+   },
+   "sanity": [
+    {
+     "prompt": "Who are you?",
+     "raw": "I'm Laghu, a small language model built by Udgam Labs. How can I help?",
+     "answer": "I'm Laghu, a small language model built by Udgam Labs. How can I help?",
+     "finish": "stop",
+     "gen_tokens": 23
+    },
+    {
+     "prompt": "Write a haiku about autumn rain.",
+     "raw": "Autumn rain falls like a slow river,\nsoftening the air with a gentle flow.\nLeaves turn gold, then silver, then gold,\nand the world feels quieter.",
+     "answer": "Autumn rain falls like a slow river,\nsoftening the air with a gentle flow.\nLeaves turn gold, then silver, then gold,\nand the world feels quieter.",
+     "finish": "stop",
+     "gen_tokens": 40
+    },
+    {
+     "prompt": "Explain in two sentences why the sky is blue.",
+     "raw": "Sunlight contains all colours mixed together, and the mix you see is the result of how the light behaves through the air. When sunlight passes through the atmosphere, it hits tiny gas molecules that scatter the light in every direction. That scattering is what makes the light look blue.",
+     "answer": "Sunlight contains all colours mixed together, and the mix you see is the result of how the light behaves through the air. When sunlight passes through the atmosphere, it hits tiny gas molecules that scatter the light in every direction. That scattering is what makes the light look blue.",
+     "finish": "stop",
+     "gen_tokens": 56
+    }
+   ],
+   "commonsense_avg2_acc_norm": 0.435
+  }
+ },
+ "source_dataset": "https://huggingface.co/datasets/pratikgx/launch-bench-results",
+ "build_repo": "https://huggingface.co/pratikgx/Laghu-MLX-4bit"
+}
