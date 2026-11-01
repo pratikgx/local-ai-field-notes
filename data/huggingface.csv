@@ -1,0 +1,10 @@
+type,repo,revision,updated,status,note
+dataset,pratikgx/mage-vl-cowork-m5-pro-mac-mini-bench,f0edaaed06562af36fce94dae0df8fbba2fa8374,2026-11-01,public,notes/2026-10-30-mage-vl-cowork.md
+model,pratikgx/Mage-VL-Cowork-MLX-4bit,b3d4def31e755b0c53199dc41fb90144ce4e95f0,2026-10-31,public,notes/2026-10-30-mage-vl-cowork.md
+dataset,pratikgx/mistral-large-4-1t-m5-pro-mac-mini-bench,ba34f153889c4ab6a7fca824bfd1c9331abd89c1,2026-10-30,public,notes/2026-10-29-mistral-large-4-1t.md
+dataset,pratikgx/lfm3-1.7b-m5-pro-mac-mini-bench,1e33fa85af167c9305fdcab13ed9e1f2f11173de,2026-10-30,public,notes/2026-10-27-lfm3-1.7b.md
+dataset,pratikgx/mac-mini-local-benchmarks,5b28f490dc7ea492aeb7dcf1a18e35d1ebfde42c,2026-10-27,public,notes/2026-10-23-flint.md;notes/2026-10-26-nemotron-3.5-bolt-e4b.md
+dataset,pratikgx/launch-bench-results,80b0c5a1890633a7e6428aa4753f46158e8e42a4,2026-10-27,public,notes/2026-10-27-laghu.md
+model,pratikgx/Laghu-MLX-4bit,a428a4d2b01071df20366cb94cdfad902cb98747,2026-10-27,public,notes/2026-10-27-laghu.md
+model,pratikgx/Nanbeige4.3-33B-MLX-4bit,883c8bda53b2062ff7e37f178ccf503c79674797,2026-10-25,public,notes/2026-10-25-nanbeige4.3-33b.md
+dataset,pratikgx/1000-rewrites-later,fea5476b53bb2b2be186294d8962f83ae5000517,2026-10-25,public,notes/2026-10-25-1000-rewrites.md
