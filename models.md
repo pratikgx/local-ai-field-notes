@@ -30,6 +30,8 @@ Every model I've tried on my own machine. Speeds are tokens per second during ge
 | 2026-10-29 | [Mistral Large 4 1T-A52B (MoE)](https://huggingface.co/unsloth/Mistral-Large-4-1T-A52B-GGUF) | UD-IQ1_S GGUF, 233 GB | llama.cpp 3c809f4 (Metal, experts on CPU via --cpu-moe) | 2.05 GB peak footprint (56.8 GB RSS, mostly memory-mapped weights) | 0.35 | 1 trillion parameters on 64 GB by streaming experts off the SSD. 150 s to first token on a 441-token prompt. It works, slowly. |
 | 2026-10-30 | [Mage-VL-Cowork 4B](https://huggingface.co/pratikgx/Mage-VL-Cowork-MLX-4bit) | 4-bit MLX (vision kept BF16), 3.1 GB | mlx-vlm 0.7.11 | 3.87 GB | 95.6 | Microsoft's computer-use agent. One move from a 1080p screenshot takes 3.1 s. It missed the one click test that full precision hit. |
 | 2026-10-30 | [Mage-VL-Cowork 4B](https://huggingface.co/microsoft/Mage-VL-Cowork) | BF16 MLX (no quantization), 9.5 GB | mlx-vlm 0.7.11 | 9.96 GB | 30.0 | About a third the speed of 4-bit and 6.0 s per 1080p move, but it clicked the Dark Mode toggle right. |
+| 2026-11-03 | [Qwen3.8 27B](https://huggingface.co/TensorFold/Qwen3.8-27B-MLX-4bit) | 4-bit MLX (g64) | TensorFold 1.2.1 | 26.70 GiB (28.52 with drafter) | 17.23 | 56.19 with the DFlash2 drafter (3.26x), same output at temp 0. |
+| 2026-11-03 | [Qwen3.8 27B](https://huggingface.co/TensorFold/Qwen3.8-27B-MLX-4bit) | 4-bit MLX (g64) | TensorFold 1.2.2 | 26.70 GiB (28.52 with drafter) | 16.85 | 56.43 with the drafter (3.35x). Not faster than 1.2.1 on this Mac. |
 
 I measure speed with mlx-lm's own numbers, generating 256 tokens from the same prompt for every model. Speed is generation tokens per second. Memory is peak memory reported by mlx-lm. The script is in scripts/bench.py and raw results are in results/.
 

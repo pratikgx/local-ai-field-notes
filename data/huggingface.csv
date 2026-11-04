@@ -1,4 +1,6 @@
 type,repo,revision,updated,status,note
+dataset,pratikgx/qwen3.8-27b-tensorfold-1.2.2-m5-pro-mac-mini-bench,90310e019a6a5cb73b57c50791edefe80a882ff2,2026-11-04,public,notes/2026-11-03-qwen3.8-27b-tensorfold.md
+dataset,pratikgx/qwen3.8-27b-tensorfold-1.2.1-m5-pro-mac-mini-bench,8d9631f8e26fd812e5d655d681adb2d804d0b204,2026-11-04,public,notes/2026-11-03-qwen3.8-27b-tensorfold.md
 dataset,pratikgx/mistral-large-4-1t-m5-pro-mac-mini-bench,2b85b9fe576eab8c80c487abecb63cc3568a2c28,2026-11-01,public,notes/2026-10-29-mistral-large-4-1t.md
 dataset,pratikgx/mage-vl-cowork-m5-pro-mac-mini-bench,a560d38ce2958b6e64cb7b6441ca721b364ca8c4,2026-11-01,public,notes/2026-10-30-mage-vl-cowork.md
 dataset,pratikgx/mac-mini-local-benchmarks,3ca3939a37848b164afb066e42e7c76b09403554,2026-11-01,public,notes/2026-10-23-flint.md;notes/2026-10-26-nemotron-3.5-bolt-e4b.md
