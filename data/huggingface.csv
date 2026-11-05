@@ -1,7 +1,7 @@
 type,repo,revision,updated,status,note
 dataset,pratikgx/twil-8b-m5-pro-mac-mini-bench,f688c7ca4c8b32b5b213d71e7d3a59905d7dfec8,2026-11-05,public,notes/2026-11-04-twil-8b.md
 dataset,pratikgx/iota-decide-4b-m5-pro-mac-mini-bench,9334bcbde73bc5366ecfea77b2e74b1618b2143a,2026-11-05,public,notes/2026-11-04-iota-decide-4b.md
-model,pratikgx/TwIL-8B-MLX-4bit,df71def23f8e1a59aa575bb5992c772092ebbae1,2026-11-05,public,
+model,pratikgx/TwIL-8B-MLX-4bit,df71def23f8e1a59aa575bb5992c772092ebbae1,2026-11-05,public,notes/2026-11-04-twil-8b.md
 dataset,pratikgx/qwen3.8-27b-tensorfold-1.2.2-m5-pro-mac-mini-bench,dfa6a99e5d733dd7718e2be6fe6ed1d74cc4d426,2026-11-04,public,notes/2026-11-03-qwen3.8-27b-tensorfold.md
 dataset,pratikgx/qwen3.8-27b-tensorfold-1.2.1-m5-pro-mac-mini-bench,070b915b3e7379cbac1c92419a8e60e5c39f9d5d,2026-11-04,public,notes/2026-11-03-qwen3.8-27b-tensorfold.md
 dataset,pratikgx/mistral-large-4-1t-m5-pro-mac-mini-bench,2b85b9fe576eab8c80c487abecb63cc3568a2c28,2026-11-01,public,notes/2026-10-29-mistral-large-4-1t.md
