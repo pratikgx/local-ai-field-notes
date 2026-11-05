@@ -6,6 +6,7 @@ The list is generated from [data/huggingface.csv](data/huggingface.csv) by `scri
 
 | Updated | Type | Hugging Face | Note | Version |
 | --- | --- | --- | --- | --- |
+| 2026-11-05 | dataset | [pratikgx/ripple-65b-preview-m5-pro-mac-mini-bench](https://huggingface.co/datasets/pratikgx/ripple-65b-preview-m5-pro-mac-mini-bench) | [2026-11-05-ripple-65b-preview](notes/2026-11-05-ripple-65b-preview.md) | [75ae151c](https://huggingface.co/datasets/pratikgx/ripple-65b-preview-m5-pro-mac-mini-bench/tree/75ae151c7da63b69cb439938840a31da4c583de7) |
 | 2026-11-05 | dataset | [pratikgx/twil-8b-m5-pro-mac-mini-bench](https://huggingface.co/datasets/pratikgx/twil-8b-m5-pro-mac-mini-bench) | [2026-11-04-twil-8b](notes/2026-11-04-twil-8b.md) | [f688c7ca](https://huggingface.co/datasets/pratikgx/twil-8b-m5-pro-mac-mini-bench/tree/f688c7ca4c8b32b5b213d71e7d3a59905d7dfec8) |
 | 2026-11-05 | dataset | [pratikgx/iota-decide-4b-m5-pro-mac-mini-bench](https://huggingface.co/datasets/pratikgx/iota-decide-4b-m5-pro-mac-mini-bench) | [2026-11-04-iota-decide-4b](notes/2026-11-04-iota-decide-4b.md) | [9334bcbd](https://huggingface.co/datasets/pratikgx/iota-decide-4b-m5-pro-mac-mini-bench/tree/9334bcbde73bc5366ecfea77b2e74b1618b2143a) |
 | 2026-11-05 | model | [pratikgx/TwIL-8B-MLX-4bit](https://huggingface.co/pratikgx/TwIL-8B-MLX-4bit) | [2026-11-04-twil-8b](notes/2026-11-04-twil-8b.md) | [df71def2](https://huggingface.co/pratikgx/TwIL-8B-MLX-4bit/tree/df71def23f8e1a59aa575bb5992c772092ebbae1) |

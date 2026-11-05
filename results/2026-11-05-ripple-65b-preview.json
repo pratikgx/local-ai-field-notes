@@ -1,0 +1,213 @@
+{
+ "mlx_4bit": {
+  "512": {
+   "prompt_tokens": 512,
+   "prompt_tps": 146.755706438527,
+   "gen_tps": 6.895091625328641,
+   "ttft_s": 3.49065791699104,
+   "peak_mem_gb": 37.213491442,
+   "runs_gen": [
+    6.894553380938243,
+    7.384767713257664,
+    6.895091625328641
+   ],
+   "bytes_per_token": 36321413280,
+   "eff_bw_gbs": 250.44,
+   "bw_util_pct": 81.6,
+   "bg_scrubbed": "18.8 3422640 /Users/pratik/launch-benchmarks/.venv/bin/python | 13.7 1278064 /Applications/Brave Browser.app/Contents/Frameworks/Brave Browser Framework.framework/Versions/156.1.98.63/Helpers/Brave Browser Helper (Renderer).app/Contents/MacOS/Brave Browser Helper (Renderer) | 4.1 92144 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer | 3.2 387520 /Applications/Brave Browser.app/Contents/MacOS/Brave Browser"
+  },
+  "4096": {
+   "prompt_tokens": 4096,
+   "prompt_tps": 155.53044583548527,
+   "gen_tps": 7.015698120064604,
+   "ttft_s": 26.34364174993243,
+   "peak_mem_gb": 38.646335684,
+   "runs_gen": [
+    7.015698120064604,
+    7.308911062900069,
+    6.488621943210057
+   ],
+   "bytes_per_token": 36690512032,
+   "eff_bw_gbs": 257.41,
+   "bw_util_pct": 83.8,
+   "bg_scrubbed": "16.9 3428720 /Users/pratik/launch-benchmarks/.venv/bin/python | 2.7 48672 /Applications/superwhisper.app/Contents/MacOS/superwhisper | 1.3 8784 /System/Library/CoreServices/launchservicesd"
+  },
+  "16384": {
+   "prompt_tokens": 16384,
+   "prompt_tps": 153.50555432796384,
+   "gen_tps": 6.809384532050339,
+   "ttft_s": 106.74697179195937,
+   "peak_mem_gb": 39.455885562,
+   "runs_gen": [
+    6.809384532050339,
+    6.793866655861643,
+    6.856702528145905
+   ],
+   "bytes_per_token": 37495818400,
+   "eff_bw_gbs": 255.32,
+   "bw_util_pct": 83.2,
+   "bg_scrubbed": "25.9 110624 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer | 17.0 3397984 /Users/pratik/launch-benchmarks/.venv/bin/python | 2.2 90672 /Applications/superwhisper.app/Contents/MacOS/superwhisper"
+  },
+  "32768": {
+   "prompt_tokens": 32768,
+   "prompt_tps": 155.9397076161298,
+   "gen_tps": 6.9917769034157375,
+   "ttft_s": 210.15712125005666,
+   "peak_mem_gb": 40.529692922,
+   "runs_gen": [
+    6.9917769034157375,
+    6.9712783853029014,
+    6.994077416607436
+   ],
+   "bytes_per_token": 38569560224,
+   "eff_bw_gbs": 269.67,
+   "bw_util_pct": 87.8,
+   "bg_scrubbed": "16.5 3397312 /Users/pratik/launch-benchmarks/.venv/bin/python | 6.9 79392 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer | 2.1 60880 /Applications/superwhisper.app/Contents/MacOS/superwhisper"
+  }
+ },
+ "env": {
+  "chip": "Apple M5 Pro",
+  "ram_gb": 64,
+  "macos": "27.0.1 (26A434)",
+  "mlx": "0.32.4",
+  "mlx_lm": "0.32.3.dev12+g4cfc64784",
+  "python": "3.12.15",
+  "power": "Now drawing from 'AC Power'",
+  "model": "frogggias/Ripple-65B-Preview-MLX-4bit",
+  "quant": "mlx-4bit-g64 trust_remote_code ricursive.py",
+  "size_gb": 36.44,
+  "load_s": 8.7,
+  "date": "2026-11-05 08:51 MST",
+  "suite": "v1",
+  "caveat": "a background inference app was running and was not paused"
+ },
+ "settings": {
+  "temp": 0,
+  "gen_tokens_perf": 256,
+  "warmup": 1,
+  "runs": 3,
+  "quality_thinking": true,
+  "batch": "batch_generate cbs=10 greedy"
+ },
+ "quality": {
+  "math": [
+   20,
+   20
+  ],
+  "code": [
+   10,
+   10
+  ],
+  "if": [
+   10,
+   10
+  ],
+  "needles": [
+   [
+    8,
+    8
+   ]
+  ],
+  "tools": [
+   5,
+   5
+  ],
+  "unclosed_think": 0
+ },
+ "needles": [
+  {
+   "ctx": 32768,
+   "depth": 0.1,
+   "prompt_tokens": 32704,
+   "ok": true,
+   "found_in_think": true,
+   "secs": 228.23388123512268,
+   "prompt_tps": 148.84599243859236,
+   "peak_mem_gb": 40.478247162
+  },
+  {
+   "ctx": 32768,
+   "depth": 0.3,
+   "prompt_tokens": 32705,
+   "ok": true,
+   "found_in_think": true,
+   "secs": 222.6042492389679,
+   "prompt_tps": 155.6239564288622,
+   "peak_mem_gb": 40.478918906
+  },
+  {
+   "ctx": 32768,
+   "depth": 0.5,
+   "prompt_tokens": 32704,
+   "ok": true,
+   "found_in_think": true,
+   "secs": 217.81560492515564,
+   "prompt_tps": 155.18831112301805,
+   "peak_mem_gb": 40.478460154
+  },
+  {
+   "ctx": 32768,
+   "depth": 0.7,
+   "prompt_tokens": 32705,
+   "ok": true,
+   "found_in_think": true,
+   "secs": 217.524010181427,
+   "prompt_tps": 155.43597870513153,
+   "peak_mem_gb": 40.478918906
+  },
+  {
+   "ctx": 32768,
+   "depth": 0.9,
+   "prompt_tokens": 32705,
+   "ok": true,
+   "found_in_think": true,
+   "secs": 217.14837503433228,
+   "prompt_tps": 155.70926878713047,
+   "peak_mem_gb": 40.478918906
+  },
+  {
+   "ctx": 65536,
+   "depth": 0.25,
+   "prompt_tokens": 65472,
+   "ok": true,
+   "found_in_think": true,
+   "secs": 457.22734117507935,
+   "prompt_tps": 145.59594346282395,
+   "peak_mem_gb": 42.626074874
+  },
+  {
+   "ctx": 65536,
+   "depth": 0.5,
+   "prompt_tokens": 65472,
+   "ok": true,
+   "found_in_think": true,
+   "secs": 459.559809923172,
+   "prompt_tps": 144.84520542294854,
+   "peak_mem_gb": 42.626074874
+  },
+  {
+   "ctx": 65536,
+   "depth": 0.75,
+   "prompt_tokens": 65472,
+   "ok": true,
+   "found_in_think": true,
+   "secs": 459.0200357437134,
+   "prompt_tps": 145.03023817931515,
+   "peak_mem_gb": 42.626074874
+  }
+ ],
+ "bandwidth_assumptions": {
+  "dense": true,
+  "embedding_excluded": true,
+  "lm_head_counted": true,
+  "kv_dtype_bytes": 2,
+  "n_full_attn_layers": 16,
+  "n_sliding_layers": 64,
+  "sliding_window": 1024,
+  "label": "estimate from model geometry, not a hardware counter"
+ },
+ "unsupported": {
+  "tensorfold_1_2_2": "no registered Zig family serves model_type ricursive",
+  "llama_cpp_eb7818c": "unknown model architecture: 'ricursive'"
+ }
+}
