@@ -34,6 +34,7 @@ Every model I've tried on my own machine. Speeds are tokens per second during ge
 | 2026-11-03 | [Qwen3.8 27B](https://huggingface.co/TensorFold/Qwen3.8-27B-MLX-4bit) | 4-bit MLX (g64) | TensorFold 1.2.2 | 26.70 GiB (28.52 with drafter) | 16.85 | 56.43 with the drafter (3.35x). Not faster than 1.2.1 on this Mac. |
 | 2026-11-04 | [TwIL-8B](https://huggingface.co/webAI-Official/TwIL-8B) | 4-bit MLX (g64, my conversion, [MLX build](https://huggingface.co/pratikgx/TwIL-8B-MLX-4bit)), 4.95 GB | mlx-lm 0.32.3.dev12 | 5.57 GB | 53.76 | webAI's 8B reasoning model. 9.16 tok/s at 128K context in 27.85 GB. Passed all my quality checks. |
 | 2026-11-04 | [TwIL-8B](https://huggingface.co/webAI-Official/TwIL-8B) | BF16 MLX (my conversion), 17.58 GB | mlx-lm 0.32.3.dev12 | 17.98 GB | 16.69 | Full 128K context fits, 40.55 GB peak, 6.60 tok/s. Found the passphrase among decoys at 128K, 3/3. |
+| 2026-11-04 | [IOTA Decide 4B v0.4](https://huggingface.co/macrocosm-os/iota-decide-4b-v0.4) | BF16 (PyTorch MPS) | torch 2.15.0, transformers 5.21.0 | 10.66 GB (MPS driver) | n/a | A decision model, not a text generator. 87.7 ms per yes/no decision on a short ticket, about 11 decisions a second. |
 
 I measure speed with mlx-lm's own numbers, generating 256 tokens from the same prompt for every model. Speed is generation tokens per second. Memory is peak memory reported by mlx-lm. The script is in scripts/bench.py and raw results are in results/.
 
