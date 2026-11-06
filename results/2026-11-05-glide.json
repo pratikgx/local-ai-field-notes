@@ -1,0 +1,379 @@
+{
+  "started": "2026-11-05 11:56 ",
+  "chip": "Apple M5 Pro",
+  "ram_gb": 64,
+  "peak_bandwidth_gbs": 307.0,
+  "suite_version": "glide-v1",
+  "background_load": "background inference app running",
+  "versions": {
+    "mlx": "0.32.4",
+    "mlx-vlm": "0.7.11",
+    "transformers": "5.17.0",
+    "torch": "2.14.0",
+    "tokenizers": "0.23.2",
+    "glide_mlx": "0.1.0"
+  },
+  "builds": [
+    {
+      "tag": "mlx-4bit",
+      "model_dir": "/Users/pratik/launch-benchmarks/glide/models/GLiDE-mlx-4bit",
+      "size_gb": 19.97,
+      "load_s": 7.58,
+      "latency": [
+        {
+          "target_tokens": 512,
+          "actual_tokens": 513,
+          "n_timed": 20,
+          "median_s": 1.4476,
+          "p95_s": 1.5052,
+          "min_s": 1.3844,
+          "mean_s": 1.4523,
+          "decisions_per_s": 0.6908,
+          "peak_mem_gb": 15.07,
+          "raw_times": [
+            1.415,
+            1.4785,
+            1.4105,
+            1.4771,
+            1.4738,
+            1.4217,
+            1.4138,
+            1.4681,
+            1.4523,
+            1.4969,
+            1.4428,
+            1.4354,
+            1.505,
+            1.4777,
+            1.4407,
+            1.4223,
+            1.4114,
+            1.3844,
+            1.5052,
+            1.513
+          ]
+        },
+        {
+          "target_tokens": 2048,
+          "actual_tokens": 2049,
+          "n_timed": 20,
+          "median_s": 5.41,
+          "p95_s": 7.9509,
+          "min_s": 5.3316,
+          "mean_s": 5.8246,
+          "decisions_per_s": 0.1848,
+          "peak_mem_gb": 15.66,
+          "raw_times": [
+            7.4143,
+            5.6331,
+            5.4775,
+            5.453,
+            5.4524,
+            5.4369,
+            5.4025,
+            5.3836,
+            5.3577,
+            5.3499,
+            5.3521,
+            5.4175,
+            6.6083,
+            8.0992,
+            7.9509,
+            5.342,
+            5.3431,
+            5.3387,
+            5.3316,
+            5.3482
+          ]
+        },
+        {
+          "target_tokens": 4096,
+          "actual_tokens": 4097,
+          "n_timed": 20,
+          "median_s": 12.217,
+          "p95_s": 17.5849,
+          "min_s": 11.9468,
+          "mean_s": 12.9584,
+          "decisions_per_s": 0.0819,
+          "peak_mem_gb": 16.54,
+          "raw_times": [
+            12.0347,
+            12.6545,
+            13.3444,
+            11.9486,
+            11.9765,
+            11.9669,
+            11.9468,
+            17.7511,
+            13.5034,
+            12.1008,
+            12.9517,
+            12.0562,
+            12.0425,
+            14.1284,
+            12.2917,
+            12.1959,
+            12.2189,
+            12.2151,
+            12.2552,
+            17.5849
+          ]
+        }
+      ],
+      "batch": {
+        "tag": "mlx-4bit",
+        "prompt_tokens_approx": 513,
+        "questions_per_request": 8,
+        "n_reps": 10,
+        "median_request_s": 11.9989,
+        "p95_request_s": 13.9185,
+        "questions_per_s": 0.6667,
+        "note": "glide-mlx decide_batch/decide runs questions one at a time; no fused micro-batch"
+      },
+      "jevbench": {
+        "tag": "mlx-4bit",
+        "n_items": 231,
+        "scored": 231,
+        "correct": 213,
+        "accuracy": 0.922077922077922,
+        "by_tier": {
+          "easy.jsonl": {
+            "correct": 48,
+            "total": 48
+          },
+          "original.jsonl": {
+            "correct": 72,
+            "total": 72
+          },
+          "hard.jsonl": {
+            "correct": 93,
+            "total": 111
+          }
+        },
+        "median_s": 0.5677,
+        "p95_s": 7.7019,
+        "note": "public 231 via in-process glide-mlx; argmax scoring aligned with jevbench yes/no labels"
+      },
+      "jevbench_http": [
+        {
+          "tasks": "/Users/pratik/launch-benchmarks/glide/jevbench/datasets/public/easy.jsonl",
+          "returncode": 0,
+          "stdout_tail": "[jevbench] adapter=typesafe endpoint=http://127.0.0.1:8790 tasks=48 cap=$15.0 ledger=/Users/pratik/launch-benchmarks/glide/jevbench/../private/ledger.jsonl\n10/48 completed\n20/48 completed\n30/48 completed\n40/48 completed\n[jevbench] done: 48/48 attempted, 0 failed; charged=$0.9600\n",
+          "stderr_tail": "",
+          "results": "/Users/pratik/launch-benchmarks/glide/runs/run-20261105-115608/jevbench_http_mlx-4bit_easy.jsonl"
+        },
+        {
+          "tasks": "/Users/pratik/launch-benchmarks/glide/jevbench/datasets/public/original.jsonl",
+          "returncode": 0,
+          "stdout_tail": "[jevbench] adapter=typesafe endpoint=http://127.0.0.1:8790 tasks=72 cap=$15.0 ledger=/Users/pratik/launch-benchmarks/glide/jevbench/../private/ledger.jsonl\n10/72 completed\n20/72 completed\n30/72 completed\n40/72 completed\n50/72 completed\n60/72 completed\n70/72 completed\n[jevbench] done: 72/72 attempted, 0 failed; charged=$2.4000\n",
+          "stderr_tail": "",
+          "results": "/Users/pratik/launch-benchmarks/glide/runs/run-20261105-115608/jevbench_http_mlx-4bit_original.jsonl"
+        },
+        {
+          "tasks": "/Users/pratik/launch-benchmarks/glide/jevbench/datasets/public/hard.jsonl",
+          "returncode": 0,
+          "stdout_tail": "[jevbench] adapter=typesafe endpoint=http://127.0.0.1:8790 tasks=111 cap=$15.0 ledger=/Users/pratik/launch-benchmarks/glide/jevbench/../private/ledger.jsonl\n10/111 completed\n20/111 completed\n30/111 completed\n40/111 completed\n50/111 completed\n60/111 completed\n70/111 completed\n80/111 completed\n90/111 completed\n100/111 completed\n110/111 completed\n[jevbench] done: 111/111 attempted, 0 failed; charged=$4.6200\n",
+          "stderr_tail": "",
+          "results": "/Users/pratik/launch-benchmarks/glide/runs/run-20261105-115608/jevbench_http_mlx-4bit_hard.jsonl"
+        }
+      ]
+    },
+    {
+      "tag": "mlx-8bit",
+      "model_dir": "/Users/pratik/launch-benchmarks/glide/models/GLiDE-mlx-8bit",
+      "size_gb": 29.7,
+      "load_s": 6.37,
+      "latency": [
+        {
+          "target_tokens": 512,
+          "actual_tokens": 513,
+          "n_timed": 20,
+          "median_s": 1.6745,
+          "p95_s": 1.7192,
+          "min_s": 1.552,
+          "mean_s": 1.6728,
+          "decisions_per_s": 0.5972,
+          "peak_mem_gb": 42.3,
+          "raw_times": [
+            1.552,
+            1.6784,
+            1.6656,
+            1.6595,
+            1.6639,
+            1.6608,
+            1.6495,
+            1.6822,
+            1.6662,
+            1.6973,
+            1.6982,
+            1.6683,
+            1.6779,
+            1.674,
+            1.7297,
+            1.6949,
+            1.675,
+            1.7192,
+            1.6976,
+            1.6462
+          ]
+        },
+        {
+          "target_tokens": 2048,
+          "actual_tokens": 2049,
+          "n_timed": 20,
+          "median_s": 5.8065,
+          "p95_s": 6.4878,
+          "min_s": 5.6914,
+          "mean_s": 5.9583,
+          "decisions_per_s": 0.1722,
+          "peak_mem_gb": 42.89,
+          "raw_times": [
+            6.4878,
+            5.9142,
+            5.8809,
+            5.8239,
+            5.8055,
+            5.7752,
+            5.7759,
+            5.7947,
+            5.7658,
+            7.9185,
+            6.108,
+            5.8844,
+            5.8629,
+            5.8312,
+            5.8035,
+            5.7644,
+            5.7436,
+            5.7272,
+            5.6914,
+            5.8075
+          ]
+        },
+        {
+          "target_tokens": 4096,
+          "actual_tokens": 4097,
+          "n_timed": 20,
+          "median_s": 17.17,
+          "p95_s": 18.2462,
+          "min_s": 12.9287,
+          "mean_s": 16.2893,
+          "decisions_per_s": 0.0582,
+          "peak_mem_gb": 43.77,
+          "raw_times": [
+            18.1979,
+            17.7423,
+            17.4964,
+            17.4242,
+            17.5475,
+            17.4918,
+            16.9643,
+            20.8506,
+            13.3903,
+            13.1109,
+            15.9014,
+            16.9717,
+            17.1464,
+            18.2462,
+            12.9287,
+            17.9964,
+            13.2529,
+            12.9688,
+            12.9637,
+            17.1936
+          ]
+        }
+      ],
+      "batch": {
+        "tag": "mlx-8bit",
+        "prompt_tokens_approx": 513,
+        "questions_per_request": 8,
+        "n_reps": 10,
+        "median_request_s": 13.3586,
+        "p95_request_s": 19.0251,
+        "questions_per_s": 0.5989,
+        "note": "glide-mlx decide_batch/decide runs questions one at a time; no fused micro-batch"
+      },
+      "jevbench": {
+        "tag": "mlx-8bit",
+        "n_items": 231,
+        "scored": 231,
+        "correct": 215,
+        "accuracy": 0.9307359307359307,
+        "by_tier": {
+          "easy.jsonl": {
+            "correct": 48,
+            "total": 48
+          },
+          "original.jsonl": {
+            "correct": 72,
+            "total": 72
+          },
+          "hard.jsonl": {
+            "correct": 95,
+            "total": 111
+          }
+        },
+        "median_s": 0.7251,
+        "p95_s": 9.7499,
+        "note": "public 231 via in-process glide-mlx; argmax scoring aligned with jevbench yes/no labels"
+      },
+      "jevbench_http": [
+        {
+          "tasks": "/Users/pratik/launch-benchmarks/glide/jevbench/datasets/public/easy.jsonl",
+          "returncode": 0,
+          "stdout_tail": "[jevbench] adapter=typesafe endpoint=http://127.0.0.1:8791 tasks=48 cap=$15.0 ledger=/Users/pratik/launch-benchmarks/glide/jevbench/../private/ledger.jsonl\n10/48 completed\n20/48 completed\n30/48 completed\n40/48 completed\n[jevbench] done: 48/48 attempted, 0 failed; charged=$5.5800\n",
+          "stderr_tail": "",
+          "results": "/Users/pratik/launch-benchmarks/glide/runs/run-20261105-115608/jevbench_http_mlx-8bit_easy.jsonl"
+        },
+        {
+          "tasks": "/Users/pratik/launch-benchmarks/glide/jevbench/datasets/public/original.jsonl",
+          "returncode": 0,
+          "stdout_tail": "[jevbench] adapter=typesafe endpoint=http://127.0.0.1:8791 tasks=72 cap=$15.0 ledger=/Users/pratik/launch-benchmarks/glide/jevbench/../private/ledger.jsonl\n10/72 completed\n20/72 completed\n30/72 completed\n40/72 completed\n50/72 completed\n60/72 completed\n70/72 completed\n[jevbench] done: 72/72 attempted, 0 failed; charged=$7.0200\n",
+          "stderr_tail": "",
+          "results": "/Users/pratik/launch-benchmarks/glide/runs/run-20261105-115608/jevbench_http_mlx-8bit_original.jsonl"
+        },
+        {
+          "tasks": "/Users/pratik/launch-benchmarks/glide/jevbench/datasets/public/hard.jsonl",
+          "returncode": 0,
+          "stdout_tail": "[jevbench] adapter=typesafe endpoint=http://127.0.0.1:8791 tasks=111 cap=$15.0 ledger=/Users/pratik/launch-benchmarks/glide/jevbench/../private/ledger.jsonl\n10/111 completed\n20/111 completed\n30/111 completed\n40/111 completed\n50/111 completed\n60/111 completed\n70/111 completed\n80/111 completed\n90/111 completed\n100/111 completed\n110/111 completed\n[jevbench] done: 111/111 attempted, 0 failed; charged=$9.2400\n",
+          "stderr_tail": "",
+          "results": "/Users/pratik/launch-benchmarks/glide/runs/run-20261105-115608/jevbench_http_mlx-8bit_hard.jsonl"
+        }
+      ]
+    }
+  ],
+  "netprojects_claims": {
+    "4bit_jevbench_public": "213/231 (their M5 Max 128GB)",
+    "8bit_jevbench_public": "215/231 (their M5 Max 128GB)",
+    "4bit_vs_pytorch_top": "197/204",
+    "8bit_vs_pytorch_top": "202/204"
+  },
+  "agreement": {
+    "questions_compared": 43,
+    "top_match": 43,
+    "top_match_rate": 1.0,
+    "mean_abs_prob_diff": 0.001004,
+    "n_cases": 40,
+    "note": "4-bit vs 8-bit MLX on same Mac; not vs Fastino PyTorch bf16 27B",
+    "netprojects_claim_4bit_vs_pytorch": "197/204 top match, mean abs diff 0.012 (their M5 Max numbers)",
+    "netprojects_claim_8bit_vs_pytorch": "202/204 top match, mean abs diff 0.002 (their M5 Max numbers)"
+  },
+  "pytorch_9b": {
+    "tag": "pytorch-9b-mps",
+    "model_dir": "/Users/pratik/launch-benchmarks/glide/models/GLiDE-9B",
+    "returncode": 0,
+    "stdout_tail": "torch 2.14.0 mps True\n{\"load_s\": 17.77, \"median_s\": 0.6778, \"p95_s\": 0.6782, \"decisions_per_s\": 1.4755, \"n\": 10, \"note\": \"short smoke at ~300 tok; full suite skipped if slow\"}\n",
+    "stderr_tail": "",
+    "elapsed_s": 32.9,
+    "smoke": {
+      "load_s": 17.77,
+      "median_s": 0.6778,
+      "p95_s": 0.6782,
+      "decisions_per_s": 1.4755,
+      "n": 10,
+      "note": "short smoke at ~300 tok; full suite skipped if slow"
+    }
+  },
+  "finished": "2026-11-05 12:52 "
+}

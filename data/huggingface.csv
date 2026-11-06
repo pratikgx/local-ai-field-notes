@@ -1,4 +1,5 @@
 type,repo,revision,updated,status,note
+dataset,pratikgx/glide-27b-m5-pro-mac-mini-bench,b2f8b71245ead9912f453967612a03bf34512b08,2026-11-05,public,notes/2026-11-05-glide.md
 dataset,pratikgx/ripple-65b-preview-m5-pro-mac-mini-bench,75ae151c7da63b69cb439938840a31da4c583de7,2026-11-05,public,notes/2026-11-05-ripple-65b-preview.md
 dataset,pratikgx/twil-8b-m5-pro-mac-mini-bench,f688c7ca4c8b32b5b213d71e7d3a59905d7dfec8,2026-11-05,public,notes/2026-11-04-twil-8b.md
 dataset,pratikgx/iota-decide-4b-m5-pro-mac-mini-bench,9334bcbde73bc5366ecfea77b2e74b1618b2143a,2026-11-05,public,notes/2026-11-04-iota-decide-4b.md
