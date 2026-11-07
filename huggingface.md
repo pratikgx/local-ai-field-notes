@@ -6,6 +6,7 @@ The list is generated from [data/huggingface.csv](data/huggingface.csv) by `scri
 
 | Updated | Type | Hugging Face | Note | Version |
 | --- | --- | --- | --- | --- |
+| 2026-11-07 | dataset | [pratikgx/drex-max-v1-m5-pro-mac-mini-bench](https://huggingface.co/datasets/pratikgx/drex-max-v1-m5-pro-mac-mini-bench) | [2026-11-06-drex-max-v1](notes/2026-11-06-drex-max-v1.md) | [39473ff2](https://huggingface.co/datasets/pratikgx/drex-max-v1-m5-pro-mac-mini-bench/tree/39473ff23dd0b6c9b9b465e24094cfa6a0326bc3) |
 | 2026-11-05 | dataset | [pratikgx/glide-27b-m5-pro-mac-mini-bench](https://huggingface.co/datasets/pratikgx/glide-27b-m5-pro-mac-mini-bench) | [2026-11-05-glide](notes/2026-11-05-glide.md) | [b2f8b712](https://huggingface.co/datasets/pratikgx/glide-27b-m5-pro-mac-mini-bench/tree/b2f8b71245ead9912f453967612a03bf34512b08) |
 | 2026-11-05 | dataset | [pratikgx/ripple-65b-preview-m5-pro-mac-mini-bench](https://huggingface.co/datasets/pratikgx/ripple-65b-preview-m5-pro-mac-mini-bench) | [2026-11-05-ripple-65b-preview](notes/2026-11-05-ripple-65b-preview.md) | [75ae151c](https://huggingface.co/datasets/pratikgx/ripple-65b-preview-m5-pro-mac-mini-bench/tree/75ae151c7da63b69cb439938840a31da4c583de7) |
 | 2026-11-05 | dataset | [pratikgx/twil-8b-m5-pro-mac-mini-bench](https://huggingface.co/datasets/pratikgx/twil-8b-m5-pro-mac-mini-bench) | [2026-11-04-twil-8b](notes/2026-11-04-twil-8b.md) | [f688c7ca](https://huggingface.co/datasets/pratikgx/twil-8b-m5-pro-mac-mini-bench/tree/f688c7ca4c8b32b5b213d71e7d3a59905d7dfec8) |
