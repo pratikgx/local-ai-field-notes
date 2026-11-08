@@ -1,5 +1,6 @@
 type,repo,revision,updated,status,note
 dataset,pratikgx/drex-max-v1-m5-pro-mac-mini-bench,39473ff23dd0b6c9b9b465e24094cfa6a0326bc3,2026-11-07,public,notes/2026-11-06-drex-max-v1.md
+dataset,pratikgx/arete-27b-m5-pro-mac-mini-bench,893c5e3e2040235199c4d2e7a389981addf1ad30,2026-11-07,public,notes/2026-11-07-arete-27b.md
 dataset,pratikgx/glide-27b-m5-pro-mac-mini-bench,b2f8b71245ead9912f453967612a03bf34512b08,2026-11-05,public,notes/2026-11-05-glide.md
 dataset,pratikgx/ripple-65b-preview-m5-pro-mac-mini-bench,75ae151c7da63b69cb439938840a31da4c583de7,2026-11-05,public,notes/2026-11-05-ripple-65b-preview.md
 dataset,pratikgx/twil-8b-m5-pro-mac-mini-bench,f688c7ca4c8b32b5b213d71e7d3a59905d7dfec8,2026-11-05,public,notes/2026-11-04-twil-8b.md
