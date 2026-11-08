@@ -1,0 +1,222 @@
+[
+  {
+    "configuration": "arete-mlx",
+    "ctx": 512,
+    "gen_tps": 17.745892906220675,
+    "ttft_s": 1.177818291937001,
+    "cold_prefill_trials": 3,
+    "prompt_tps": 434.70202789768337,
+    "peak_mem_gb": 16.395015266,
+    "memory_metric": "MLX allocator peak per trial",
+    "spread": 0.0008214960193873041
+  },
+  {
+    "configuration": "arete-mlx",
+    "ctx": 4096,
+    "gen_tps": 17.392459050482362,
+    "ttft_s": 8.875107584055513,
+    "cold_prefill_trials": 3,
+    "prompt_tps": 461.51553220139306,
+    "peak_mem_gb": 18.263915562,
+    "memory_metric": "MLX allocator peak per trial",
+    "spread": 0.004255727556586072
+  },
+  {
+    "configuration": "arete-mlx",
+    "ctx": 16384,
+    "gen_tps": 16.167775180560348,
+    "ttft_s": 41.58652566699311,
+    "cold_prefill_trials": 3,
+    "prompt_tps": 393.97376282875797,
+    "peak_mem_gb": 19.068943402,
+    "memory_metric": "MLX allocator peak per trial",
+    "spread": 0.023715404176989016
+  },
+  {
+    "configuration": "arete-mlx",
+    "ctx": 32768,
+    "gen_tps": 15.525881547738416,
+    "ttft_s": 82.73021874995902,
+    "cold_prefill_trials": 3,
+    "prompt_tps": 396.08259829503027,
+    "peak_mem_gb": 20.143078442,
+    "memory_metric": "MLX allocator peak per trial",
+    "spread": 0.02503078931949708
+  },
+  {
+    "configuration": "arete-mlx",
+    "ctx": 65536,
+    "gen_tps": 13.696640727775323,
+    "ttft_s": 194.28934625000693,
+    "cold_prefill_trials": 3,
+    "prompt_tps": 337.31134138291776,
+    "peak_mem_gb": 22.399695902,
+    "memory_metric": "MLX allocator peak per trial",
+    "spread": 0.038504905780375034
+  },
+  {
+    "configuration": "qwen-mlx",
+    "ctx": 512,
+    "gen_tps": 17.06063829450433,
+    "ttft_s": 1.5949214999563992,
+    "cold_prefill_trials": 3,
+    "prompt_tps": 321.01893416948525,
+    "peak_mem_gb": 16.39503165,
+    "memory_metric": "MLX allocator peak per trial",
+    "spread": 0.0425054991656937
+  },
+  {
+    "configuration": "qwen-mlx",
+    "ctx": 4096,
+    "gen_tps": 17.189228046741157,
+    "ttft_s": 8.970984959043562,
+    "cold_prefill_trials": 3,
+    "prompt_tps": 456.58308632775737,
+    "peak_mem_gb": 18.263260202,
+    "memory_metric": "MLX allocator peak per trial",
+    "spread": 0.013442990617149724
+  },
+  {
+    "configuration": "qwen-mlx",
+    "ctx": 16384,
+    "gen_tps": 16.294772997768394,
+    "ttft_s": 39.23171800002456,
+    "cold_prefill_trials": 3,
+    "prompt_tps": 417.62127266488164,
+    "peak_mem_gb": 19.068681258,
+    "memory_metric": "MLX allocator peak per trial",
+    "spread": 0.018019303262640073
+  },
+  {
+    "configuration": "qwen-mlx",
+    "ctx": 32768,
+    "gen_tps": 15.317450788761095,
+    "ttft_s": 84.17567037499975,
+    "cold_prefill_trials": 3,
+    "prompt_tps": 389.28112902480814,
+    "peak_mem_gb": 20.142963754,
+    "memory_metric": "MLX allocator peak per trial",
+    "spread": 0.1288965852372383
+  },
+  {
+    "configuration": "qwen-mlx",
+    "ctx": 65536,
+    "gen_tps": 12.271795239325595,
+    "ttft_s": 187.95616020797752,
+    "cold_prefill_trials": 3,
+    "prompt_tps": 348.6770528163749,
+    "peak_mem_gb": 22.399368222,
+    "memory_metric": "MLX allocator peak per trial",
+    "spread": 0.23411092572960782
+  },
+  {
+    "configuration": "arete-tf",
+    "ctx": 512,
+    "gen_tps": 17.22282411388328,
+    "ttft_s": 1.1553337919758633,
+    "cold_prefill_trials": 3,
+    "prompt_tps": 443.1619706408592,
+    "peak_mem_gb": 32.888123104,
+    "memory_metric": "TensorFold physical-footprint-backed device peak, since start/health reset",
+    "spread": 0.12333547911383061
+  },
+  {
+    "configuration": "arete-tf",
+    "ctx": 4096,
+    "gen_tps": 16.642710002343293,
+    "ttft_s": 9.531495583010837,
+    "cold_prefill_trials": 3,
+    "prompt_tps": 429.7331897525932,
+    "peak_mem_gb": 32.888581856,
+    "memory_metric": "TensorFold physical-footprint-backed device peak, since start/health reset",
+    "spread": 0.015006550449751493
+  },
+  {
+    "configuration": "arete-tf",
+    "ctx": 16384,
+    "gen_tps": 15.946760998695504,
+    "ttft_s": 43.3959665420698,
+    "cold_prefill_trials": 1,
+    "prompt_tps": 377.54660871804043,
+    "peak_mem_gb": 32.88882764,
+    "memory_metric": "TensorFold physical-footprint-backed device peak, since start/health reset",
+    "spread": 0.0449288326090114
+  },
+  {
+    "configuration": "arete-tf",
+    "ctx": 32768,
+    "gen_tps": 14.924016636945028,
+    "ttft_s": 91.29242045793217,
+    "cold_prefill_trials": 1,
+    "prompt_tps": 358.93450776781185,
+    "peak_mem_gb": 32.88928644,
+    "memory_metric": "TensorFold physical-footprint-backed device peak, since start/health reset",
+    "spread": 0.010308025900806903
+  },
+  {
+    "configuration": "arete-tf",
+    "ctx": 65536,
+    "gen_tps": 13.055309203747267,
+    "ttft_s": 219.0781247910345,
+    "cold_prefill_trials": 1,
+    "prompt_tps": 299.1444265031521,
+    "peak_mem_gb": 32.890122024,
+    "memory_metric": "TensorFold physical-footprint-backed device peak, since start/health reset",
+    "spread": 0.009266012484536538
+  },
+  {
+    "configuration": "qwen-tf",
+    "ctx": 512,
+    "gen_tps": 16.8325006746273,
+    "ttft_s": 1.152712499955669,
+    "cold_prefill_trials": 3,
+    "prompt_tps": 444.1697301102317,
+    "peak_mem_gb": 32.887779088,
+    "memory_metric": "TensorFold physical-footprint-backed device peak, since start/health reset",
+    "spread": 0.12222046730796796
+  },
+  {
+    "configuration": "qwen-tf",
+    "ctx": 4096,
+    "gen_tps": 16.0902342863347,
+    "ttft_s": 9.791169458068907,
+    "cold_prefill_trials": 3,
+    "prompt_tps": 418.3361362032688,
+    "peak_mem_gb": 32.88815592,
+    "memory_metric": "TensorFold physical-footprint-backed device peak, since start/health reset",
+    "spread": 0.07523929920180855
+  },
+  {
+    "configuration": "qwen-tf",
+    "ctx": 16384,
+    "gen_tps": 15.28756963896386,
+    "ttft_s": 42.871681833057664,
+    "cold_prefill_trials": 3,
+    "prompt_tps": 382.1636870650258,
+    "peak_mem_gb": 32.888401704,
+    "memory_metric": "TensorFold physical-footprint-backed device peak, since start/health reset",
+    "spread": 0.01153495636864317
+  },
+  {
+    "configuration": "qwen-tf",
+    "ctx": 32768,
+    "gen_tps": 14.561165688003413,
+    "ttft_s": 93.59385629103053,
+    "cold_prefill_trials": 3,
+    "prompt_tps": 350.10845047465244,
+    "peak_mem_gb": 32.888860504,
+    "memory_metric": "TensorFold physical-footprint-backed device peak, since start/health reset",
+    "spread": 0.023192300986380462
+  },
+  {
+    "configuration": "qwen-tf",
+    "ctx": 65536,
+    "gen_tps": 12.709414629122382,
+    "ttft_s": 226.82464620901737,
+    "cold_prefill_trials": 3,
+    "prompt_tps": 288.9280380034585,
+    "peak_mem_gb": 32.889728904,
+    "memory_metric": "TensorFold physical-footprint-backed device peak, since start/health reset",
+    "spread": 0.021150551618623364
+  }
+]
