@@ -6,6 +6,7 @@ The list is generated from [data/huggingface.csv](data/huggingface.csv) by `scri
 
 | Updated | Type | Hugging Face | Note | Version |
 | --- | --- | --- | --- | --- |
+| 2026-11-09 | dataset | [pratikgx/zonos3-mini-m5-pro-mac-mini-bench](https://huggingface.co/datasets/pratikgx/zonos3-mini-m5-pro-mac-mini-bench) | [2026-11-09-zonos3-mini](notes/2026-11-09-zonos3-mini.md) | [19af83d3](https://huggingface.co/datasets/pratikgx/zonos3-mini-m5-pro-mac-mini-bench/tree/19af83d316d5e3bdef470c389b77c0010af741da) |
 | 2026-11-07 | dataset | [pratikgx/drex-max-v1-m5-pro-mac-mini-bench](https://huggingface.co/datasets/pratikgx/drex-max-v1-m5-pro-mac-mini-bench) | [2026-11-06-drex-max-v1](notes/2026-11-06-drex-max-v1.md) | [39473ff2](https://huggingface.co/datasets/pratikgx/drex-max-v1-m5-pro-mac-mini-bench/tree/39473ff23dd0b6c9b9b465e24094cfa6a0326bc3) |
 | 2026-11-07 | dataset | [pratikgx/arete-27b-m5-pro-mac-mini-bench](https://huggingface.co/datasets/pratikgx/arete-27b-m5-pro-mac-mini-bench) | [2026-11-07-arete-27b](notes/2026-11-07-arete-27b.md) | [893c5e3e](https://huggingface.co/datasets/pratikgx/arete-27b-m5-pro-mac-mini-bench/tree/893c5e3e2040235199c4d2e7a389981addf1ad30) |
 | 2026-11-05 | dataset | [pratikgx/glide-27b-m5-pro-mac-mini-bench](https://huggingface.co/datasets/pratikgx/glide-27b-m5-pro-mac-mini-bench) | [2026-11-05-glide](notes/2026-11-05-glide.md) | [b2f8b712](https://huggingface.co/datasets/pratikgx/glide-27b-m5-pro-mac-mini-bench/tree/b2f8b71245ead9912f453967612a03bf34512b08) |
