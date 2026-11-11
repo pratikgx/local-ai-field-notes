@@ -1,0 +1,176 @@
+{
+  "model": "TensorFold/Qwen3.8-27B-MLX-4bit",
+  "model_revision": "22d8d538154e0e5b6f8dcb1fcc74a60a0798104c",
+  "drafter": "z-lab/Qwen3.8-27B-DFlash2",
+  "date": "2026-11-11",
+  "machine": "64GB M5 Pro Mac mini",
+  "macos": "27.0.1 (26A434)",
+  "background": "A background inference app was paused for this run at the owner's request.",
+  "tensorfold_versions": {
+    "1.2.4": "Homebrew keg, kept and selected by path",
+    "1.2.6": "official macOS arm64 tarball, side folder, sha256 4b50317bfdc00cd34a2c43d02f06eefbdd537b847747bcfa0f6cef6d19386751, never installed",
+    "1.2.7": "Homebrew, upgraded 12:21 PM PT November 11, 2026"
+  },
+  "headline_longchat_drop_long": {
+    "protocol": "thinking on, reasoning-effort low, prompt-cache-gib 5, context 65536, no drafts, fresh server, 34,000-token first prompt, follow-ups 20 s apart, client drops earlier reasoning, turn-1 reply 529 tokens",
+    "n_runs_per_arm": 1,
+    "1.2.6_turn3": {
+      "prompt_tokens": 34354,
+      "cached_tokens": 10240,
+      "ttft_s": 76.78,
+      "tf_prefill_s": 73.71,
+      "reply_tokens": 85
+    },
+    "1.2.7_turn3": {
+      "prompt_tokens": 34354,
+      "cached_tokens": 34304,
+      "ttft_s": 0.36,
+      "tf_prefill_s": 0.36,
+      "reply_tokens": 85
+    },
+    "1.2.7_followup_resumed_tokens": [
+      33995,
+      34304,
+      34349
+    ],
+    "1.2.7_followup_ttft_s": [
+      1.19,
+      0.36,
+      0.34
+    ],
+    "replies_byte_identical_1.2.6_vs_1.2.7": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "peak_gib_1.2.6": 35.31,
+    "peak_gib_1.2.7": 35.45
+  },
+  "headline_longchat_keep_long_followups": {
+    "1.2.6_ttft_s": [
+      0.27,
+      4.04,
+      1.35
+    ],
+    "1.2.6_median_ttft_s": 1.35,
+    "1.2.7_ttft_s": [
+      0.27,
+      0.27,
+      0.26
+    ],
+    "1.2.7_median_ttft_s": 0.27,
+    "replies_byte_identical_1.2.6_vs_1.2.7": [
+      true,
+      true,
+      true,
+      true
+    ]
+  },
+  "community_v2": {
+    "method": "tensorfold benchmark, 5 reps after warmup, 256 tokens, thinking off, stream delivery tok/s median [min-max]",
+    "cells": {
+      "chat_T0": {
+        "plain_1.2.4": {
+          "med": 17.06,
+          "lo": 16.94,
+          "hi": 17.13
+        },
+        "plain_1.2.7": {
+          "med": 17.39,
+          "lo": 17.35,
+          "hi": 17.4
+        },
+        "dflash2_1.2.4": {
+          "med": 56.22,
+          "lo": 56.17,
+          "hi": 56.35
+        },
+        "dflash2_1.2.7": {
+          "med": 57.9,
+          "lo": 33.62,
+          "hi": 58.06
+        },
+        "speedup_1.2.7": 3.33,
+        "greedy_sha": "a06fab348fbe"
+      },
+      "code_T0": {
+        "plain_1.2.4": {
+          "med": 17.01,
+          "lo": 16.93,
+          "hi": 17.11
+        },
+        "plain_1.2.7": {
+          "med": 17.39,
+          "lo": 17.35,
+          "hi": 17.4
+        },
+        "dflash2_1.2.4": {
+          "med": 80.76,
+          "lo": 80.18,
+          "hi": 82.24
+        },
+        "dflash2_1.2.7": {
+          "med": 82.43,
+          "lo": 82.43,
+          "hi": 82.53
+        },
+        "speedup_1.2.7": 4.74,
+        "greedy_sha": "a10c9b848ed9"
+      },
+      "chat_T1": {
+        "plain_1.2.4": {
+          "med": 17.17,
+          "lo": 16.93,
+          "hi": 17.37
+        },
+        "plain_1.2.7": {
+          "med": 17.49,
+          "lo": 17.44,
+          "hi": 17.5
+        },
+        "dflash2_1.2.4": {
+          "med": 47.51,
+          "lo": 42.66,
+          "hi": 62.45
+        },
+        "dflash2_1.2.7": {
+          "med": 51.41,
+          "lo": 44.96,
+          "hi": 65.74
+        },
+        "speedup_1.2.7": 2.94
+      },
+      "code_T1": {
+        "plain_1.2.4": {
+          "med": 17.33,
+          "lo": 16.86,
+          "hi": 17.35
+        },
+        "plain_1.2.7": {
+          "med": 17.38,
+          "lo": 17.33,
+          "hi": 17.47
+        },
+        "dflash2_1.2.4": {
+          "med": 93.79,
+          "lo": 73.57,
+          "hi": 102.43
+        },
+        "dflash2_1.2.7": {
+          "med": 98.9,
+          "lo": 77.58,
+          "hi": 108.19
+        },
+        "speedup_1.2.7": 5.69
+      }
+    },
+    "dflash2_1.2.7_chat_T0_outlier_tok_s": 33.62,
+    "dflash2_1.2.7_chat_T0_other_reps_tok_s": [
+      57.61,
+      57.9,
+      58.05,
+      58.06
+    ]
+  }
+}
