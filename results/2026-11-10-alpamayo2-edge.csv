@@ -1,0 +1,6 @@
+config,median_s,min_s,max_s,peak_gib,notes
+traj_1cand_right,6.17,6.11,6.19,17.3,"headline, isolated peak, MPS FP32 SDPA, synthetic"
+traj_6cand_right_capped,12.69,12.68,12.77,21.0,MPS cache cap 0.5/0.3
+traj_6cand_right_uncapped,15.92,13.46,19.42,73.6,swapping; peak 73.6 to 75.3 GiB
+vqa_q1,10.52,10.3,10.55,23.0,capped-run peak
+cpu_fp32_traj_1cand_right,20.6,20.44,21.7,,reference; memory 13.9 to 17.8 GiB

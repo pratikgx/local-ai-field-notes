@@ -1,0 +1,49 @@
+{
+  "model": "nvidia/Alpamayo2-Edge",
+  "date": "2026-11-10",
+  "machine": "64GB M5 Pro Mac mini",
+  "input": "synthetic spec-matching 6-camera scene; official PhysicalAI-AV clips not included",
+  "headline": [
+    {
+      "config": "traj_1cand_right",
+      "median_s": 6.17,
+      "min_s": 6.11,
+      "max_s": 6.19,
+      "peak_gib": 17.3,
+      "notes": "headline, isolated peak, MPS FP32 SDPA, synthetic"
+    },
+    {
+      "config": "traj_6cand_right_capped",
+      "median_s": 12.69,
+      "min_s": 12.68,
+      "max_s": 12.77,
+      "peak_gib": 21.0,
+      "notes": "MPS cache cap 0.5/0.3"
+    },
+    {
+      "config": "traj_6cand_right_uncapped",
+      "median_s": 15.92,
+      "min_s": 13.46,
+      "max_s": 19.42,
+      "peak_gib": 73.6,
+      "notes": "swapping; peak 73.6 to 75.3 GiB"
+    },
+    {
+      "config": "vqa_q1",
+      "median_s": 10.52,
+      "min_s": 10.3,
+      "max_s": 10.55,
+      "peak_gib": 23.0,
+      "notes": "capped-run peak"
+    },
+    {
+      "config": "cpu_fp32_traj_1cand_right",
+      "median_s": 20.6,
+      "min_s": 20.44,
+      "max_s": 21.7,
+      "peak_gib": null,
+      "notes": "reference; memory 13.9 to 17.8 GiB"
+    }
+  ],
+  "background": "A background inference app was running and was not paused."
+}

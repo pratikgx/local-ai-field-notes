@@ -6,6 +6,7 @@ The list is generated from [data/huggingface.csv](data/huggingface.csv) by `scri
 
 | Updated | Type | Hugging Face | Note | Version |
 | --- | --- | --- | --- | --- |
+| 2026-11-11 | dataset | [pratikgx/alpamayo2-edge-m5-pro-mac-mini-bench](https://huggingface.co/datasets/pratikgx/alpamayo2-edge-m5-pro-mac-mini-bench) | [2026-11-10-alpamayo2-edge](notes/2026-11-10-alpamayo2-edge.md) | [627ad5e1](https://huggingface.co/datasets/pratikgx/alpamayo2-edge-m5-pro-mac-mini-bench/tree/627ad5e19fd9b1d3ff8fa075337e5e28ca553942) |
 | 2026-11-10 | dataset | [pratikgx/minimax-h3-image-m5-pro-mac-mini-bench](https://huggingface.co/datasets/pratikgx/minimax-h3-image-m5-pro-mac-mini-bench) | [2026-11-10-minimax-h3-image](notes/2026-11-10-minimax-h3-image.md) | [ccf4a00e](https://huggingface.co/datasets/pratikgx/minimax-h3-image-m5-pro-mac-mini-bench/tree/ccf4a00ea925953c33e6157f6d0ce35eaf938fd8) |
 | 2026-11-09 | dataset | [pratikgx/zonos3-mini-m5-pro-mac-mini-bench](https://huggingface.co/datasets/pratikgx/zonos3-mini-m5-pro-mac-mini-bench) | [2026-11-09-zonos3-mini](notes/2026-11-09-zonos3-mini.md) | [19af83d3](https://huggingface.co/datasets/pratikgx/zonos3-mini-m5-pro-mac-mini-bench/tree/19af83d316d5e3bdef470c389b77c0010af741da) |
 | 2026-11-07 | dataset | [pratikgx/drex-max-v1-m5-pro-mac-mini-bench](https://huggingface.co/datasets/pratikgx/drex-max-v1-m5-pro-mac-mini-bench) | [2026-11-06-drex-max-v1](notes/2026-11-06-drex-max-v1.md) | [39473ff2](https://huggingface.co/datasets/pratikgx/drex-max-v1-m5-pro-mac-mini-bench/tree/39473ff23dd0b6c9b9b465e24094cfa6a0326bc3) |
