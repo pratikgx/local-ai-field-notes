@@ -1,0 +1,3 @@
+run,width,height,frames,fps,duration_s,seed,prompt,text_encoder_ms,decoder_ms,generation_s,wall_s,ms_per_output_frame,mlx_peak_gb,rss_peak_gb,video,codec,size_bytes
+clip,832,480,81,16,5.0625,0,A corgi surfing a wave at sunset,871.4,1115.8,30.43,35.91,375.7,22.927,30.374,clip.mp4,h264,693212
+smoke,8,8,5,,0.3125,0,,,429.2,2.828,2.98,565.6,0.001,0.063,smoke.mp4,h264,1768

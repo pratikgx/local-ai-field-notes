@@ -1,4 +1,5 @@
 type,repo,revision,updated,status,note
+dataset,pratikgx/fastframes-s-m5-pro-mac-mini-bench,c5627a4222db67a7dfbb2fb0dda4f7a1bacdd478,2026-11-18,public,notes/2026-11-18-apple-fastframes-s-mlx.md
 dataset,pratikgx/qwen3.8-27b-pi-adapted-m5-pro-mac-mini-bench,f06d796979ac425e6bcf617b682bb97361c54882,2026-11-18,public,notes/2026-11-18-qwen3.8-27b-pi-adapted.md
 dataset,pratikgx/qwen3.8-27b-tensorfold-1.2.7-m5-pro-mac-mini-bench,8db4b40e878276d5855ce11813a1e4eadc4f617a,2026-11-11,public,notes/2026-11-11-qwen3.8-27b-tensorfold-1.2.7.md
 dataset,pratikgx/alpamayo2-edge-m5-pro-mac-mini-bench,627ad5e19fd9b1d3ff8fa075337e5e28ca553942,2026-11-11,public,notes/2026-11-10-alpamayo2-edge.md
