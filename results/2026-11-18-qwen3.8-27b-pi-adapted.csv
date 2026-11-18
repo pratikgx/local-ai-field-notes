@@ -1,0 +1,21 @@
+kind,config,context,prompt_tps,gen_tps,ttft_s,peak_mem_gb,method,source_run
+speed,Base Q8_0,512,356.27801608502983,9.96612455639021,1.4188154170115013,33.0,"llama-server stream, median of 3",2026-11-17
+speed,Base Q8_0,4096,379.5824945659769,9.816293646224935,10.766413375007687,33.0,"llama-server stream, median of 3",2026-11-17
+speed,Base Q8_0,16384,346.6317196828296,9.520873787712741,47.22867900002166,33.0,"llama-server stream, median of 3",2026-11-17
+speed,Base Q8_0,32768,312.11057076045756,9.030844157626408,105.02971945900936,33.0,"llama-server stream, median of 3",2026-11-17
+speed,Base Q8_0 + pi LoRA at runtime,512,210.165214140351,9.596240621932731,2.4113732500118203,33.0,"llama-server stream, median of 3",2026-11-17
+speed,Base Q8_0 + pi LoRA at runtime,4096,216.63911434323825,9.42368615799087,18.895731458003866,33.0,"llama-server stream, median of 3",2026-11-17
+speed,Base Q8_0 + pi LoRA at runtime,16384,205.4522348159111,8.916433714637336,79.71077470900491,33.0,"llama-server stream, median of 3",2026-11-17
+speed,Base Q8_0 + pi LoRA at runtime,32768,193.23610027831086,8.524013851823355,169.70525425000233,33.0,"llama-server stream, median of 3",2026-11-17
+speed,pi merged into Q8_0,512,333.75884261475454,10.057572304774734,1.5056382500042673,37.252235264,"llama-server stream, median of 3",overnight
+speed,pi merged into Q8_0,4096,387.7039479366273,9.967173212741221,10.540863583999453,37.252235264,"llama-server stream, median of 3",overnight
+speed,pi merged into Q8_0,16384,353.43826039787353,9.57646487991113,46.32207824999932,37.252235264,"llama-server stream, median of 3",overnight
+speed,pi merged into Q8_0,32768,310.1466256014928,8.909948201754071,105.61261974999798,37.252235264,"llama-server stream, median of 3",overnight
+speed,Base Q8_0,512,406.351604,9.960411,1.2599925654532422,35.686694912,"llama-bench pp / tg-at-depth, 3 reps (avg_ts)",overnight
+speed,Base Q8_0,4096,371.491083,9.873642,11.025836655142541,35.686694912,"llama-bench pp / tg-at-depth, 3 reps (avg_ts)",overnight
+speed,Base Q8_0,16384,339.324503,9.466877,48.28416414124977,35.686694912,"llama-bench pp / tg-at-depth, 3 reps (avg_ts)",overnight
+speed,Base Q8_0,32768,307.769885,8.942907,106.46915633087363,35.686694912,"llama-bench pp / tg-at-depth, 3 reps (avg_ts)",overnight
+speed,pi merged into Q8_0,512,402.737445,9.979118,1.271299717363008,35.6859904,"llama-bench pp / tg-at-depth, 3 reps (avg_ts)",overnight
+speed,pi merged into Q8_0,4096,367.618255,9.787639,11.141992935035287,35.6859904,"llama-bench pp / tg-at-depth, 3 reps (avg_ts)",overnight
+speed,pi merged into Q8_0,16384,341.147315,9.482616,48.02617309182105,35.6859904,"llama-bench pp / tg-at-depth, 3 reps (avg_ts)",overnight
+speed,pi merged into Q8_0,32768,305.912717,8.866703,107.11552079739137,35.6859904,"llama-bench pp / tg-at-depth, 3 reps (avg_ts)",overnight

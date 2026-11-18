@@ -1,0 +1,318 @@
+{
+  "model_base": "Qwen/Qwen3.8-27B",
+  "base_gguf": "ggml-org/Qwen3.8-27B-GGUF (Qwen3.8-27B-Q8_0.gguf)",
+  "adapter": "harness-hub/Qwen3.8-27B-pi-adapted",
+  "adapter_gguf": "harness-hub/Qwen3.8-27B-pi-adapted-GGUF (Qwen3.8-27B-pi-lora-F16.gguf)",
+  "merged_file": "Qwen3.8-27B-pi-merged-Q8_0.gguf",
+  "merged_bytes": 28595763840,
+  "date": "2026-11-18",
+  "machine": "64GB M5 Pro Mac mini",
+  "macos": "27.0.1 (26A434)",
+  "runtime": "llama.cpp b11940 (eb7818c), Metal",
+  "background": "A background inference app was paused for this run at the owner's request.",
+  "speed_method": "llama-server stream, thinking off, temp 0, median of 3. Base and runtime-LoRA rows from 2026-11-17; merged rows from 2026-11-18.",
+  "speed_server_stream": {
+    "base": {
+      "512": {
+        "prompt_tps": 356.27801608502983,
+        "gen_tps": 9.96612455639021,
+        "ttft_s": 1.4188154170115013,
+        "peak_mem_gb": 33.0
+      },
+      "4096": {
+        "prompt_tps": 379.5824945659769,
+        "gen_tps": 9.816293646224935,
+        "ttft_s": 10.766413375007687,
+        "peak_mem_gb": 33.0
+      },
+      "16384": {
+        "prompt_tps": 346.6317196828296,
+        "gen_tps": 9.520873787712741,
+        "ttft_s": 47.22867900002166,
+        "peak_mem_gb": 33.0
+      },
+      "32768": {
+        "prompt_tps": 312.11057076045756,
+        "gen_tps": 9.030844157626408,
+        "ttft_s": 105.02971945900936,
+        "peak_mem_gb": 33.0
+      }
+    },
+    "runtime": {
+      "512": {
+        "prompt_tps": 210.165214140351,
+        "gen_tps": 9.596240621932731,
+        "ttft_s": 2.4113732500118203,
+        "peak_mem_gb": 33.0
+      },
+      "4096": {
+        "prompt_tps": 216.63911434323825,
+        "gen_tps": 9.42368615799087,
+        "ttft_s": 18.895731458003866,
+        "peak_mem_gb": 33.0
+      },
+      "16384": {
+        "prompt_tps": 205.4522348159111,
+        "gen_tps": 8.916433714637336,
+        "ttft_s": 79.71077470900491,
+        "peak_mem_gb": 33.0
+      },
+      "32768": {
+        "prompt_tps": 193.23610027831086,
+        "gen_tps": 8.524013851823355,
+        "ttft_s": 169.70525425000233,
+        "peak_mem_gb": 33.0
+      }
+    },
+    "merged": {
+      "512": {
+        "prompt_tps": 333.75884261475454,
+        "gen_tps": 10.057572304774734,
+        "ttft_s": 1.5056382500042673,
+        "peak_mem_gb": 37.252235264
+      },
+      "4096": {
+        "prompt_tps": 387.7039479366273,
+        "gen_tps": 9.967173212741221,
+        "ttft_s": 10.540863583999453,
+        "peak_mem_gb": 37.252235264
+      },
+      "16384": {
+        "prompt_tps": 353.43826039787353,
+        "gen_tps": 9.57646487991113,
+        "ttft_s": 46.32207824999932,
+        "peak_mem_gb": 37.252235264
+      },
+      "32768": {
+        "prompt_tps": 310.1466256014928,
+        "gen_tps": 8.909948201754071,
+        "ttft_s": 105.61261974999798,
+        "peak_mem_gb": 37.252235264
+      }
+    }
+  },
+  "speed_llamabench": {
+    "base": {
+      "512": {
+        "prompt_tps": 406.351604,
+        "gen_tps": 9.960411,
+        "ttft_s": 1.2599925654532422,
+        "peak_mem_gb": 35.686694912
+      },
+      "4096": {
+        "prompt_tps": 371.491083,
+        "gen_tps": 9.873642,
+        "ttft_s": 11.025836655142541,
+        "peak_mem_gb": 35.686694912
+      },
+      "16384": {
+        "prompt_tps": 339.324503,
+        "gen_tps": 9.466877,
+        "ttft_s": 48.28416414124977,
+        "peak_mem_gb": 35.686694912
+      },
+      "32768": {
+        "prompt_tps": 307.769885,
+        "gen_tps": 8.942907,
+        "ttft_s": 106.46915633087363,
+        "peak_mem_gb": 35.686694912
+      }
+    },
+    "merged": {
+      "512": {
+        "prompt_tps": 402.737445,
+        "gen_tps": 9.979118,
+        "ttft_s": 1.271299717363008,
+        "peak_mem_gb": 35.6859904
+      },
+      "4096": {
+        "prompt_tps": 367.618255,
+        "gen_tps": 9.787639,
+        "ttft_s": 11.141992935035287,
+        "peak_mem_gb": 35.6859904
+      },
+      "16384": {
+        "prompt_tps": 341.147315,
+        "gen_tps": 9.482616,
+        "ttft_s": 48.02617309182105,
+        "peak_mem_gb": 35.6859904
+      },
+      "32768": {
+        "prompt_tps": 305.912717,
+        "gen_tps": 8.866703,
+        "ttft_s": 107.11552079739137,
+        "peak_mem_gb": 35.6859904
+      }
+    }
+  },
+  "merged_peak_mem_gb": 37.3,
+  "sanity_ok": true,
+  "agent": {
+    "base": {
+      "runs": 24,
+      "passes": 22,
+      "pass_rate": 0.9166666666666666,
+      "tool_calls_mean": 11.791666666666666,
+      "tool_calls_median": 10.5,
+      "tool_errors_mean": 0.625,
+      "turns_mean": 10.5,
+      "wall_s_mean": 334.4166666666667,
+      "wall_s_median": 290.70000000000005,
+      "gen_tokens_mean": 2966.5416666666665,
+      "prompt_tokens_mean": 47313.125,
+      "timeouts": 5,
+      "tool_calls_passing_mean": 10.590909090909092
+    },
+    "pi": {
+      "runs": 24,
+      "passes": 22,
+      "pass_rate": 0.9166666666666666,
+      "tool_calls_mean": 11.083333333333334,
+      "tool_calls_median": 11.0,
+      "tool_errors_mean": 1.375,
+      "turns_mean": 9.875,
+      "wall_s_mean": 313.37916666666666,
+      "wall_s_median": 272.9,
+      "gen_tokens_mean": 2831.0416666666665,
+      "prompt_tokens_mean": 44703.125,
+      "timeouts": 3,
+      "tool_calls_passing_mean": 10.818181818181818
+    }
+  },
+  "agent_settings": {
+    "harness": "pi coding agent 0.73.1 (@mariozechner/pi-coding-agent), json print mode, tools read/bash/edit/write",
+    "temperature": 0.8,
+    "thinking": "off",
+    "server": "llama-server b11940 -c 65536 -np 1, prompt cache on",
+    "per_task_cap_s": 600,
+    "sandbox": "macOS sandbox-exec, writes limited to task dir"
+  },
+  "agent_per_task": {
+    "t01_stats": {
+      "base": [
+        true,
+        true
+      ],
+      "pi": [
+        true,
+        true
+      ]
+    },
+    "t02_lru": {
+      "base": [
+        true,
+        true
+      ],
+      "pi": [
+        true,
+        true
+      ]
+    },
+    "t03_shop": {
+      "base": [
+        true,
+        true
+      ],
+      "pi": [
+        true,
+        false
+      ]
+    },
+    "t04_duration": {
+      "base": [
+        true,
+        false
+      ],
+      "pi": [
+        true,
+        false
+      ]
+    },
+    "t05_logsummary": {
+      "base": [
+        true,
+        true
+      ],
+      "pi": [
+        true,
+        true
+      ]
+    },
+    "t06_intervals": {
+      "base": [
+        true,
+        true
+      ],
+      "pi": [
+        true,
+        true
+      ]
+    },
+    "t07_graph": {
+      "base": [
+        true,
+        true
+      ],
+      "pi": [
+        true,
+        true
+      ]
+    },
+    "t08_merge": {
+      "base": [
+        true,
+        true
+      ],
+      "pi": [
+        true,
+        true
+      ]
+    },
+    "t09_roman": {
+      "base": [
+        true,
+        true
+      ],
+      "pi": [
+        true,
+        true
+      ]
+    },
+    "t10_justify": {
+      "base": [
+        true,
+        false
+      ],
+      "pi": [
+        true,
+        true
+      ]
+    },
+    "t11_inventory": {
+      "base": [
+        true,
+        true
+      ],
+      "pi": [
+        true,
+        true
+      ]
+    },
+    "t12_calc": {
+      "base": [
+        true,
+        true
+      ],
+      "pi": [
+        true,
+        true
+      ]
+    }
+  },
+  "grader_correction": "Original t12_calc grader rejected re.compile; corrected grades used above. Original: base 22/24, pi 20/24.",
+  "caveats": [
+    "Small saturated Python suite, not Terminal-Bench or SWE-bench Pro; does not confirm the lab's 55-62% fewer-tool-calls claim.",
+    "Merged model is re-quantized, close to but not bit-identical with runtime LoRA.",
+    "Only 2 of 3 planned agent samples were counted."
+  ]
+}
