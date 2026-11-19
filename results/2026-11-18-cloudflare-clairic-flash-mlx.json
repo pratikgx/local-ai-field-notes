@@ -1,0 +1,117 @@
+{
+  "model": "Cloudflare/clairic-flash",
+  "also_released": "Cloudflare/clairic",
+  "also_released_note": "27.8B, not run",
+  "license": "Apache-2.0",
+  "blog": "https://blog.cloudflare.com/open-clairic/",
+  "date": "2026-11-18",
+  "machine": "64GB M5 Pro Mac mini",
+  "macos": "27.0.1",
+  "gpu_cores": 20,
+  "background": "A background inference app was paused for these runs at the owner's request.",
+  "pytorch": {
+    "runtime": "official PyTorch path, load_release_model + systemone, MPS, BF16",
+    "python": "3.12.15",
+    "torch": "2.13.0",
+    "transformers": "5.10.2",
+    "xgrammar": "0.2.1",
+    "load_s": 7.0,
+    "peak_gb": 28.8,
+    "speed": {
+      "512": {
+        "prompt_tok_s": 796,
+        "gen_tok_s": 12.7,
+        "ttft_s": 0.64
+      },
+      "4K": {
+        "prompt_tok_s": 791,
+        "gen_tok_s": 11.9,
+        "ttft_s": 5.18
+      },
+      "16K": {
+        "prompt_tok_s": 637,
+        "gen_tok_s": 10.3,
+        "ttft_s": 25.7
+      }
+    },
+    "extraction": {
+      "total": "34/34",
+      "receipt_image": "9/9",
+      "invoice_pdf": "12/12",
+      "form_image": "13/13",
+      "note": "Synthetic documents with known ground truth. Not Cloudflare's 576-field eval."
+    },
+    "pass": 2
+  },
+  "mlx": {
+    "runtime": "pratikgx/Clairic-Flash-MLX",
+    "commit": "5e7db582b1d442b4bcbe582fd8bb701c9773ed1d",
+    "tarball_sha256": "490f17dc8e3d19c6fe3308ebd268eeeebf344f7c6caccc287919736da915760c",
+    "mlx": "0.32.4",
+    "pytest_metal": "19/19",
+    "pass": 3,
+    "bf16": {
+      "load_s": 3.1,
+      "metal_peak_gb": 17.8,
+      "speed": {
+        "512": {
+          "prompt_tok_s": 1295,
+          "gen_tok_s": 15.2,
+          "ttft_s": 0.4
+        },
+        "4K": {
+          "prompt_tok_s": 1182,
+          "gen_tok_s": 15.3,
+          "ttft_s": 3.47
+        },
+        "16K": {
+          "prompt_tok_s": 996,
+          "gen_tok_s": 14.5,
+          "ttft_s": 16.4
+        }
+      }
+    },
+    "int4": {
+      "load_s": 3.2,
+      "metal_peak_gb_at_load": 7.18,
+      "metal_peak_gb_after_16k": 29.0,
+      "convert_backbone_gb": 6.5,
+      "convert_load_s": 1.1,
+      "convert_metal_peak_gb": 6.3,
+      "speed": {
+        "512": {
+          "prompt_tok_s": 1232,
+          "gen_tok_s": 40.5,
+          "ttft_s": 0.42
+        },
+        "4K": {
+          "prompt_tok_s": 1090,
+          "gen_tok_s": 38.3,
+          "ttft_s": 3.76
+        },
+        "16K": {
+          "prompt_tok_s": 1131,
+          "gen_tok_s": 36.0,
+          "ttft_s": 14.5
+        }
+      },
+      "text_extraction": "33/34",
+      "text_extraction_detail": "receipt 8/9 truncated item name, invoice 12/12, form 13/13"
+    },
+    "image_pdf_extraction": {
+      "status": "fails",
+      "bf16": "1/34",
+      "int4": "0/34",
+      "note": "Vision tower not yet numerically matched to real weights. Use official PyTorch path for images and PDFs."
+    }
+  },
+  "lab_claims_not_reproduced": {
+    "fresh_text": "328/336",
+    "mixed_input": "213/226",
+    "synthetic_receipt_fields": "576/576"
+  },
+  "huggingface_model": "pratikgx/Clairic-Flash-MLX",
+  "huggingface_model_revision": "b729e44bfb0143e66c5a1ec6a21cd48b5c34a2ee",
+  "huggingface_dataset": "pratikgx/clairic-flash-m5-pro-mac-mini-bench",
+  "huggingface_dataset_revision": "2f018426c39e4a853e66906c2dc7688cf5e0e690"
+}
