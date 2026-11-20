@@ -1,0 +1,116 @@
+{
+  "title": "Apple Depth Pro 2 on a 64GB M5 Pro Mac mini",
+  "date": "2026-11-19",
+  "machine": "64GB M5 Pro Mac mini, macOS 27.0.1",
+  "dataset": "https://huggingface.co/datasets/pratikgx/depth-pro-2-m5-pro-mac-mini-bench",
+  "fourbit_model": "https://huggingface.co/pratikgx/Depth-Pro-2-MLX-4bit",
+  "headline": {
+    "w1_720p_hplus_ms": {
+      "mlx_bf16": 472.7,
+      "coreml": 494.8,
+      "pytorch_mps_bf16": 621.7,
+      "apple_m4_max_published": 826
+    },
+    "photo_bf16_pearson_inv_min": 0.99995,
+    "fourbit_uploaded": [
+      "L",
+      "H+"
+    ],
+    "fourbit_not_uploaded": [
+      "S",
+      "B"
+    ]
+  },
+  "rows": [
+    {
+      "cell": "w1_720p_hplus_mlx_bf16",
+      "runtime": "MLX BF16",
+      "ms": 472.7,
+      "note": "measured, this M5 Pro"
+    },
+    {
+      "cell": "w1_720p_hplus_coreml",
+      "runtime": "Core ML",
+      "ms": 494.8,
+      "note": "measured, this M5 Pro"
+    },
+    {
+      "cell": "w1_720p_hplus_pytorch_mps_bf16",
+      "runtime": "PyTorch MPS BF16",
+      "ms": 621.7,
+      "note": "measured, this M5 Pro"
+    },
+    {
+      "cell": "w1_720p_hplus_apple_m4_max_published",
+      "runtime": "Apple published M4 Max",
+      "ms": 826,
+      "note": "Apple's published number, different machine"
+    },
+    {
+      "cell": "w4_720p_s_mlx_bf16",
+      "runtime": "MLX BF16",
+      "ms": 60.3,
+      "note": "measured, this M5 Pro"
+    },
+    {
+      "cell": "w4_720p_b_mlx_bf16",
+      "runtime": "MLX BF16",
+      "ms": 139.4,
+      "note": "measured, this M5 Pro"
+    },
+    {
+      "cell": "w4_720p_b_pytorch_mps_bf16",
+      "runtime": "PyTorch MPS BF16",
+      "ms": 135.4,
+      "note": "measured, this M5 Pro"
+    },
+    {
+      "cell": "w4_720p_l_mlx_bf16",
+      "runtime": "MLX BF16",
+      "ms": 353.6,
+      "note": "measured, this M5 Pro"
+    },
+    {
+      "cell": "w4_720p_hplus_mlx_bf16",
+      "runtime": "MLX BF16",
+      "ms": 629.1,
+      "note": "measured, this M5 Pro"
+    },
+    {
+      "cell": "w4_720p_hplus_coreml",
+      "runtime": "Core ML",
+      "ms": 1081.8,
+      "note": "measured, this M5 Pro"
+    },
+    {
+      "cell": "w1_360p_s_coreml",
+      "runtime": "Core ML",
+      "ms": 6.7,
+      "note": "149 fps, measured, this M5 Pro"
+    },
+    {
+      "cell": "w1_720p_s_coreml",
+      "runtime": "Core ML",
+      "ms": 31.5,
+      "note": "31 fps, measured, this M5 Pro"
+    },
+    {
+      "cell": "fov_896x512_mlx_fp16",
+      "runtime": "MLX FP16",
+      "ms": 15.61,
+      "note": "measured, this M5 Pro"
+    },
+    {
+      "cell": "fov_896x512_mlx_bf16",
+      "runtime": "MLX BF16",
+      "ms": 15.66,
+      "note": "measured, this M5 Pro"
+    },
+    {
+      "cell": "fov_896x512_coreml",
+      "runtime": "Core ML",
+      "ms": 27.74,
+      "note": "measured, this M5 Pro"
+    }
+  ]
+}

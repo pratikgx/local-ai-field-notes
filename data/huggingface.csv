@@ -1,4 +1,6 @@
 type,repo,revision,updated,status,note
+dataset,pratikgx/depth-pro-2-m5-pro-mac-mini-bench,db8e4223cf384baac5e81be8fe715ac17313e6cd,2026-11-20,public,notes/2026-11-19-apple-depth-pro-2-mlx.md
+model,pratikgx/Depth-Pro-2-MLX-4bit,db009bf1cd9b0bcbc4b64aab13a7df5d90829837,2026-11-20,public,notes/2026-11-19-apple-depth-pro-2-mlx.md
 model,pratikgx/Clairic-Flash-MLX,b729e44bfb0143e66c5a1ec6a21cd48b5c34a2ee,2026-11-18,public,notes/2026-11-18-cloudflare-clairic-flash-mlx.md
 dataset,pratikgx/clairic-flash-m5-pro-mac-mini-bench,2f018426c39e4a853e66906c2dc7688cf5e0e690,2026-11-18,public,notes/2026-11-18-cloudflare-clairic-flash-mlx.md
 dataset,pratikgx/fastframes-s-m5-pro-mac-mini-bench,c5627a4222db67a7dfbb2fb0dda4f7a1bacdd478,2026-11-18,public,notes/2026-11-18-apple-fastframes-s-mlx.md
