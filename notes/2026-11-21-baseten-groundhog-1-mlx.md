@@ -57,3 +57,4 @@ A 26B MoE decision model fits this Mac at 4-bit in 13.22 GB, and it answers in w
 - Hugging Face benchmark data: [pratikgx/groundhog-1-m5-pro-mac-mini-bench](https://huggingface.co/datasets/pratikgx/groundhog-1-m5-pro-mac-mini-bench)
 - Official model: [baselabs/groundhog-1](https://huggingface.co/baselabs/groundhog-1)
 - results/2026-11-21-baseten-groundhog-1-mlx.csv / .json
+- Same-day bison-1 note: [2026-11-21-baseten-bison-1-mlx.md](2026-11-21-baseten-bison-1-mlx.md)
