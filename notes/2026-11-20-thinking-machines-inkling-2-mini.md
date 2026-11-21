@@ -10,6 +10,8 @@ A background inference app was paused for these runs at the owner's request.
 
 The public dataset is [pratikgx/inkling-2-mini-m5-pro-mac-mini-bench](https://huggingface.co/datasets/pratikgx/inkling-2-mini-m5-pro-mac-mini-bench).
 
+A November 21 tuning pass on the same setup is in [notes/2026-11-21-thinking-machines-inkling-2-mini-tuning.md](2026-11-21-thinking-machines-inkling-2-mini-tuning.md). The stock baseline remained the fastest lossless config. Raw files: [pratikgx/inkling-2-mini-m5-pro-mac-mini-tuning](https://huggingface.co/datasets/pratikgx/inkling-2-mini-m5-pro-mac-mini-tuning).
+
 ## The setup
 
 - Mac mini, Apple M5 Pro, 64 GB unified memory, macOS 27.0.1 (26A434), AC power.
