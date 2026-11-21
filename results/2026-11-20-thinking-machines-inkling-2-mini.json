@@ -1,0 +1,106 @@
+{
+  "model": "thinkingmachines/Inkling-2-Mini",
+  "gguf": "ggml-org/Inkling-2-Mini-GGUF",
+  "gguf_file": "Inkling-2-Mini-IQ4_NL.gguf",
+  "gguf_bytes": 17627940768,
+  "license": "Apache-2.0",
+  "date": "2026-11-20",
+  "machine": "64GB M5 Pro Mac mini",
+  "macos": "27.0.1 (26A434)",
+  "power": "AC power",
+  "background": "A background inference app was paused for these runs at the owner's request.",
+  "runtime": "llama.cpp PR #32694",
+  "commit": "d7cb78c91",
+  "version": "1.0.0-dev (build 12587)",
+  "metal": true,
+  "ngl": 99,
+  "flash_attn": true,
+  "server_ctx": 133120,
+  "temperature": 0.0,
+  "official_generation_config_temperature": 1.0,
+  "seed": 42,
+  "thinking": "off",
+  "reasoning_effort": "none",
+  "warmup": 1,
+  "timed_runs": 3,
+  "stat": "median",
+  "gen_tokens_perf": 256,
+  "suite": "v1",
+  "run_id": "20261120-141436",
+  "speed": {
+    "512": {
+      "prompt_tok_s": 490.8,
+      "gen_tok_s": 29.95,
+      "ttft_s": 1.117,
+      "peak_rss_gb": 23.1,
+      "spread_pct": 0.48
+    },
+    "4096": {
+      "prompt_tok_s": 357.5,
+      "gen_tok_s": 28.42,
+      "ttft_s": 11.54,
+      "peak_rss_gb": 23.53,
+      "spread_pct": 0.41
+    },
+    "16384": {
+      "prompt_tok_s": 248.5,
+      "gen_tok_s": 26.74,
+      "ttft_s": 66.05,
+      "peak_rss_gb": 24.13,
+      "spread_pct": 0.19
+    },
+    "32768": {
+      "prompt_tok_s": 201.6,
+      "gen_tok_s": 24.97,
+      "ttft_s": 162.7,
+      "peak_rss_gb": 24.54,
+      "spread_pct": 0.81
+    },
+    "131072": {
+      "prompt_tok_s": 95.29,
+      "gen_tok_s": 17.39,
+      "ttft_s": 1376,
+      "peak_rss_gb": 25.86,
+      "spread_pct": 0.72
+    }
+  },
+  "quality": {
+    "math": "20/20",
+    "code": "10/10",
+    "instruction_following": "2/10",
+    "instruction_following_note": "Plans in the visible answer even with reasoning_effort=none, as the lab warned.",
+    "needles_32k": "5/5",
+    "needles_64k": "3/3",
+    "needles_total": "8/8",
+    "unclosed_think": 0,
+    "needle_peak_rss_gb": {
+      "32768": 32.14,
+      "65536": 32.65
+    }
+  },
+  "comparison_qwen3_8_27b": {
+    "note": "Not apples to apples. Different model family, runtime (MLX 4-bit vs llama.cpp IQ4_NL), and date. Same 64GB M5 Pro Mac mini and suite v1, thinking off.",
+    "source": "results/2026-11-07-arete-27b.json, configuration qwen-mlx",
+    "model": "TensorFold/Qwen3.8-27B-MLX-4bit",
+    "date": "2026-11-07",
+    "gen_tok_s": {
+      "512": 17.06,
+      "4096": 17.19,
+      "16384": 16.29,
+      "32768": 15.32,
+      "65536": 12.27
+    },
+    "quality": {
+      "math": "20/20",
+      "code": "10/10",
+      "instruction_following": "10/10",
+      "needles": "8/8"
+    }
+  },
+  "skipped_runtimes": [
+    "mlx-lm PR #2061 failed to load official looped weights (146 unexpected parameters, including middle_cycle_cross_pass_queries). Full MLX suite skipped. No MLX port created.",
+    "TensorFold 1.2.7: no Inkling / inkling2_loop support. Not used.",
+    "Ollama 0.40.14: no local Inkling 2 Mini library model. Not used."
+  ],
+  "dataset": "https://huggingface.co/datasets/pratikgx/inkling-2-mini-m5-pro-mac-mini-bench"
+}

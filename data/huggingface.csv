@@ -1,4 +1,5 @@
 type,repo,revision,updated,status,note
+dataset,pratikgx/inkling-2-mini-m5-pro-mac-mini-bench,7acaf395a59ee03b219e8f719326907d8d3db896,2026-11-20,public,notes/2026-11-20-thinking-machines-inkling-2-mini.md
 dataset,pratikgx/depth-pro-2-m5-pro-mac-mini-bench,db8e4223cf384baac5e81be8fe715ac17313e6cd,2026-11-20,public,notes/2026-11-19-apple-depth-pro-2-mlx.md
 model,pratikgx/Depth-Pro-2-MLX-4bit,db009bf1cd9b0bcbc4b64aab13a7df5d90829837,2026-11-20,public,notes/2026-11-19-apple-depth-pro-2-mlx.md
 model,pratikgx/Clairic-Flash-MLX,b729e44bfb0143e66c5a1ec6a21cd48b5c34a2ee,2026-11-18,public,notes/2026-11-18-cloudflare-clairic-flash-mlx.md

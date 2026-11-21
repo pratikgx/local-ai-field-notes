@@ -1,0 +1,6 @@
+backend,quant,context,prompt_tok_s,gen_tok_s,ttft_s,peak_rss_gb,spread_pct
+llama.cpp PR #32694,IQ4_NL GGUF 17.63 GB,512,490.8,29.95,1.117,23.1,0.48
+llama.cpp PR #32694,IQ4_NL GGUF 17.63 GB,4096,357.5,28.42,11.54,23.53,0.41
+llama.cpp PR #32694,IQ4_NL GGUF 17.63 GB,16384,248.5,26.74,66.05,24.13,0.19
+llama.cpp PR #32694,IQ4_NL GGUF 17.63 GB,32768,201.6,24.97,162.7,24.54,0.81
+llama.cpp PR #32694,IQ4_NL GGUF 17.63 GB,131072,95.29,17.39,1376,25.86,0.72
