@@ -1,8 +1,8 @@
 type,repo,revision,updated,status,note
 dataset,pratikgx/inkling-2-mini-m5-pro-mac-mini-tuning,80196f09d0387f04c73d86115b6f12afcba4f5c3,2026-11-21,public,notes/2026-11-21-thinking-machines-inkling-2-mini-tuning.md
-dataset,pratikgx/groundhog-1-m5-pro-mac-mini-bench,e8359cba2093562eb99544ce2a62c19692cf5e91,2026-11-21,public,notes/2026-11-21-baseten-groundhog-1-mlx.md
+dataset,pratikgx/groundhog-1-m5-pro-mac-mini-bench,3f74445cf45b79c87dee45f3820336489c1d5e5b,2026-11-21,public,notes/2026-11-21-baseten-groundhog-1-mlx.md
 model,pratikgx/groundhog-1-MLX-4bit,f37ff936fefcbeefe8a797055ac62169444a2e83,2026-11-21,public,notes/2026-11-21-baseten-groundhog-1-mlx.md
-dataset,pratikgx/bison-1-m5-pro-mac-mini-bench,5a5bd1632234093caa8c935edd54f2585ab0193a,2026-11-21,public,notes/2026-11-21-baseten-bison-1-mlx.md
+dataset,pratikgx/bison-1-m5-pro-mac-mini-bench,c8d9f08a0c3db18fff43fc7deab1c3fd0367a420,2026-11-21,public,notes/2026-11-21-baseten-bison-1-mlx.md
 model,pratikgx/bison-1-MLX-4bit,9eefb05e958ed0ff477a33e919dad352a71c0af7,2026-11-21,public,notes/2026-11-21-baseten-bison-1-mlx.md
 dataset,pratikgx/inkling-2-mini-m5-pro-mac-mini-bench,7acaf395a59ee03b219e8f719326907d8d3db896,2026-11-20,public,notes/2026-11-20-thinking-machines-inkling-2-mini.md
 dataset,pratikgx/depth-pro-2-m5-pro-mac-mini-bench,db8e4223cf384baac5e81be8fe715ac17313e6cd,2026-11-20,public,notes/2026-11-19-apple-depth-pro-2-mlx.md
