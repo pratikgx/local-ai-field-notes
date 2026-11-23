@@ -1,4 +1,5 @@
 type,repo,revision,updated,status,note
+dataset,pratikgx/kolibri-1.1-m5-pro-mac-mini-bench,9e692ca2b9d8a1219f35e74baa80e0c581a10137,2026-11-23,public,notes/2026-11-23-aleph-alpha-kolibri-1.1.md
 dataset,pratikgx/daisyrose-27b-m5-pro-mac-mini-bench,c631845326a31ba287a7cb0590c99e613f1ff369,2026-11-22,public,notes/2026-11-21-radixark-daisyrose-27b-mlx.md
 dataset,pratikgx/inkling-2-mini-m5-pro-mac-mini-tuning,80196f09d0387f04c73d86115b6f12afcba4f5c3,2026-11-21,public,notes/2026-11-21-thinking-machines-inkling-2-mini-tuning.md
 dataset,pratikgx/groundhog-1-m5-pro-mac-mini-bench,3f74445cf45b79c87dee45f3820336489c1d5e5b,2026-11-21,public,notes/2026-11-21-baseten-groundhog-1-mlx.md

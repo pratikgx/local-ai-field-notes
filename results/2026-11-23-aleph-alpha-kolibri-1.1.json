@@ -1,0 +1,159 @@
+{
+ "model": "Aleph-Alpha/Kolibri-1.1",
+ "build": "Kolibri-1.1-IQ4_XS.gguf (official Aleph Alpha GGUF)",
+ "file_bytes": 40177787328,
+ "sha256": "53874fd99353a30a58f90764629ac42c90e088d578bfcf366bacf9d33dcae0e3",
+ "bits_per_weight": 4.279,
+ "runtime": "llama.cpp built from ggml-org/llama.cpp PR #32891 head 5f4d222898ddb12cf581edf1b7e841d80e0b2e17 (Metal)",
+ "machine": "Mac mini, Apple M5 Pro, 64 GB unified memory",
+ "macos": "ProductName:\t\tmacOS\nProductVersion:\t\t27.0.1\nBuildVersion:\t\t26A434",
+ "thinking": "off (enable_thinking=false, --reasoning off)",
+ "sampling": "temperature 0 (top_k 1), seed 1234",
+ "gen_tokens_per_speed_run": 256,
+ "runs": "1 warmup + 3 timed, median",
+ "speed": [
+  {
+   "ctx": 512,
+   "prompt_tokens": 512,
+   "gen_tps": 76.52,
+   "gen_runs": [
+    76.52,
+    76.53,
+    76.39
+   ],
+   "prompt_tps": 1381.9,
+   "prompt_runs": [
+    1409.1,
+    1381.9,
+    1364.4
+   ],
+   "ttft_s": 0.37,
+   "peak_rss_gb": 41.16,
+   "spread": 0.0018,
+   "rerun": false,
+   "bytes_per_token_est": 2142950400,
+   "eff_bw_gbs_est": 164.0,
+   "bw_util_est": 0.534
+  },
+  {
+   "ctx": 4096,
+   "prompt_tokens": 3997,
+   "gen_tps": 74.04,
+   "gen_runs": [
+    74.08,
+    74.03,
+    74.04
+   ],
+   "prompt_tps": 994.1,
+   "prompt_runs": [
+    994.1,
+    988.3,
+    997.4
+   ],
+   "ttft_s": 4.03,
+   "peak_rss_gb": 41.26,
+   "spread": 0.0006,
+   "rerun": false,
+   "bytes_per_token_est": 2171499520,
+   "eff_bw_gbs_est": 160.8,
+   "bw_util_est": 0.524
+  },
+  {
+   "ctx": 16384,
+   "prompt_tokens": 16384,
+   "gen_tps": 67.39,
+   "gen_runs": [
+    66.7,
+    68.29,
+    67.39
+   ],
+   "prompt_tps": 917.2,
+   "prompt_runs": [
+    909.4,
+    918.1,
+    917.2
+   ],
+   "ttft_s": 17.88,
+   "peak_rss_gb": 41.3,
+   "spread": 0.0236,
+   "rerun": false,
+   "bytes_per_token_est": 2272973824,
+   "eff_bw_gbs_est": 153.2,
+   "bw_util_est": 0.499
+  },
+  {
+   "ctx": 32768,
+   "prompt_tokens": 32768,
+   "gen_tps": 64.0,
+   "gen_runs": [
+    64.43,
+    64.0,
+    62.82
+   ],
+   "prompt_tps": 861.9,
+   "prompt_runs": [
+    860.6,
+    869.2,
+    861.9
+   ],
+   "ttft_s": 38.05,
+   "peak_rss_gb": 41.35,
+   "spread": 0.0252,
+   "rerun": false,
+   "bytes_per_token_est": 2407191552,
+   "eff_bw_gbs_est": 154.1,
+   "bw_util_est": 0.502
+  },
+  {
+   "ctx": 65536,
+   "prompt_tokens": 65536,
+   "gen_tps": 57.09,
+   "gen_runs": [
+    57.09,
+    56.8,
+    57.43
+   ],
+   "prompt_tps": 772.9,
+   "prompt_runs": [
+    772.9,
+    769.7,
+    780.8
+   ],
+   "ttft_s": 84.84,
+   "peak_rss_gb": 41.4,
+   "spread": 0.011,
+   "rerun": false,
+   "bytes_per_token_est": 2675627008,
+   "eff_bw_gbs_est": 152.8,
+   "bw_util_est": 0.498
+  }
+ ],
+ "quality": {
+  "math": "20/20",
+  "code": "10/10",
+  "if": "9/10",
+  "hmath": "8/8",
+  "hcode": "5/5",
+  "tool": "2/5"
+ },
+ "quality_total": "54/58",
+ "needles": {
+  "plain_32k": "5/5",
+  "plain_64k": "3/3",
+  "distractor_64k": "0/3",
+  "total": "8/11",
+  "needle_prompt_tokens": {
+   "32k": 31616,
+   "64k": 63235
+  },
+  "distractor_answers": [
+   "amber-falcon-2290.",
+   "amber-falcon-2290.",
+   "amber-falcon-2290."
+  ]
+ },
+ "peak_memory_note": "Peak = max sampled llama-server process RSS (0.25 s), not a Metal counter. System wired memory reached ~44.9 GB after load.",
+ "bandwidth_note": "Estimate from GGUF geometry, not a hardware counter. Per token: always-on tensors + shared expert + output head + routed experts x 6/384 = 2.097 GB; token embedding lookup excluded. KV: 4 unique full-attention KV layers (kv_source_map) x 4 KV heads x 128 x K+V x f16 x context, plus 40 sliding-window layers x 513. Sparse/indexed attention may read less KV than this. Peak 307 GB/s from Apple spec.",
+ "background": "A background app was paused at the owner's request for this run (09:08 to 09:33 PT) and restarted afterwards.",
+ "prompt_note": "Same user prompts as earlier runs (suite v1 + deep-v1); rendered with Kolibri's own chat template, so token counts differ. The \"4k\" speed prompt is 3,997 tokens because the shared filler text ran out."
+}
