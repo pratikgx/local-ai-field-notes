@@ -1,0 +1,19 @@
+config,engine,set,pages,processes,workers_per_process,median_wall_s,ms_per_page,pages_per_s,cpu_ms_per_page,effective_cores,peak_rss_gb,spread_pct,bg_app_avg_cores
+ocria_ocr_w1,OCRia-nano-1 via LiteParse,sets/ocr,48,1,1,11.291,235.2,4.25,865.6,3.68,0.96,3.7,0.22
+ocria_ocr_w18,OCRia-nano-1 via LiteParse,sets/ocr,48,1,18,4.756,99.1,10.09,787.9,7.95,2.31,24.9,0.42
+ocria_ocr_w6,OCRia-nano-1 via LiteParse,sets/ocr,48,1,6,4.262,88.8,11.26,677.1,7.63,1.8,6.8,0.12
+ocria_native_w1,OCRia-nano-1 via LiteParse,sets/native,48,1,1,3.145,65.5,15.26,181.7,2.77,0.84,1.9,0.06
+ocria_native_w18,OCRia-nano-1 via LiteParse,sets/native,48,1,18,1.813,37.8,26.48,177.7,4.71,1.47,4.0,0.07
+ocria_latin_w1,OCRia-nano-1 via LiteParse,sets/ocr_latin,20,1,1,6.267,313.3,3.19,1139.5,3.64,0.79,5.3,0.39
+tess_latin_w1,tesseract 5.5.4 via LiteParse,sets/ocr_latin,20,1,1,39.984,1999.2,0.5,1996.0,1.0,0.21,3.2,0.7
+ocria_latin_w18,OCRia-nano-1 via LiteParse,sets/ocr_latin,20,1,18,1.878,93.9,10.65,815.5,8.68,2.17,0.6,0.7
+tess_latin_w18,tesseract 5.5.4 via LiteParse,sets/ocr_latin,20,1,18,12.089,604.5,1.65,4721.5,7.81,0.75,1.3,0.67
+ocria_cjk_w18,OCRia-nano-1 via LiteParse,sets/ocr_cjk,16,1,18,1.36,85.0,11.76,706.2,8.31,1.91,7.6,0.68
+tess_cjk_w18,tesseract 5.5.4 via LiteParse,sets/ocr_cjk,16,1,18,6.68,417.5,2.4,2478.8,5.94,1.64,1.9,0.64
+ocria_rtl_w18,OCRia-nano-1 via LiteParse,sets/ocr_rtl,12,1,18,1.247,103.9,9.63,728.3,7.01,1.72,6.7,0.67
+tess_rtl_w18,tesseract 5.5.4 via LiteParse,sets/ocr_rtl,12,1,18,6.563,546.9,1.83,2455.0,4.49,0.52,3.4,0.47
+ocria_nativepages_w18,OCRia-nano-1 via LiteParse,sets/native_pages,48,1,18,3.271,68.1,14.67,177.5,2.6,0.78,2.7,0.07
+ocria_ocrpages_4procs_x1worker,OCRia-nano-1 via LiteParse,sets/ocr_pages (sharded),48,4,1,4.299,89.6,11.16,1036.9,11.58,3.26,1.9,0.48
+ocria_ocrpages_6procs_x1worker,OCRia-nano-1 via LiteParse,sets/ocr_pages (sharded),48,6,1,3.603,75.1,13.32,1082.5,14.42,4.46,11.6,0.55
+ocria_ocrpages_12procs_x1worker,OCRia-nano-1 via LiteParse,sets/ocr_pages (sharded),48,12,1,2.783,58.0,17.25,960.8,16.57,8.31,16.2,0.26
+ocria_ocrpages_18procs_x1worker,OCRia-nano-1 via LiteParse,sets/ocr_pages (sharded),48,18,1,2.616,54.5,18.35,895.6,16.43,11.95,4.2,0.05
