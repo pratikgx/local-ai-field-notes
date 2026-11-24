@@ -1,4 +1,5 @@
 type,repo,revision,updated,status,note
+dataset,pratikgx/qwen3.8-27b-super-adapter-m5-pro-mac-mini-bench,5b48ede6c3b96ed9bc9db8585bdb0dbe864d4536,2026-11-23,public,notes/2026-11-22-qwen3.8-27b-super-adapter.md
 dataset,pratikgx/ocria-nano-1-m5-pro-mac-mini-bench,4c86f9ab1ef90a3697210b726a0ab6e4b80f475f,2026-11-23,public,notes/2026-11-23-llamaindex-ocria-nano-1.md
 dataset,pratikgx/kolibri-1.1-m5-pro-mac-mini-bench,9e692ca2b9d8a1219f35e74baa80e0c581a10137,2026-11-23,public,notes/2026-11-23-aleph-alpha-kolibri-1.1.md
 dataset,pratikgx/daisyrose-27b-m5-pro-mac-mini-bench,c631845326a31ba287a7cb0590c99e613f1ff369,2026-11-22,public,notes/2026-11-21-radixark-daisyrose-27b-mlx.md

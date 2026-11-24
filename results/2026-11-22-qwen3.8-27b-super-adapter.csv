@@ -1,0 +1,10 @@
+config,context,gen_tps,gen_tps_spread,kind,method,n,n_pass,note,passes,peak_mem_gb,prompt_tps,source_run,timeouts,tool_calls_mean,tool_calls_median,tool_errors_mean,ttft_s,wall_s_mean
+super-adapter MLX 4-bit,512,18.054,16.910;18.054;18.133,speed,"mlx_lm stream_generate, thinking off, temp 0, 256 gen tokens, 1 warmup + 3 timed, median",,,,,16.395,374.984,2026-11-22 07:28 PT,,,,,1.367,
+super-adapter MLX 4-bit,4096,15.092,13.322;13.334;17.909,speed,"mlx_lm stream_generate, thinking off, temp 0, 256 gen tokens, 1 warmup + 3 timed, median",,,noisy 4k,,18.263,446.859,2026-11-22 07:28 PT,,,,,9.22,
+super-adapter MLX 4-bit,8192,17.085,15.482;17.572;16.638,speed,"mlx_lm stream_generate, thinking off, temp 0, 256 gen tokens, 1 warmup + 3 timed, median",,,13% gen spread,,18.532,473.356,2026-11-22 07:28 PT,,,,,17.316,
+super-adapter MLX 4-bit,16384,16.758,15.963;16.758;16.816,speed,"mlx_lm stream_generate, thinking off, temp 0, 256 gen tokens, 1 warmup + 3 timed, median",,,,,19.069,431.808,2026-11-22 07:28 PT,,,,,37.961,
+super-adapter MLX 4-bit,32768,15.825,15.825;15.851;15.642,speed,"mlx_lm stream_generate, thinking off, temp 0, 256 gen tokens, 1 warmup + 3 timed, median",,,,,20.143,411.601,2026-11-22 07:28 PT,,,,,79.642,
+super-adapter MLX 4-bit 4k recheck,4096,17.272,17.272;17.454;15.608,speed_recheck,"same as speed suite, 3 fresh timed runs after a new load",,,does not replace the first 4k row,,18.263,438.791,2026-11-22 23:29 PT,,,,,9.342,
+Base Q8_0 llama.cpp,,,,agent,,24,22,"NOT apples to apples with the super-adapter arm: llama.cpp Q8_0, background app paused",22/24,,,2026-11-18,5,11.8,10.5,0.63,,334
+pi merged Q8_0 llama.cpp,,,,agent,,24,22,"NOT apples to apples with the super-adapter arm: llama.cpp Q8_0, background app paused",22/24,,,2026-11-18,3,11.1,11,1.38,,313
+super-adapter MLX 4-bit,,,,agent,,24,24,"MLX 4-bit, background app running; same 12 tasks and seeds as Nov 18",24/24,,,2026-11-23 01:21 PT,0,9.46,9.0,0.83,,169.9
