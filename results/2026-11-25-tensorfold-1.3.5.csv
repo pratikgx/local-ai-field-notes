@@ -1,0 +1,94 @@
+section,tf_version,date,mode,cell,prompt_tokens,gen_tps_median,gen_min,gen_max,runs,ttft_s,prompt_tps,peak_mem_gib,accept_rate,token_sha,quant,background
+community-v2,1.2.1,Nov 3,plain,code_T1,14-31,16.88,13.45,17.08,5,0.068,,,,4e0a0a5f5689 58d9ea00c241 7f7c5d443a06 94624c419588 ed99f8b35926,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+community-v2,1.2.1,Nov 3,plain,chat_T1,14-31,17.27,15.98,17.3,5,0.066,,,,29788dce0a63 5f34c146cd3e b8c0e8685c58 c0f9d9f52889 ffe1988e6b95,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+community-v2,1.2.1,Nov 3,plain,code_T0,14-31,17.08,15.24,17.2,5,0.068,,,,a10c9b848ed9,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+community-v2,1.2.1,Nov 3,plain,chat_T0,14-31,17.23,15.3,17.26,5,0.067,,,,a06fab348fbe,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+community-v2,1.2.1,Nov 3,drafter,code_T1,14-31,91.9,70.43,100.36,5,0.066,,,0.384,4e0a0a5f5689 58d9ea00c241 7f7c5d443a06 94624c419588 ed99f8b35926,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+community-v2,1.2.1,Nov 3,drafter,chat_T1,14-31,44.74,42.03,59.69,5,0.12,,,0.185,29788dce0a63 5f34c146cd3e b8c0e8685c58 c0f9d9f52889 ffe1988e6b95,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+community-v2,1.2.1,Nov 3,drafter,code_T0,14-31,41.33,20.46,82.27,5,0.11,,,0.335,a10c9b848ed9,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+community-v2,1.2.1,Nov 3,drafter,chat_T0,14-31,56.19,41.0,56.63,5,0.127,,,0.218,a06fab348fbe,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+community-v2,1.2.2,Nov 3,plain,code_T1,14-31,16.15,12.19,16.61,5,0.069,,,,4e0a0a5f5689 58d9ea00c241 7f7c5d443a06 94624c419588 ed99f8b35926,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+community-v2,1.2.2,Nov 3,plain,chat_T1,14-31,16.69,15.48,17.06,5,0.069,,,,29788dce0a63 5f34c146cd3e b8c0e8685c58 c0f9d9f52889 ffe1988e6b95,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+community-v2,1.2.2,Nov 3,plain,code_T0,14-31,16.97,16.87,17.08,5,0.067,,,,a10c9b848ed9,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+community-v2,1.2.2,Nov 3,plain,chat_T0,14-31,16.85,12.84,16.98,5,0.089,,,,a06fab348fbe,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+community-v2,1.2.2,Nov 3,drafter,code_T1,14-31,88.93,73.04,97.32,5,0.067,,,0.389,4e0a0a5f5689 58d9ea00c241 7f7c5d443a06 94624c419588 ed99f8b35926,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+community-v2,1.2.2,Nov 3,drafter,chat_T1,14-31,43.49,35.58,59.51,5,0.07,,,0.185,29788dce0a63 5f34c146cd3e b8c0e8685c58 c0f9d9f52889 ffe1988e6b95,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+community-v2,1.2.2,Nov 3,drafter,code_T0,14-31,79.57,79.51,79.71,5,0.069,,,0.338,a10c9b848ed9,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+community-v2,1.2.2,Nov 3,drafter,chat_T0,14-31,56.43,56.4,56.68,5,0.069,,,0.22,a06fab348fbe,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+community-v2,1.2.4,Nov 11,plain,code_T1,14-31,17.33,16.86,17.35,5,0.066,,,,4e0a0a5f5689 58d9ea00c241 7f7c5d443a06 94624c419588 ed99f8b35926,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app paused
+community-v2,1.2.4,Nov 11,plain,chat_T1,14-31,17.17,16.93,17.37,5,0.066,,,,29788dce0a63 5f34c146cd3e b8c0e8685c58 c0f9d9f52889 ffe1988e6b95,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app paused
+community-v2,1.2.4,Nov 11,plain,code_T0,14-31,17.01,16.93,17.11,5,0.067,,,,a10c9b848ed9,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app paused
+community-v2,1.2.4,Nov 11,plain,chat_T0,14-31,17.06,16.94,17.13,5,0.066,,,,a06fab348fbe,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app paused
+community-v2,1.2.4,Nov 11,drafter,code_T1,14-31,93.79,73.57,102.43,5,0.066,,,0.407,4e0a0a5f5689 58d9ea00c241 7f7c5d443a06 94624c419588 ed99f8b35926,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app paused
+community-v2,1.2.4,Nov 11,drafter,chat_T1,14-31,47.51,42.66,62.45,5,0.066,,,0.195,29788dce0a63 5f34c146cd3e b8c0e8685c58 c0f9d9f52889 ffe1988e6b95,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app paused
+community-v2,1.2.4,Nov 11,drafter,code_T0,14-31,80.76,80.18,82.24,5,0.067,,,0.358,a10c9b848ed9,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app paused
+community-v2,1.2.4,Nov 11,drafter,chat_T0,14-31,56.22,56.17,56.35,5,0.068,,,0.228,a06fab348fbe,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app paused
+community-v2,1.2.7,Nov 11,plain,code_T1,14-31,17.38,17.33,17.47,5,0.066,,,,4e0a0a5f5689 58d9ea00c241 7f7c5d443a06 94624c419588 ed99f8b35926,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app paused
+community-v2,1.2.7,Nov 11,plain,chat_T1,14-31,17.49,17.44,17.5,5,0.065,,,,29788dce0a63 5f34c146cd3e b8c0e8685c58 c0f9d9f52889 ffe1988e6b95,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app paused
+community-v2,1.2.7,Nov 11,plain,code_T0,14-31,17.39,17.35,17.4,5,0.066,,,,a10c9b848ed9,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app paused
+community-v2,1.2.7,Nov 11,plain,chat_T0,14-31,17.39,17.35,17.4,5,0.065,,,,a06fab348fbe,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app paused
+community-v2,1.2.7,Nov 11,drafter,code_T1,14-31,98.9,77.58,108.19,5,0.066,,,0.385,4e0a0a5f5689 58d9ea00c241 7f7c5d443a06 94624c419588 ed99f8b35926,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app paused
+community-v2,1.2.7,Nov 11,drafter,chat_T1,14-31,51.41,44.96,65.74,5,0.065,,,0.185,29788dce0a63 5f34c146cd3e b8c0e8685c58 c0f9d9f52889 ffe1988e6b95,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app paused
+community-v2,1.2.7,Nov 11,drafter,code_T0,14-31,82.43,82.43,82.53,5,0.066,,,0.336,a10c9b848ed9,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app paused
+community-v2,1.2.7,Nov 11,drafter,chat_T0,14-31,57.9,33.62,58.06,5,0.067,,,0.219,a06fab348fbe,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app paused
+community-v2,1.3.5,Nov 25,plain,code_T1,14-31,17.35,17.25,17.36,5,0.066,,,,4e0a0a5f5689 58d9ea00c241 7f7c5d443a06 94624c419588 ed99f8b35926,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+community-v2,1.3.5,Nov 25,plain,chat_T1,14-31,17.32,17.3,17.35,5,0.065,,,,29788dce0a63 5f34c146cd3e b8c0e8685c58 c0f9d9f52889 ffe1988e6b95,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+community-v2,1.3.5,Nov 25,plain,code_T0,14-31,17.24,17.22,17.25,5,0.066,,,,a10c9b848ed9,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+community-v2,1.3.5,Nov 25,plain,chat_T0,14-31,17.24,17.2,17.24,5,0.065,,,,a06fab348fbe,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+community-v2,1.3.5,Nov 25,drafter,code_T1,14-31,101.73,82.75,118.72,5,0.065,,,0.411,4e0a0a5f5689 58d9ea00c241 7f7c5d443a06 94624c419588 ed99f8b35926,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+community-v2,1.3.5,Nov 25,drafter,chat_T1,14-31,52.15,44.88,72.29,5,0.065,,,0.193,29788dce0a63 5f34c146cd3e b8c0e8685c58 c0f9d9f52889 ffe1988e6b95,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+community-v2,1.3.5,Nov 25,drafter,code_T0,14-31,81.34,66.75,81.4,5,0.066,,,0.33,a10c9b848ed9,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+community-v2,1.3.5,Nov 25,drafter,chat_T0,14-31,57.27,31.42,57.31,5,0.066,,,0.213,a06fab348fbe,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+ctxbench-v1,1.2.1,Nov 3,plain,ctx~512,518,16.32,16.13,17.35,3,1.34,391.3,26.7,,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+ctxbench-v1,1.2.1,Nov 3,plain,ctx~4096,3847,16.69,12.28,16.82,3,9.27,413.7,26.7,,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+ctxbench-v1,1.2.1,Nov 3,plain,ctx~16384,15589,15.72,14.42,15.94,3,39.7,391.6,26.7,,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+ctxbench-v1,1.2.1,Nov 3,plain,ctx~32768,31141,13.78,13.59,14.55,3,98.36,316.8,26.7,,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+ctxbench-v1,1.2.1,Nov 3,drafter,ctx~512,510,56.62,54.43,64.89,3,1.25,416.8,28.52,0.232,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+ctxbench-v1,1.2.1,Nov 3,drafter,ctx~4096,3848,51.34,46.88,54.32,3,9.3,413.6,28.52,0.218,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+ctxbench-v1,1.2.1,Nov 3,drafter,ctx~16384,15571,42.44,35.97,44.62,3,40.85,379.9,28.52,0.215,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+ctxbench-v1,1.2.1,Nov 3,drafter,ctx~32768,31228,40.52,39.27,41.83,3,90.94,343.5,28.52,0.212,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+ctxbench-v1,1.2.2,Nov 3,plain,ctx~512,523,16.84,16.78,16.86,3,1.16,442.3,26.7,,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+ctxbench-v1,1.2.2,Nov 3,plain,ctx~4096,3860,16.28,14.45,16.34,3,9.05,426.5,26.7,,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+ctxbench-v1,1.2.2,Nov 3,plain,ctx~16384,15619,15.16,13.97,15.27,3,43.22,359.5,26.7,,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+ctxbench-v1,1.2.2,Nov 3,plain,ctx~32768,31185,14.66,13.15,14.72,3,88.93,351.2,26.7,,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+ctxbench-v1,1.2.2,Nov 3,drafter,ctx~512,518,57.42,52.64,69.52,3,1.13,457.8,28.52,0.229,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+ctxbench-v1,1.2.2,Nov 3,drafter,ctx~4096,3863,48.63,48.03,55.18,3,9.46,408.2,28.52,0.218,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+ctxbench-v1,1.2.2,Nov 3,drafter,ctx~16384,15531,46.32,32.1,46.61,3,39.32,395.6,28.52,0.202,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+ctxbench-v1,1.2.2,Nov 3,drafter,ctx~32768,31142,40.68,40.05,41.98,3,88.65,351.7,28.52,0.207,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+ctxbench-v1,1.3.5,Nov 25,plain,ctx~512,508,17.2,17.2,17.22,3,1.07,475.8,26.59,,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+ctxbench-v1,1.3.5,Nov 25,plain,ctx~4096,3847,16.85,16.84,16.88,3,8.6,446.2,26.59,,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+ctxbench-v1,1.3.5,Nov 25,plain,ctx~16384,15587,15.78,15.75,15.82,3,37.79,412.3,26.59,,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+ctxbench-v1,1.3.5,Nov 25,plain,ctx~32768,31147,14.71,14.69,14.73,3,82.42,377.9,26.59,,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+ctxbench-v1,1.3.5_ungated,Nov 11,plain,ctx~512,520,14.81,9.69,15.16,3,1.67,311.8,26.59,,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+ctxbench-v1,1.3.5_ungated,Nov 11,plain,ctx~4096,3846,7.56,6.84,9.27,3,12.22,314.0,26.59,,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+ctxbench-v1,1.3.5_ungated,Nov 11,plain,ctx~16384,15568,14.09,13.57,15.8,3,40.5,383.7,26.59,,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+ctxbench-v1,1.3.5_ungated,Nov 11,plain,ctx~32768,31166,10.26,9.74,13.02,3,107.92,290.1,26.59,,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+ctxbench-v1,1.2.4_unpublished_nov11,Nov 11,plain,ctx~512,515,8.2,8.17,8.52,3,2.85,179.4,26.7,,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app paused
+ctxbench-v1,1.2.4_unpublished_nov11,Nov 11,plain,ctx~4096,3873,8.16,8.14,8.34,3,18.52,209.1,26.7,,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app paused
+ctxbench-v1,1.2.4_unpublished_nov11,Nov 11,plain,ctx~16384,15634,7.84,7.42,7.93,3,76.14,204.0,26.7,,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app paused
+ctxbench-v1,1.2.4_unpublished_nov11,Nov 11,plain,ctx~32768,31187,7.04,6.9,7.13,3,169.45,184.1,26.7,,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app paused
+ctxbench-v1,1.2.7_unpublished_nov11,Nov 11,plain,ctx~512,521,8.23,8.19,8.48,3,3.05,173.6,26.71,,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app paused
+ctxbench-v1,1.2.7_unpublished_nov11,Nov 11,plain,ctx~4096,3867,8.03,7.33,8.16,3,17.85,215.7,26.71,,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app paused
+ctxbench-v1,1.2.7_unpublished_nov11,Nov 11,plain,ctx~16384,15620,7.88,7.8,7.94,3,73.84,210.8,26.71,,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app paused
+ctxbench-v1,1.2.7_unpublished_nov11,Nov 11,plain,ctx~32768,31207,7.35,7.31,7.43,3,164.65,189.9,26.71,,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app paused
+ctxbench-v1,1.3.5,Nov 25,drafter,ctx~512,510,60.82,58.67,63.32,3,1.06,479.0,28.41,0.233,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+ctxbench-v1,1.3.5,Nov 25,drafter,ctx~4096,3842,50.67,47.57,58.85,3,9.45,407.1,28.41,0.224,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+ctxbench-v1,1.3.5,Nov 25,drafter,ctx~16384,15646,39.61,33.44,46.38,3,40.69,381.0,28.41,0.21,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+ctxbench-v1,1.3.5,Nov 25,drafter,ctx~32768,31171,40.57,36.9,41.38,3,83.18,375.1,28.41,0.214,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+ctxbench-v1,1.3.5_gated_pass2,Nov 11,drafter,ctx~512,532,55.96,51.87,56.23,3,1.27,409.6,28.41,0.21,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+ctxbench-v1,1.3.5_gated_pass2,Nov 11,drafter,ctx~4096,3865,45.96,24.39,49.23,3,10.22,378.1,28.41,0.198,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+ctxbench-v1,1.3.5_gated_pass2,Nov 11,drafter,ctx~16384,15619,43.25,42.26,44.46,3,44.98,346.8,28.41,0.204,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+ctxbench-v1,1.3.5_gated_pass2,Nov 11,drafter,ctx~32768,31177,28.89,24.11,37.44,3,95.29,327.2,28.41,0.198,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app running
+ctxbench-v1,1.2.4_unpublished_nov11,Nov 11,drafter,ctx~512,529,30.08,28.64,30.17,3,2.91,182.3,28.53,0.235,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app paused
+ctxbench-v1,1.2.4_unpublished_nov11,Nov 11,drafter,ctx~4096,3822,27.1,26.63,27.59,3,18.07,213.1,28.53,0.225,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app paused
+ctxbench-v1,1.2.4_unpublished_nov11,Nov 11,drafter,ctx~16384,15589,25.24,22.69,26.81,3,75.14,207.5,28.53,0.223,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app paused
+ctxbench-v1,1.2.4_unpublished_nov11,Nov 11,drafter,ctx~32768,31122,20.64,18.8,22.45,3,167.14,186.6,28.53,0.207,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app paused
+ctxbench-v1,1.2.7_unpublished_nov11,Nov 11,drafter,ctx~512,522,32.11,27.89,33.27,3,2.91,182.0,28.54,0.24,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app paused
+ctxbench-v1,1.2.7_unpublished_nov11,Nov 11,drafter,ctx~4096,3880,25.2,24.73,26.22,3,18.33,211.7,28.54,0.192,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app paused
+ctxbench-v1,1.2.7_unpublished_nov11,Nov 11,drafter,ctx~16384,15575,22.05,20.68,26.03,3,75.99,204.9,28.54,0.207,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app paused
+ctxbench-v1,1.2.7_unpublished_nov11,Nov 11,drafter,ctx~32768,31145,20.93,19.64,21.95,3,164.04,189.7,28.54,0.208,,mlx-affine-4bit-g64 TensorFold/Qwen3.8-27B-MLX-4bit@22d8d538,background app paused
+inkling-tf,1.3.5,Nov 25,dspark,ctx 512,512,11.34,11.33,11.34,3,16.87,30.3,19.97,0.6182795698924731,e7fc4d861a4c,official thinkingmachines/Inkling-2-Mini modelopt NVFP4 (18.21 GiB),background app running
+inkling-tf,1.3.5,Nov 25,dspark,ctx 4096,4096,9.84,8.92,10.31,3,144.55,28.3,19.97,0.6335078534031413,9e0fd092ad5e,official thinkingmachines/Inkling-2-Mini modelopt NVFP4 (18.21 GiB),background app running
+inkling-tf,1.3.5,Nov 25,plain,ctx 512,512,11.52,8.99,12.37,3,21.82,23.5,19.08,0.0,e7fc4d861a4c,official thinkingmachines/Inkling-2-Mini modelopt NVFP4 (18.21 GiB),background app running
+inkling-tf,1.3.5,Nov 25,plain,ctx 4096,4096,8.73,6.81,11.02,3,149.15,27.5,19.08,0.0,9e0fd092ad5e,official thinkingmachines/Inkling-2-Mini modelopt NVFP4 (18.21 GiB),background app running
+inkling-tf,1.3.5,Nov 25,plain32k,ctx 32768,32768,8.01,8.01,8.01,1,1138.74,28.8,19.95,0.0,d328f4b5c7bf,official thinkingmachines/Inkling-2-Mini modelopt NVFP4 (18.21 GiB),background app running
