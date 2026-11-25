@@ -2,8 +2,6 @@
 
 Date: 2026-11-24 (America/Vancouver). Thinking off, greedy (temperature 0), 256 generated tokens, 1 discarded warmup + 3 timed runs at 512 to 32k, 3 timed runs at 64k and 2 at 128k on a warm model, medians. A background app was left running at Pratik's request.
 
-These are speed results only. Agent coding and quality results will be added tomorrow.
-
 Credit to the PrismML team for Ternary Bonsai 2.5 27B, the MLX pack with its bundled Hadamard loader, the llama.cpp fork, and the MTP draft head. Base model: Qwen3.8-27B.
 
 ## Headline
@@ -13,6 +11,9 @@ Credit to the PrismML team for Ternary Bonsai 2.5 27B, the MLX pack with its bun
 - The MTP draft head on the PrismML llama.cpp fork lifts decode from **29.28 to 32.92 tok/s** at 512 and **21.22 to 24.77** at 32k (1.12x to 1.17x, 83% to 88% of drafted tokens accepted).
 - PrismML's claims on the model card are 30.2 tok/s decode (tg128) and 416 tok/s prefill (pp512) for PQ2_0 on an M5 Pro. llama-bench here measured **28.94** and **415.0**.
 - Bonsai 2.5 keeps Bonsai 2's speed on the same runtime (29.28 vs 28.57 tok/s at 512, 21.22 vs 21.20 at 32k), so the upgrade comes without a speed cost.
+- On my 12-task coding-agent suite Bonsai 2.5 passed **17/24 vs 15/24** for Bonsai 2 with **63% fewer tool calls** (21.75 vs 58.92 per task), **82% fewer tool errors** and **45% less time per task**.
+- Long context: Bonsai 2.5 on MLX found the passphrase in **17/17** needle tests, including all 6 at 128k with decoys.
+- Fixed quality suite: **56/58** for Bonsai 2.5 on both MLX and llama.cpp.
 
 ## Writing speed (generated tok/s, median)
 
@@ -77,9 +78,56 @@ Bonsai 2.5 MLX 3.93 tok/s per GB of text weights, llama.cpp 4.04, llama.cpp + MT
 ![llama-bench vs PrismML card](img/2026-11-24-ternary-bonsai-2.5-27b-llamabench-vs-prismml-card.png)
 ![Bonsai 2 vs 2.5 speed](img/2026-11-24-ternary-bonsai-2.5-27b-vs-2-speed.png)
 
-## Still running (will be added tomorrow)
+## Coding-agent suite (12 tasks x 2 seeds, pi agent, hidden unit tests)
 
-Fixed quality suite (math 20, code 10, instruction following 10, hard math 8, hard code 5, tool calling 5), needles at 32k/64k plain and with decoys plus 128k on MLX, and the 12-task x 2-seed coding-agent suite for Bonsai 2.5 and Bonsai 2 on the PrismML llama.cpp server.
+Same 12 small Python tasks, seeds 1001 and 1002, thinking off, temp 0.8, 10 minute cap per run, PrismML llama.cpp server with the PQ2_0 GGUFs.
+
+| Metric | Bonsai 2.5 | Bonsai 2 | Change |
+|---|---:|---:|---:|
+| Tasks passed | 17/24 | 15/24 | +2 |
+| Tool calls per task (mean) | 21.75 | 58.92 | 63% fewer |
+| Tool calls per task (median) | 14.0 | 45.0 | |
+| Tool errors per task | 2.83 | 16.08 | 82% fewer |
+| Model turns per task | 20.58 | 57.12 | 64% fewer |
+| Runs hitting the 10 min cap | 6 | 16 | 10 fewer |
+| Seconds per task (mean) | 264.5 | 477.9 | 45% less |
+| Generated tokens per task | 5,027 | 9,560 | 47% fewer |
+
+Per task, Bonsai 2.5 passed both seeds on stats, lru, logsummary, intervals, graph, merge and inventory. Bonsai 2 passed both seeds on stats, lru, graph and inventory.
+
+Earlier Qwen3.8-27B runs of the same suite on this Mac, for context (different engine or quant): base Q8_0 on llama.cpp 22/24 with 11.8 tool calls per task (Nov 18, background app paused), and a super-adapter MLX 4-bit build 24/24 with 9.46 tool calls per task (Nov 22).
+
+![Agent suite Bonsai 2 vs 2.5](img/2026-11-24-ternary-bonsai-2.5-27b-agent-bonsai-2-vs-2.5.png)
+![Agent suite vs Qwen references](img/2026-11-24-ternary-bonsai-2.5-27b-agent-vs-qwen-references.png)
+![Agent suite per task](img/2026-11-24-ternary-bonsai-2.5-27b-agent-per-task.png)
+
+## Fixed quality suite (greedy, thinking off)
+
+| Build | Math | Code | Instructions | Hard math | Hard code | Tool calls | Total |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Bonsai 2.5 MLX | 20/20 | 9/10 | 10/10 | 7/8 | 5/5 | 5/5 | 56/58 |
+| Bonsai 2.5 llama.cpp | 20/20 | 9/10 | 10/10 | 7/8 | 5/5 | 5/5 | 56/58 |
+| Bonsai 2 llama.cpp | 20/20 | 10/10 | 10/10 | 8/8 | 5/5 | 5/5 | 58/58 |
+| Qwen3.8-27B MLX 4-bit (Nov 7) | 20/20 | 10/10 | 10/10 | 8/8 | 5/5 | 5/5 | 58/58 |
+
+MLX and llama.cpp gave the same two misses for Bonsai 2.5: a word-count function that kept punctuation, and one hard math item (answered 1, expected 3). That matches PrismML's note that the MLX pack reproduces llama.cpp closely.
+
+## Needle recall (plain and with decoy passphrases)
+
+| Build | Plain 32k | Plain 64k | Decoy 64k | Plain 128k | Decoy 128k |
+|---|---:|---:|---:|---:|---:|
+| Bonsai 2.5 MLX | 5/5 | 3/3 | 3/3 | 3/3 | 3/3 |
+| Bonsai 2.5 llama.cpp | 5/5 | 3/3 | 3/3 | | |
+| Bonsai 2 llama.cpp | 5/5 | 3/3 | 3/3 | | |
+| Qwen3.8-27B MLX 4-bit (Nov 7) | 5/5 | 3/3 | 3/3 | | |
+
+Bonsai 2.5 on MLX found the right passphrase in all 17 tests, including all 6 at 128k (about 10 minutes per 128k prompt).
+
+Quality per GB (fixed suite plus 32k/64k needles, per GB of weights): Bonsai 2.5 MLX 12.7, Bonsai 2.5 llama.cpp 13.4, Bonsai 2 llama.cpp 13.9, Qwen3.8-27B MLX 4-bit 6.2.
+
+![Quality suite](img/2026-11-24-ternary-bonsai-2.5-27b-quality-suite.png)
+![Needle recall](img/2026-11-24-ternary-bonsai-2.5-27b-needle-recall.png)
+![Quality per GB](img/2026-11-24-ternary-bonsai-2.5-27b-quality-per-gb.png)
 
 ## Caveats
 
@@ -89,6 +137,8 @@ Fixed quality suite (math 20, code 10, instruction following 10, hard math 8, ha
 - Qwen3.8-27B rows come from earlier runs on this Mac with the same protocol (Nov 7 base MLX 4-bit; a Nov 22 super-adapter 4-bit run measured 18.05 tok/s at 512 and 15.83 at 32k, 16.3 GB).
 - MTP on MLX (mlx-vlm 0.6.3, `draft_block_size=2`) did not raise throughput in this run. PrismML's pack README says MLX MTP throughput hasn't been measured yet.
 - PrismML's published accuracy benchmarks use thinking at `xhigh`. This run is thinking off, so the only direct overlap is llama-bench speed.
+- The agent suite is 12 small Python tasks with sampling at temp 0.8 and 2 seeds, so a pass or two either way is within noise. It is not SWE-bench or Terminal-Bench. The Qwen agent references used a different engine or quant.
+- The fixed quality suite is short (58 items), and greedy thinking-off runs of Bonsai 2 and 2.5 differ by 2 items.
 
 Exact commands, raw per-run JSON, and scripts are in the Hugging Face dataset.
 
