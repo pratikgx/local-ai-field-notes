@@ -102,3 +102,4 @@ Credit to Microsoft for Aion 1.0 Instruct 2.3B.
 ## Data
 
 - Hugging Face benchmark data: [pratikgx/aion-1.0-instruct-2.3b-m5-pro-mac-mini-bench](https://huggingface.co/datasets/pratikgx/aion-1.0-instruct-2.3b-m5-pro-mac-mini-bench)
+- MLX 4-bit weights: [pratikgx/Aion-1.0-Instruct-2.3B-MLX-4bit](https://huggingface.co/pratikgx/Aion-1.0-Instruct-2.3B-MLX-4bit)
