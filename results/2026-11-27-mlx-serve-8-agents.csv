@@ -1,0 +1,9 @@
+agent,sessions,turns,tool_calls,tool_errors,output_tokens,input_tokens,cache_read_tokens,request_time_s,tok_per_s_while_requesting,tok_per_s_over_window,files,lines,basic_check
+01-snake,13,106,120,0,41864,528562,420138,6525.3,6.42,5.81,6,790,PASS
+02-expenses,12,123,124,4,39050,619282,500573,6504.1,6.0,5.42,7,874,PASS
+03-kanban,4,57,63,8,35070,469154,238281,6747.6,5.2,4.87,7,966,PASS
+04-pomodoro,6,64,68,4,45275,404749,291112,6454.9,7.01,6.29,7,626,PASS
+05-markdown,7,70,79,6,46399,456372,288465,6293.5,7.37,6.44,6,794,PASS
+06-todo-api,11,116,124,5,36654,565662,502654,6403.7,5.72,5.09,5,760,PASS
+07-converter,5,70,81,4,47918,392675,538982,6125.3,7.82,6.66,8,837,PASS
+08-typing,5,59,67,5,44444,359603,224774,6813.5,6.52,6.17,5,532,PASS

@@ -1,0 +1,18 @@
+{
+ "window_minutes": 120.0,
+ "measured_minutes": 120.4,
+ "server_generated_tokens": 336674,
+ "server_prompt_tokens": 6801038,
+ "prefix_cache_tokens": 3004979,
+ "avg_aggregate_tok_s": 46.62,
+ "peak_2min_aggregate_tok_s": 110.89,
+ "median_2min_aggregate_tok_s": 41.71,
+ "server_peak_footprint_gib": 35.1,
+ "requests_failed": 0,
+ "requests_ok": 665,
+ "bg_app_cpu_median": 3.6,
+ "pi_output_tokens_sum": 336674,
+ "apps_pass": 8,
+ "total_files": 51,
+ "total_lines": 6179
+}
